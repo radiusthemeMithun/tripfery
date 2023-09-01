@@ -1,0 +1,61 @@
+.header-primary {
+  .navbar-toggler {
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    box-shadow: none;
+    position: relative;
+    right: 0;
+    z-index: 99;
+    border: none;
+    span {
+      position: absolute;
+      left: 9px;
+      overflow: hidden;
+      width: 26px;
+      height: 2px;
+      margin-top: -1px;
+      text-indent: 200%;
+      -webkit-transition: opacity 0.25s;
+      transition: opacity 0.25s;
+      background-color: $rt-blue-500;
+    }
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 9px;
+      width: 26px;
+      height: 2px;
+      pointer-events: none;
+      -webkit-transition: -webkit-transform 0.25s;
+      transition: transform 0.25s;
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      background-color: $rt-blue-500;
+    }
+    &::after {
+      -webkit-transform: translate3d(0, 8px, 0) scale3d(1, 1, 1);
+      transform: translate3d(0, 8px, 0) scale3d(1, 1, 1);
+    }
+    &::before {
+      -webkit-transform: translate3d(0, -9px, 0) scale3d(1, 1, 1);
+      transform: translate3d(0, -9px, 0) scale3d(1, 1, 1);
+    }
+    &:focus {
+      box-shadow: none;
+    }
+    &[aria-expanded="true"] span {
+      opacity: 0;
+    }
+    &[aria-expanded="true"]::before {
+      -webkit-transform: rotate3d(0, 0, 1, 45deg);
+      transform: rotate3d(0, 0, 1, 45deg);
+    }
+    &[aria-expanded="true"]::after {
+      -webkit-transform: rotate3d(0, 0, 1, -45deg);
+      transform: rotate3d(0, 0, 1, -45deg);
+    }
+  }
+}

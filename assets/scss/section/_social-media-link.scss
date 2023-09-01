@@ -1,0 +1,100 @@
+.social-media-links {
+  .social-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    @include small-screen {
+      grid-template-columns: repeat(3,1fr);
+      gap: 15px;
+    }
+    @include portrait-phone {
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+
+  .social-link {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    gap: 10px;
+    text-transform: lowercase;
+    transition: all ease-in-out 0.5s;
+    position: relative;
+    z-index: 1;
+    transition-delay: 0.1s !important;
+    overflow: hidden;
+    &:hover {
+      &.facebook {
+        color: $rt-white;
+      }
+      &.twitter {
+        color: $rt-white;
+      }
+      &.linkedin {
+        color: $rt-white;
+      }
+      &.instagram {
+        color: $rt-white;
+      }
+      &.pinterest {
+        color: $rt-white;
+      }
+      &::after {
+        transition: height 0.5s ease-in-out;
+        height: 400%;
+      }
+    }
+    &::after {
+      transition: height 0.5s ease-in-out;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 0;
+      width: 100%;
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: -1;
+      background: transparent;
+    }
+    &.facebook {
+      color: $facebook-500;
+      background-color: $facebook-100;
+      &::after {
+        background-color: $facebook-500;
+      }
+    }
+    &.twitter {
+      background-color: $twitter-100;
+      color: $twitter-500;
+      &::after {
+        background-color: $twitter-500;
+      }
+    }
+    &.linkedin {
+      background-color: $linkedin-100;
+      color: $linkedin-500;
+      &::after {
+        background-color: $linkedin-500;
+      }
+    }
+    &.instagram {
+      background-color: $instagram-100;
+      color: $instagram-500;
+      &::after {
+        background-color: #e1306c;
+      }
+    }
+    &.pinterest {
+      background-color: $pinterest-100;
+      color: $pinterest-500;
+      &::after {
+        background-color: #e60023;
+      }
+    }
+  }
+  .social-icon {
+    font-size: 18px;
+  }
+}

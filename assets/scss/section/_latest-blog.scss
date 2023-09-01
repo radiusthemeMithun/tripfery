@@ -1,0 +1,108 @@
+.latest-blogs {
+  padding: 120px 0;
+  @include portrait-phone {
+    padding: 70px 0 50px;
+  }
+  .single-blog-wrapper {
+    &:hover {
+      .rt-blog {
+        .latest-blog-thumb {
+          img {
+            transform: scale(1.1);
+          }
+        }
+      }
+      .blog-content {
+        &::before {
+          height: 100%;
+          transition: height .6s;
+          top: 0;
+        }
+        .latest-blog-title {
+          a {
+            color: $rt-blue-500;
+          }
+        }
+      }
+    }
+    .rt-blog {
+      overflow: hidden;
+      .latest-blog-thumb {
+        border-radius: 20px;
+        display: block;
+        width: 100%;
+        img {
+          transition: all .5s ease-in-out;
+          width: 100%;
+          transform: scale(1);
+        }
+  
+      }
+    }
+    .blog-content {
+      margin-left: 20px;
+      margin-top: 20px;
+      padding-left: 15px;
+      // border-left: 2px solid #e0e1e2;
+      transition: all .5s ease-in-out;
+      position: relative;
+      &::after {
+        content: "";
+        height: 100%;
+        width: 2px;
+        background-color: #e0e1e2;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      &::before {
+        content: "";
+        height: 0;
+        width: 2px;
+        background-color: $rt-blue-500;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transition: height .8s;
+      }
+    }
+    .blog-meta {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 0;
+      .tag {
+        font-size: 15px;
+        color: $rt-black-400;
+        font-weight: $font-medium;
+        transition: all .5s ease-in-out;
+        &:hover {
+          color: $rt-blue-500;
+        }
+      }
+      .date {
+        font-size: 15px;
+        color: #797979;
+        position: relative;
+        padding-left: 15px;
+        &::before {
+          content: "";
+          width: 3px;
+          height: 3px;
+          top: 10px;
+          left: 0;
+          position: absolute;
+          border-radius: 50%;
+          background-color: #797979;
+        }
+      }
+    }
+    .latest-blog-title {
+      a {
+        font-size: 22px;
+        font-weight: $font-bold;
+        color: $rt-black-400;
+      }
+    }
+  }
+}

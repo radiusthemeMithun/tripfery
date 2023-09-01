@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rental Search Sidebar -TripFery Travel Website</title>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/fav.png">
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="assets/css/font-awesome-all.min.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="assets/css/aos.css" />
+  <!-- Magnific-popup -->
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <!-- Nice Select CSS -->
+  <link rel="stylesheet" href="assets/css/nice-select.css" />
+  <!-- Flatepikr -->
+  <link rel="stylesheet" href="assets/css/flatpickr.min.css" />
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-wrap">
+      <img src="assets/img/preloader.gif" alt="" class=" img-fluid preloader-icon">
+    </div>
+  </div>
+
+  <!-- Topbar -->
+  <section class="rt-tf-topbar">
+    <div class="topbar-container">
+      <div class="d-flex align-items-center  justify-content-between">
+        <div class="rt-tf-topbar-left d-flex">
+          <p class="rt-tf-welcome-text d-none d-lg-block">Welcome to Travel Agency</p>
+          <a href="tel:156-677-124-442-2887" class="rt-tf-phone-number">
+            <svg width="11" height="11" viewBox="0 0 11 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.98047 7.80859L9.51172 9.78125C9.45312 10.0742 9.21875 10.2695 8.92578 10.2695C4.00391 10.25 0 6.24609 0 1.32422C0 1.03125 0.175781 0.796875 0.46875 0.738281L2.44141 0.269531C2.71484 0.210938 3.00781 0.367188 3.125 0.621094L4.04297 2.75C4.14062 3.00391 4.08203 3.29688 3.86719 3.45312L2.8125 4.3125C3.47656 5.66016 4.57031 6.75391 5.9375 7.41797L6.79688 6.36328C6.95312 6.16797 7.24609 6.08984 7.5 6.1875L9.62891 7.10547C9.88281 7.24219 10.0391 7.53516 9.98047 7.80859Z"
+                fill="#D2D2D2" />
+            </svg>
+            156-677-124-442-2887</a>
+        </div>
+        <div class="rt-tf-topbar-right d-flex align-items-center justify-content-end">
+          <div class="rt-tf-right-info d-none d-sm-block">
+            <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.9805 0.972656L9.73047 9.07812C9.71094 9.27344 9.59375 9.44922 9.41797 9.54688C9.32031 9.58594 9.22266 9.625 9.10547 9.625C9.02734 9.625 8.94922 9.60547 8.87109 9.56641L6.48828 8.57031L5.49219 10.0547C5.41406 10.1914 5.27734 10.25 5.14062 10.25C4.92578 10.25 4.75 10.0742 4.75 9.85938V7.98438C4.75 7.82812 4.78906 7.69141 4.86719 7.59375L9.125 2.125L3.38281 7.30078L1.37109 6.46094C1.15625 6.36328 1 6.16797 1 5.91406C0.980469 5.64062 1.09766 5.44531 1.3125 5.32812L10.0625 0.347656C10.2578 0.230469 10.5312 0.230469 10.7266 0.367188C10.9219 0.503906 11.0195 0.738281 10.9805 0.972656Z"
+                fill="#D2D2D2" />
+            </svg>
+            <a href="mailto:travelwp@gmail.com" class="info-content ">
+              travelwp@gmail.com</a>
+          </div>
+          <div class="rt-tf-right-info d-none d-md-block">
+            <address class="info-content">
+              <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M3.28125 10.0156C2.26562 8.74609 0 5.71875 0 4C0 1.92969 1.66016 0.25 3.75 0.25C5.82031 0.25 7.5 1.92969 7.5 4C7.5 5.71875 5.21484 8.74609 4.19922 10.0156C3.96484 10.3086 3.51562 10.3086 3.28125 10.0156ZM3.75 5.25C4.43359 5.25 5 4.70312 5 4C5 3.31641 4.43359 2.75 3.75 2.75C3.04688 2.75 2.5 3.31641 2.5 4C2.5 4.70312 3.04688 5.25 3.75 5.25Z"
+                  fill="#D2D2D2" />
+              </svg>
+              184 Main Collins Street Victoria 8007
+            </address>
+          </div>
+          <div class="rt-tf-topbar-social-links">
+            <span class="social-link-text">Follow Us:</span>
+            <a href="https://www.facebook.com/" target="_blank" class="social-link-item">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/" class="social-link-item">
+              <i class="fa-brands fa-twitter"></i> 
+            </a>
+            <a href="https://bd.linkedin.com/" target="_blank" class="social-link-item">
+              <i class="fa-brands fa-linkedin-in"></i> 
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="social-link-item">
+              <i class="fa-brands fa-instagram"></i> 
+            </a>
+            <a href="https://www.pinterest.com/" target="_blank" class="social-link-item">
+              <i class="fa-brands fa-pinterest-p"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <!-- Place Holder -->
+  <div class="place-holder"></div>
+  <!-- Header -->
+  <header class="header-primary sticky-header">
+    <div class="nav-container">
+      <nav class="navbar navbar-expand-xl justify-content-between">
+        <a href="index.html">
+          <img src="assets/img/logo/Logo-color.svg" alt="">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="d-block d-xl-none">
+              <div class="logo"><a href="index.html"><img src="assets/img/logo/Logo-color.svg" alt="" width="130"></a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                data-bs-auto-close="outside" aria-expanded="false">All Demos</a>
+              <div class="dropdown-menu two-column">
+                <div class="shape">
+                  <svg class="animate__animated animate__fadeInUp" width="21" height="10" viewBox="0 0 21 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 0L0 9.5H20.5L10 0Z" fill="currentColor"/>
+                  </svg>
+                </div>
+                <div class="d-flex flex-column flex-xl-row justify-content-between">
+                  <ul>
+                    <li>
+                      <a href="index.html" class="dropdown-item">
+                        <span class="flip-item">
+                          <span data-text="Main Home">Main Home</span>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="index-2.html" class="dropdown-item">
+                        <span class="flip-item">
+                          <span data-text="Hotel Boking">Hotel Boking</span>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="index-3.html" class="dropdown-item">
+                        <span class="flip-item">
+                          <span data-text="Tour Package">Tour Package</span>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="index-4.html" class="dropdown-item">
+                        <span class="flip-item">
+                          <span data-text="Activity Place">Activity Place</span>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="index-5.html" class="dropdown-item">
+                        <span class="flip-item">
+                          <span data-text="Rental House">Rental House</span>
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul>
+                      <li>
+                        <a href="index-6.html" class="dropdown-item">
+                          <span class="flip-item">
+                            <span data-text="Rent a Car">Rent a Car</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="index-7.html" class="dropdown-item">
+                          <span class="flip-item">
+                            <span data-text="Restaurant Booking">Restaurant Booking</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="index-3.html" class="dropdown-item">
+                          <span class="flip-item">
+                            <span data-text="Tour Package">Tour Package</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="index-7.html" class="dropdown-item">
+                          <span class="flip-item">
+                            <span data-text="Activity Place">Activity Place</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="index-4.html" class="dropdown-item">
+                          <span class="flip-item">
+                            <span data-text="Rental House">Rental House</span>
+                          </span>
+                        </a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle flame" href="#" role="button" data-bs-toggle="dropdown"
+                data-bs-auto-close="outside" aria-expanded="false">All Feature</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-submenu dropdown">
+                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                    aria-expanded="false" href="#"><span class="flip-item">
+                      <span data-text="Hotel Feature">Hotel Feature</span>
+                    </span></a>
+                  <ul class="dropdown-menu rounded-0">
+                    <li><a href="hotel-search-sidebar-right.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Hotel Sidebar">Hotel Sidebar</span>
+                    </span></a>
+                    </li>
+                    <li><a href="hotel-details.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Hotel Detail">Hotel Detail</span>
+                    </span></a></li>
+                    <li><a href="room-details.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Room Detail">Room Detail</span>
+                    </span></a></li>
+                    <li><a href="hotel-search-with-map.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Search HalfMap">Search HalfMap</span>
+                    </span></a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu dropdown">
+                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                    aria-expanded="false" href="#"><span class="flip-item">
+                      <span data-text="Tour Feature">Tour Feature</span>
+                    </span></a>
+                  <ul class="dropdown-menu rounded-0">
+                    <li><a href="tour-sidebar-search.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Tour Sidebar">Tour Sidebar</span>
+                    </span></a></li>
+                    <li><a href="tour-details.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Tour Detail">Tour Detail</span>
+                    </span></a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu dropdown">
+                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                    aria-expanded="false" href="#"><span class="flip-item">
+                      <span data-text="Activity Feature">Activity Feature</span>
+                    </span></a>
+                  <ul class="dropdown-menu rounded-0">
+                    <li><a href="activity-search-sidebar.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Activity Sidebar">Activity Sidebar</span>
+                    </span></a>
+                    </li>
+                    <li><a href="activity-details.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Activity Details">Activity Details</span>
+                    </span></a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu dropdown">
+                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                    aria-expanded="false" href="#"><span class="flip-item">
+                      <span data-text="Rental Feature">Rental Feature</span>
+                    </span></a>
+                  <ul class="dropdown-menu rounded-0">
+                    <li><a href="rental-search-sidebar.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Rental Sidebar">Rental Sidebar</span>
+                    </span></a></li>
+                    <li><a href="rental-search-with-map.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Rental With Map">Rental With Map</span>
+                    </span></a>
+                    </li>
+                    <li><a href="rental-details.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Rental Details">Rental Details</span>
+                    </span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu dropdown">
+                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                    aria-expanded="false" href="#"><span class="flip-item">
+                      <span data-text="Ren a Car Feature">Rent a Car Feature</span>
+                    </span></a>
+                  <ul class="dropdown-menu rounded-0">
+                    <li><a href="car-search-sidebar.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Car Sidebar">Car Sidebar</span>
+                    </span></a></li>
+                    <li><a href="car-details.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Car Details">Car Details</span>
+                    </span></a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu dropdown">
+                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                    aria-expanded="false" href="#"><span class="flip-item">
+                      <span data-text="Restaurant Feature">Restaurant Feature</span>
+                    </span></a>
+                  <ul class="dropdown-menu rounded-0">
+                    <li><a href="restaurant-search-sidebar.html" class="dropdown-item"><span class="flip-item">
+                          <span data-text="Restaurant
+                            Sidebar">Restaurant
+                            Sidebar</span>
+                          </span></a></li>
+                    <li><a href="restaurant-details.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Restaurant Details">Restaurant Details</span>
+                    </span></a></li>
+
+                  </ul>
+                </li>
+
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                data-bs-auto-close="outside" aria-expanded="false">Essential Pages</a>
+              <ul class="dropdown-menu">
+                <li><a href="faq.html" class="dropdown-item"><span class="flip-item">
+                  <span data-text="Faq">Faq</span>
+                </span></a></li>
+                <li><a href="404.html" class="dropdown-item"><span class="flip-item">
+                  <span data-text="404 Page">404 Page</span>
+                </span></a></li>
+                <li><a href="services.html" class="dropdown-item"><span class="flip-item">
+                  <span data-text="Services Page">Services Page</span>
+                </span></a></li>
+                <li><a href="contact.html" class="dropdown-item"><span class="flip-item">
+                  <span data-text="Contact Page">Contact Page</span>
+                </span></a></li>
+                <li><a href="team.html" class="dropdown-item"><span class="flip-item">
+                  <span data-text="Team Page">Team Page</span>
+                </span></a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                data-bs-auto-close="outside" aria-expanded="false">Blog</a>
+              <ul class="dropdown-menu">
+                <li><a href="blog-grid.html" class="dropdown-item"><span class="flip-item">
+                  <span data-text="Blog Grid">Blog Grid</span>
+                </span></a></li>
+                <li><a href="blog-list.html" class="dropdown-item"><span class="flip-item">
+                  <span data-text="Blog List">Blog List</span>
+                </span></a></li>
+                <li><a href="blog-details.html" class="dropdown-item"><span class="flip-item">
+                  <span data-text="Blog Details">Blog Details</span>
+                </span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex align-items-center navbar-right">
+          <ul class="d-flex navbar-right-features d-md-flex">
+            <li class="d-none d-md-block">
+              <button class="currency-list">
+                USD
+                <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 1L4.5303 4.67453C4.23864 5.10849 3.76136 5.10849 3.4697 4.67453L1 1" stroke="currentColor"
+                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </li>
+            <li>
+              <a href="#template-search" class="navbar-btn-links">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                Search
+              </a>
+            </li>
+            <li>
+              <a href="index.html" class="navbar-btn-links">
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.3125 5.43298V4.7459C5.3125 3.15215 6.59458 1.58673 8.18833 1.43798C10.0867 1.25382 11.6875 2.7484 11.6875 4.61132V5.58882" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.375 15.5833H10.625C13.4725 15.5833 13.9825 14.4429 14.1313 13.0545L14.6625 8.80454C14.8538 7.07621 14.3579 5.66663 11.3333 5.66663H5.66667C2.64208 5.66663 2.14625 7.07621 2.3375 8.80454L2.86875 13.0545C3.0175 14.4429 3.5275 15.5833 6.375 15.5833Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10.976 8.50004H10.9824" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.01678 8.50004H6.02314" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Cart (0)
+              </a>
+            </li>
+          </ul>
+          <div class="header-button tripfery-button">
+            <a href="index.html" class="tripfery-btn">
+              Register Now
+            </a>
+          </div>
+          <button class="navbar-toggler d-block d-xl-none" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Search Hero -->
+  <section class="search-page-hero page-overlay" style="
+        background: url('assets/img/bg/rental-search.jpg') no-repeat center
+          center/cover;
+      ">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="search-form-wrapper mx-auto" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="150">
+            <form class="form-grid row align-items-center">
+              <div class="col-md-6 col-lg-3 col-xl-3 input-container d-flex flex-column mb-3 mb-lg-0">
+                <label for="location" class="input-label">
+                  <span class="pre-icon">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M6.99969 7.83434C8.00485 7.83434 8.81969 7.01949 8.81969 6.01434C8.81969 5.00918 8.00485 4.19434 6.99969 4.19434C5.99453 4.19434 5.17969 5.00918 5.17969 6.01434C5.17969 7.01949 5.99453 7.83434 6.99969 7.83434Z"
+                        stroke="#8694A5" />
+                      <path
+                        d="M2.11133 4.95222C3.2605 -0.0994501 10.7447 -0.0936166 11.888 4.95805C12.5588 7.92138 10.7155 10.4297 9.09967 11.9814C7.92717 13.113 6.07217 13.113 4.89383 11.9814C3.28383 10.4297 1.4405 7.91555 2.11133 4.95222Z"
+                        stroke="#8694A5" />
+                    </svg>
+                  </span>
+                  Location
+                  <span class="post-icon">
+                    <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5.5 5.5C5.28906 5.5 5.10156 5.42969 4.96094 5.28906L1.21094 1.53906C0.90625 1.25781 0.90625 0.765625 1.21094 0.484375C1.49219 0.179688 1.98438 0.179688 2.26562 0.484375L5.5 3.69531L8.71094 0.484375C8.99219 0.179688 9.48438 0.179688 9.76562 0.484375C10.0703 0.765625 10.0703 1.25781 9.76562 1.53906L6.01562 5.28906C5.875 5.42969 5.6875 5.5 5.5 5.5Z"
+                        fill="#787878" />
+                    </svg>
+                  </span>
+                </label>
+                <input type="text" id="location" class="form-control" placeholder="Where are you going?" />
+              </div>
+              <div class="col-md-6 col-lg-3 col-xl input-container d-flex flex-column mb-3 mb-lg-0">
+                <label for="pickup">
+                  <span class="pre-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.66699 1.16663V2.91663" stroke="#8694A5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M9.33301 1.16663V2.91663" stroke="#8694A5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M2.04199 5.30249H11.9587" stroke="#8694A5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M11.2058 9.19925L9.14078 11.2643C9.05912 11.3459 8.98327 11.4976 8.96577 11.6084L8.85494 12.3959C8.8141 12.6818 9.01244 12.8801 9.29828 12.8393L10.0858 12.7284C10.1966 12.7109 10.3541 12.6351 10.4299 12.5534L12.4949 10.4884C12.8508 10.1326 13.0199 9.71842 12.4949 9.19342C11.9758 8.67426 11.5616 8.84341 11.2058 9.19925Z"
+                        stroke="#8694A5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M10.9082 9.4967C11.0832 10.1267 11.5732 10.6167 12.2032 10.7917" stroke="#8694A5"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M7 12.8333H4.66667C2.625 12.8333 1.75 11.6666 1.75 9.91663V4.95829C1.75 3.20829 2.625 2.04163 4.66667 2.04163H9.33333C11.375 2.04163 12.25 3.20829 12.25 4.95829V6.99996"
+                        stroke="#8694A5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M6.99745 7.99162H7.00269" stroke="#8694A5" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M4.83827 7.99162H4.84351" stroke="#8694A5" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M4.83827 9.74162H4.84351" stroke="#8694A5" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg></span>
+                  Check in
+                  <span class="post-icon">
+                    <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5.5 5.5C5.28906 5.5 5.10156 5.42969 4.96094 5.28906L1.21094 1.53906C0.90625 1.25781 0.90625 0.765625 1.21094 0.484375C1.49219 0.179688 1.98438 0.179688 2.26562 0.484375L5.5 3.69531L8.71094 0.484375C8.99219 0.179688 9.48438 0.179688 9.76562 0.484375C10.0703 0.765625 10.0703 1.25781 9.76562 1.53906L6.01562 5.28906C5.875 5.42969 5.6875 5.5 5.5 5.5Z"
+                        fill="#787878" />
+                    </svg>
+                  </span>
+                </label>
+                <input type="text" id="pickup" class="selector form-control" placeholder="Add Date" />
+              </div>
+              <div class="col-md-6 col-lg-3 col-xl input-container d-flex flex-column mb-3 mb-lg-0">
+                <label for="drop"><span class="pre-icon">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.66699 1.16663V2.91663" stroke="#8694A5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M9.33301 1.16663V2.91663" stroke="#8694A5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M2.04199 5.30249H11.9587" stroke="#8694A5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M11.2058 9.19925L9.14078 11.2643C9.05912 11.3459 8.98327 11.4976 8.96577 11.6084L8.85494 12.3959C8.8141 12.6818 9.01244 12.8801 9.29828 12.8393L10.0858 12.7284C10.1966 12.7109 10.3541 12.6351 10.4299 12.5534L12.4949 10.4884C12.8508 10.1326 13.0199 9.71842 12.4949 9.19342C11.9758 8.67426 11.5616 8.84341 11.2058 9.19925Z"
+                        stroke="#8694A5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M10.9082 9.4967C11.0832 10.1267 11.5732 10.6167 12.2032 10.7917" stroke="#8694A5"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M7 12.8333H4.66667C2.625 12.8333 1.75 11.6666 1.75 9.91663V4.95829C1.75 3.20829 2.625 2.04163 4.66667 2.04163H9.33333C11.375 2.04163 12.25 3.20829 12.25 4.95829V6.99996"
+                        stroke="#8694A5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M6.99745 7.99162H7.00269" stroke="#8694A5" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M4.83827 7.99162H4.84351" stroke="#8694A5" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M4.83827 9.74162H4.84351" stroke="#8694A5" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                  Check out
+                  <span class="post-icon">
+                    <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5.5 5.5C5.28906 5.5 5.10156 5.42969 4.96094 5.28906L1.21094 1.53906C0.90625 1.25781 0.90625 0.765625 1.21094 0.484375C1.49219 0.179688 1.98438 0.179688 2.26562 0.484375L5.5 3.69531L8.71094 0.484375C8.99219 0.179688 9.48438 0.179688 9.76562 0.484375C10.0703 0.765625 10.0703 1.25781 9.76562 1.53906L6.01562 5.28906C5.875 5.42969 5.6875 5.5 5.5 5.5Z"
+                        fill="#787878" />
+                    </svg>
+                  </span>
+                </label>
+                <input type="text" id="drop" class="selector form-control" placeholder="Add Date" />
+              </div>
+              <div class="col-md-6 col-lg-3 col-xl input-container d-flex flex-column mb-3 mb-lg-0">
+                <label for="drop">
+                  <span class="pre-icon">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5.34349 6.34079C5.28516 6.33496 5.21516 6.33496 5.15099 6.34079C3.76266 6.29413 2.66016 5.15663 2.66016 3.75663C2.66016 2.32746 3.81516 1.16663 5.25016 1.16663C6.67932 1.16663 7.84016 2.32746 7.84016 3.75663C7.83432 5.15663 6.73182 6.29413 5.34349 6.34079Z"
+                        stroke="#8694A5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M9.57241 2.33337C10.7041 2.33337 11.6141 3.24921 11.6141 4.37504C11.6141 5.47754 10.7391 6.37587 9.64825 6.41671C9.60158 6.41087 9.54908 6.41087 9.49658 6.41671"
+                        stroke="#8694A5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M2.42643 8.49337C1.01476 9.43837 1.01476 10.9784 2.42643 11.9175C4.03059 12.9909 6.66143 12.9909 8.26559 11.9175C9.67726 10.9725 9.67726 9.43254 8.26559 8.49337C6.66726 7.42587 4.03643 7.42587 2.42643 8.49337Z"
+                        stroke="#8694A5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M10.6982 11.6666C11.1182 11.5791 11.5149 11.41 11.8416 11.1591C12.7516 10.4766 12.7516 9.35079 11.8416 8.66829C11.5207 8.42329 11.1299 8.25996 10.7157 8.16663"
+                        stroke="#8694A5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                  Guests
+
+                  <span class="post-icon">
+                    <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5.5 5.5C5.28906 5.5 5.10156 5.42969 4.96094 5.28906L1.21094 1.53906C0.90625 1.25781 0.90625 0.765625 1.21094 0.484375C1.49219 0.179688 1.98438 0.179688 2.26562 0.484375L5.5 3.69531L8.71094 0.484375C8.99219 0.179688 9.48438 0.179688 9.76562 0.484375C10.0703 0.765625 10.0703 1.25781 9.76562 1.53906L6.01562 5.28906C5.875 5.42969 5.6875 5.5 5.5 5.5Z"
+                        fill="#787878" />
+                    </svg>
+                  </span>
+                </label>
+                <select class="select-dropdown">
+                  <option selected>Add Guests</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+              <div class="col-md-6 col-lg-3 col-xl input-btn mt-0 mt-lg-5">
+                <button class="form-btn">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.1875 13.125C10.4667 13.125 13.125 10.4667 13.125 7.1875C13.125 3.90831 10.4667 1.25 7.1875 1.25C3.90831 1.25 1.25 3.90831 1.25 7.1875C1.25 10.4667 3.90831 13.125 7.1875 13.125Z"
+                      stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M13.75 13.75L12.5 12.5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  Search
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Renatl With Map -->
+  <section class="rental-with-map overflow-hidden">
+    <div class="row">
+      <div class="col-md-12 col-lg-7 col-xxl-6">
+        <div class="rental-content">
+          <div
+            class="d-flex flex-column flex-sm-row align-items-center justify-content-between view-switch-bar position-relative">
+            <div>
+              <p class="search-result mb-3 mb-sm-0">24 rental found</p>
+            </div>
+            <div class="d-flex view-switch-right">
+              <div class="d-flex sort-and-filter">
+                <div class="d-flex align-items-center sort-wrapper">
+                  <label for="sort" class="sort-label">Sort:</label>
+                  <select class="select-dropdown" id="sort">
+                    <option value="">Recommended</option>
+                    <option value="">Top Rated</option>
+                  </select>
+                </div>
+              </div>
+
+              <button class="filter-area-trigger">
+                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M10.8571 0C11.3568 0 11.7619 0.380558 11.7619 0.85V4.25C11.7619 4.71944 11.3568 5.1 10.8571 5.1C10.3575 5.1 9.95238 4.71944 9.95238 4.25V3.4H0.904762C0.405076 3.4 0 3.01944 0 2.55C0 2.08056 0.405076 1.7 0.904762 1.7H9.95238V0.85C9.95238 0.380558 10.3575 0 10.8571 0ZM13.5714 2.55C13.5714 2.08056 13.9765 1.7 14.4762 1.7H17.1905C17.6902 1.7 18.0952 2.08056 18.0952 2.55C18.0952 3.01944 17.6902 3.4 17.1905 3.4H14.4762C13.9765 3.4 13.5714 3.01944 13.5714 2.55ZM8.14286 5.95C8.64254 5.95 9.04762 6.33056 9.04762 6.8V7.65H18.0952C18.5949 7.65 19 8.03056 19 8.5C19 8.96944 18.5949 9.35 18.0952 9.35H9.04762V10.2C9.04762 10.6694 8.64254 11.05 8.14286 11.05C7.64317 11.05 7.2381 10.6694 7.2381 10.2V6.8C7.2381 6.33056 7.64317 5.95 8.14286 5.95ZM0 8.5C0 8.03056 0.405076 7.65 0.904762 7.65H4.52381C5.0235 7.65 5.42857 8.03056 5.42857 8.5C5.42857 8.96944 5.0235 9.35 4.52381 9.35H0.904762C0.405076 9.35 0 8.96944 0 8.5ZM10.8571 11.9C11.3568 11.9 11.7619 12.2806 11.7619 12.75V16.15C11.7619 16.6194 11.3568 17 10.8571 17C10.3575 17 9.95238 16.6194 9.95238 16.15V15.3H0.904762C0.405076 15.3 0 14.9194 0 14.45C0 13.9806 0.405076 13.6 0.904762 13.6H9.95238V12.75C9.95238 12.2806 10.3575 11.9 10.8571 11.9ZM13.5714 14.45C13.5714 13.9806 13.9765 13.6 14.4762 13.6H17.1905C17.6902 13.6 18.0952 13.9806 18.0952 14.45C18.0952 14.9194 17.6902 15.3 17.1905 15.3H14.4762C13.9765 15.3 13.5714 14.9194 13.5714 14.45Z"
+                    fill="currentColor" />
+                </svg>
+              </button>
+
+              <ul class="nav" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-btn active" id="pills-grid-tab" data-bs-toggle="pill" data-bs-target="#pills-grid"
+                    type="button" role="tab" aria-controls="pills-grid" aria-selected="true">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 10H7C9 10 10 9 10 7V5C10 3 9 2 7 2H5C3 2 2 3 2 5V7C2 9 3 10 5 10Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M17 10H19C21 10 22 9 22 7V5C22 3 21 2 19 2H17C15 2 14 3 14 5V7C14 9 15 10 17 10Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M17 22H19C21 22 22 21 22 19V17C22 15 21 14 19 14H17C15 14 14 15 14 17V19C14 21 15 22 17 22Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M5 22H7C9 22 10 21 10 19V17C10 15 9 14 7 14H5C3 14 2 15 2 17V19C2 21 3 22 5 22Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-btn" id="pills-list-tab" data-bs-toggle="pill" data-bs-target="#pills-list"
+                    type="button" role="tab" aria-controls="pills-list" aria-selected="false">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.3711 8.88H17.6211" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M6.37891 8.88L7.12891 9.63L9.37891 7.38" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M12.3711 15.88H17.6211" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M6.37891 15.88L7.12891 16.63L9.37891 14.38" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="wide-filter-area">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-3 col-md-6">
+                    <div class="filter-elements">
+                      <h4 class="filter-title">Price Filter</h4>
+                      <div class="filter-btn-group d-flex flex-wrap">
+                        <button class="filter-btn">$0</button>
+                        <button class="filter-btn">$00</button>
+                        <button class="filter-btn">$000</button>
+                        <button class="filter-btn">$0000</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="filter-elements">
+                      <h3 class="filter-title">Hotel Star</h3>
+                      <div class="filter-btn-group d-flex flex-wrap">
+                        <button class="">
+                          <img src="assets/img/others/5-star.png" alt="" />
+                        </button>
+                        <button class="">
+                          <img src="assets/img/others/4-star.png" alt="" />
+                        </button>
+                        <button class="">
+                          <img src="assets/img/others/3-star.png" alt="" />
+                        </button>
+                        <button class="">
+                          <img src="assets/img/others/2-star.png" alt="" />
+                        </button>
+                        <button class="">
+                          <img src="assets/img/others/1-star.png" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="filter-elements">
+                      <h3 class="filter-title">Review Score</h3>
+                      <div class="filter-btn-group d-flex flex-wrap">
+                        <button class="filter-btn">Excellent</button>
+                        <button class="filter-btn">Very Good</button>
+                        <button class="filter-btn">Average</button>
+                        <button class="filter-btn">Poor</button>
+                        <button class="filter-btn">Terrible</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="filter-elements">
+                      <h3 class="filter-title">Facilities</h3>
+                      <div class="filter-btn-group d-flex flex-wrap">
+                        <button class="filter-btn">Best value</button>
+                        <button class="filter-btn">Boutique</button>
+                        <button class="filter-btn">Wi-fi</button>
+                        <button class="filter-btn">Budget</button>
+                        <button class="filter-btn">Classic</button>
+                        <button class="filter-btn">Luxury</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-grid" role="tabpanel" aria-labelledby="pills-grid-tab"
+              tabindex="0">
+              <div class="row justify-content-center">
+                <article class="mb-4 col-md-6 col-lg-6 col-xl-4">
+                  <div class="top-rental-wrapper">
+                    <div class="position-relative">
+                      <a href="rental-details.html" class="top-rental-thumb-wrapper">
+                        <img src="assets/img/rental/rental-1.jpg" class="top-rental-thumb img-fluid w-100" alt="" />
+                      </a>
+                      <button class="heart-icon active">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+                    <div class="top-rental-info">
+                      <h3 class="top-rental-name">
+                        <a href="rental-details.html" class="top-rental-link">Hotel See View</a>
+                      </h3>
+                      <address class="top-rental-address">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6.99969 7.83418C8.00485 7.83418 8.81969 7.01933 8.81969 6.01418C8.81969 5.00902 8.00485 4.19418 6.99969 4.19418C5.99453 4.19418 5.17969 5.00902 5.17969 6.01418C5.17969 7.01933 5.99453 7.83418 6.99969 7.83418Z"
+                            stroke="#384BFF" />
+                          <path
+                            d="M2.11133 4.95254C3.2605 -0.099122 10.7447 -0.0932886 11.888 4.95838C12.5588 7.92171 10.7155 10.43 9.09967 11.9817C7.92717 13.1134 6.07217 13.1134 4.89383 11.9817C3.28383 10.43 1.4405 7.91588 2.11133 4.95254Z"
+                            stroke="#384BFF" />
+                        </svg>
+                        2464 Royal Ln. Mesa, New Jersey
+                      </address>
+                      <span class="top-rental-price">$690 <span class="rental-stay-time">/ Night</span></span>
+                    </div>
+                  </div>
+                </article>
+                <article class="mb-4 col-md-6 col-lg-6 col-xl-4">
+                  <div class="top-rental-wrapper">
+                    <div class="position-relative">
+                      <a href="rental-details.html" class="top-rental-thumb-wrapper">
+                        <img src="assets/img/rental/rental-2.jpg" class="top-rental-thumb img-fluid w-100" alt="" />
+                      </a>
+                      <button class="heart-icon">
+                        <i class="fa-regular fa-heart "></i>
+                      </button>
+                    </div>
+
+                    <div class="top-rental-info">
+                      <h3 class="top-rental-name">
+                        <a href="rental-details.html" class="top-rental-link">Hotel Max Today</a>
+                      </h3>
+                      <address class="top-rental-address">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6.99969 7.83418C8.00485 7.83418 8.81969 7.01933 8.81969 6.01418C8.81969 5.00902 8.00485 4.19418 6.99969 4.19418C5.99453 4.19418 5.17969 5.00902 5.17969 6.01418C5.17969 7.01933 5.99453 7.83418 6.99969 7.83418Z"
+                            stroke="#384BFF" />
+                          <path
+                            d="M2.11133 4.95254C3.2605 -0.099122 10.7447 -0.0932886 11.888 4.95838C12.5588 7.92171 10.7155 10.43 9.09967 11.9817C7.92717 13.1134 6.07217 13.1134 4.89383 11.9817C3.28383 10.43 1.4405 7.91588 2.11133 4.95254Z"
+                            stroke="#384BFF" />
+                        </svg>
+                        6391 Elgin St. Celina, Delaware
+                      </address>
+                      <span class="top-rental-price">$570 <span class="rental-stay-time">/ Night</span></span>
+                    </div>
+                  </div>
+                </article>
+                <article class="mb-4 col-md-6 col-lg-6 col-xl-4">
+                  <div class="top-rental-wrapper">
+                    <div class="position-relative">
+                      <a href="rental-details.html" class="top-rental-thumb-wrapper">
+                        <img src="assets/img/rental/rental-3.jpg" class="top-rental-thumb img-fluid w-100" alt="" />
+                      </a>
+                      <button class="heart-icon">
+                        <i class="fa-regular fa-heart "></i>
+                      </button>
+                    </div>
+                    <div class="top-rental-info">
+                      <h3 class="top-rental-name">
+                        <a href="rental-details.html" class="top-rental-link">Royel Martin</a>
+                      </h3>
+                      <address class="top-rental-address">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6.99969 7.83418C8.00485 7.83418 8.81969 7.01933 8.81969 6.01418C8.81969 5.00902 8.00485 4.19418 6.99969 4.19418C5.99453 4.19418 5.17969 5.00902 5.17969 6.01418C5.17969 7.01933 5.99453 7.83418 6.99969 7.83418Z"
+                            stroke="#384BFF" />
+                          <path
+                            d="M2.11133 4.95254C3.2605 -0.099122 10.7447 -0.0932886 11.888 4.95838C12.5588 7.92171 10.7155 10.43 9.09967 11.9817C7.92717 13.1134 6.07217 13.1134 4.89383 11.9817C3.28383 10.43 1.4405 7.91588 2.11133 4.95254Z"
+                            stroke="#384BFF" />
+                        </svg>
+                        8502 Preston Rd Inglewood, Maine
+                      </address>
+                      <span class="top-rental-price">$690 <span class="rental-stay-time">/ Night</span></span>
+                    </div>
+                  </div>
+                </article>
+                <article class="mb-4 col-md-6 col-lg-6 col-xl-4">
+                  <div class="top-rental-wrapper">
+                    <div class="position-relative">
+                      <a href="rental-details.html" class="top-rental-thumb-wrapper">
+                        <img src="assets/img/rental/rental-4.jpg" class="top-rental-thumb img-fluid w-100" alt="" />
+                      </a>
+                      <button class="heart-icon">
+                        <i class="fa-regular fa-heart "></i>
+                      </button>
+                    </div>
+                    <div class="top-rental-info">
+                      <h3 class="top-rental-name">
+                        <a href="rental-details.html" class="top-rental-link">Hotel See View</a>
+                      </h3>
+                      <address class="top-rental-address">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6.99969 7.83418C8.00485 7.83418 8.81969 7.01933 8.81969 6.01418C8.81969 5.00902 8.00485 4.19418 6.99969 4.19418C5.99453 4.19418 5.17969 5.00902 5.17969 6.01418C5.17969 7.01933 5.99453 7.83418 6.99969 7.83418Z"
+                            stroke="#384BFF" />
+                          <path
+                            d="M2.11133 4.95254C3.2605 -0.099122 10.7447 -0.0932886 11.888 4.95838C12.5588 7.92171 10.7155 10.43 9.09967 11.9817C7.92717 13.1134 6.07217 13.1134 4.89383 11.9817C3.28383 10.43 1.4405 7.91588 2.11133 4.95254Z"
+                            stroke="#384BFF" />
+                        </svg>
+                        8502 Preston Rd Inglewood, Maine
+                      </address>
+                      <span class="top-rental-price">$690 <span class="rental-stay-time">/ Night</span></span>
+                    </div>
+                  </div>
+                </article>
+                <article class="mb-4 col-md-6 col-lg-6 col-xl-4">
+                  <div class="top-rental-wrapper">
+                    <div class="position-relative">
+                      <a href="rental-details.html" class="top-rental-thumb-wrapper">
+                        <img src="assets/img/rental/rental-5.jpg" class="top-rental-thumb img-fluid w-100" alt="" />
+                      </a>
+                      <button class="heart-icon">
+                        <i class="fa-regular fa-heart "></i>
+                      </button>
+                    </div>
+                    <div class="top-rental-info">
+                      <h3 class="top-rental-name">
+                        <a href="rental-details.html" class="top-rental-link">Martin Hotel View</a>
+                      </h3>
+                      <address class="top-rental-address">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6.99969 7.83418C8.00485 7.83418 8.81969 7.01933 8.81969 6.01418C8.81969 5.00902 8.00485 4.19418 6.99969 4.19418C5.99453 4.19418 5.17969 5.00902 5.17969 6.01418C5.17969 7.01933 5.99453 7.83418 6.99969 7.83418Z"
+                            stroke="#384BFF" />
+                          <path
+                            d="M2.11133 4.95254C3.2605 -0.099122 10.7447 -0.0932886 11.888 4.95838C12.5588 7.92171 10.7155 10.43 9.09967 11.9817C7.92717 13.1134 6.07217 13.1134 4.89383 11.9817C3.28383 10.43 1.4405 7.91588 2.11133 4.95254Z"
+                            stroke="#384BFF" />
+                        </svg>
+                        1901 Thornridge Cir. Shiloh, Hawaii
+                      </address>
+                      <span class="top-rental-price">$480 <span class="rental-stay-time">/ Night</span></span>
+                    </div>
+                  </div>
+                </article>
+                <article class="mb-4 col-md-6 col-lg-6 col-xl-4">
+                  <div class="top-rental-wrapper">
+                    <div class="position-relative">
+                      <a href="rental-details.html" class="top-rental-thumb-wrapper">
+                        <img src="assets/img/rental/rental-6.jpg" class="top-rental-thumb img-fluid w-100" alt="" />
+                      </a>
+                      <button class="heart-icon">
+                        <i class="fa-regular fa-heart "></i>
+                      </button>
+                    </div>
+                    <div class="top-rental-info">
+                      <h3 class="top-rental-name">
+                        <a href="rental-details.html" class="top-rental-link">Ready Hotel Marmit</a>
+                      </h3>
+                      <address class="top-rental-address">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6.99969 7.83418C8.00485 7.83418 8.81969 7.01933 8.81969 6.01418C8.81969 5.00902 8.00485 4.19418 6.99969 4.19418C5.99453 4.19418 5.17969 5.00902 5.17969 6.01418C5.17969 7.01933 5.99453 7.83418 6.99969 7.83418Z"
+                            stroke="#384BFF" />
+                          <path
+                            d="M2.11133 4.95254C3.2605 -0.099122 10.7447 -0.0932886 11.888 4.95838C12.5588 7.92171 10.7155 10.43 9.09967 11.9817C7.92717 13.1134 6.07217 13.1134 4.89383 11.9817C3.28383 10.43 1.4405 7.91588 2.11133 4.95254Z"
+                            stroke="#384BFF" />
+                        </svg>
+                        Parker Rd. Allentown, New Mexico
+                      </address>
+                      <span class="top-rental-price">$625 <span class="rental-stay-time">/ Night</span></span>
+                    </div>
+                  </div>
+                </article>
+                <article class="mb-4 col-md-6 col-lg-6 col-xl-4">
+                  <div class="top-rental-wrapper">
+                    <div class="position-relative">
+                      <a href="rental-details.html" class="top-rental-thumb-wrapper">
+                        <img src="assets/img/rental/rental-7.jpg" class="top-rental-thumb img-fluid w-100" alt="" />
+                      </a>
+                      <button class="heart-icon">
+                        <i class="fa-regular fa-heart "></i>
+                      </button>
+                    </div>
+                    <div class="top-rental-info">
+                      <h3 class="top-rental-name">
+                        <a href="rental-details.html" class="top-rental-link">Martin See Wall</a>
+                      </h3>
+                      <address class="top-rental-address">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6.99969 7.83418C8.00485 7.83418 8.81969 7.01933 8.81969 6.01418C8.81969 5.00902 8.00485 4.19418 6.99969 4.19418C5.99453 4.19418 5.17969 5.00902 5.17969 6.01418C5.17969 7.01933 5.99453 7.83418 6.99969 7.83418Z"
+                            stroke="#384BFF" />
+                          <path
+                            d="M2.11133 4.95254C3.2605 -0.099122 10.7447 -0.0932886 11.888 4.95838C12.5588 7.92171 10.7155 10.43 9.09967 11.9817C7.92717 13.1134 6.07217 13.1134 4.89383 11.9817C3.28383 10.43 1.4405 7.91588 2.11133 4.95254Z"
+                            stroke="#384BFF" />
+                        </svg>
+                        8502 Preston Rd Inglewood, Maine
+                      </address>
+                      <span class="top-rental-price">$480 <span class="rental-stay-time">/ Night</span></span>
+                    </div>
+                  </div>
+                </article>
+                <article class="mb-4 col-md-6 col-lg-6 col-xl-4">
+                  <div class="top-rental-wrapper">
+                    <div class="position-relative">
+                      <a href="rental-details.html" class="top-rental-thumb-wrapper">
+                        <img src="assets/img/rental/rental-8.jpg" class="top-rental-thumb img-fluid w-100" alt="" />
+                      </a>
+                      <button class="heart-icon">
+                        <i class="fa-regular fa-heart "></i>
+                      </button>
+                    </div>
+                    <div class="top-rental-info">
+                      <h3 class="top-rental-name">
+                        <a href="rental-details.html" class="top-rental-link">Martin See Wall</a>
+                      </h3>
+                      <address class="top-rental-address">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6.99969 7.83418C8.00485 7.83418 8.81969 7.01933 8.81969 6.01418C8.81969 5.00902 8.00485 4.19418 6.99969 4.19418C5.99453 4.19418 5.17969 5.00902 5.17969 6.01418C5.17969 7.01933 5.99453 7.83418 6.99969 7.83418Z"
+                            stroke="#384BFF" />
+                          <path
+                            d="M2.11133 4.95254C3.2605 -0.099122 10.7447 -0.0932886 11.888 4.95838C12.5588 7.92171 10.7155 10.43 9.09967 11.9817C7.92717 13.1134 6.07217 13.1134 4.89383 11.9817C3.28383 10.43 1.4405 7.91588 2.11133 4.95254Z"
+                            stroke="#384BFF" />
+                        </svg>
+                        8502 Preston Rd Inglewood, Maine
+                      </address>
+                      <span class="top-rental-price">$480 <span class="rental-stay-time">/ Night</span></span>
+                    </div>
+                  </div>
+                </article>
+                <article class="mb-4 col-md-6 col-lg-6 col-xl-4">
+                  <div class="top-rental-wrapper">
+                    <div class="position-relative">
+                      <a href="rental-details.html" class="top-rental-thumb-wrapper">
+                        <img src="assets/img/rental/rental-4.jpg" class="top-rental-thumb img-fluid w-100" alt="" />
+                      </a>
+                      <button class="heart-icon">
+                        <i class="fa-regular fa-heart "></i>
+                      </button>
+                    </div>
+                    <div class="top-rental-info">
+                      <h3 class="top-rental-name">
+                        <a href="rental-details.html" class="top-rental-link">Martin See Wall</a>
+                      </h3>
+                      <address class="top-rental-address">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6.99969 7.83418C8.00485 7.83418 8.81969 7.01933 8.81969 6.01418C8.81969 5.00902 8.00485 4.19418 6.99969 4.19418C5.99453 4.19418 5.17969 5.00902 5.17969 6.01418C5.17969 7.01933 5.99453 7.83418 6.99969 7.83418Z"
+                            stroke="#384BFF" />
+                          <path
+                            d="M2.11133 4.95254C3.2605 -0.099122 10.7447 -0.0932886 11.888 4.95838C12.5588 7.92171 10.7155 10.43 9.09967 11.9817C7.92717 13.1134 6.07217 13.1134 4.89383 11.9817C3.28383 10.43 1.4405 7.91588 2.11133 4.95254Z"
+                            stroke="#384BFF" />
+                        </svg>
+                        8502 Preston Rd Inglewood, Maine
+                      </address>
+                      <span class="top-rental-price">$480 <span class="rental-stay-time">/ Night</span></span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-list" role="tabpanel" aria-labelledby="pills-list-tab" tabindex="0">
+              <div class="row">
+                <article class="col-12">
+                  <div class="d-flex flex-column flex-md-row rental-list-card">
+                    <a href="rental-details.html" class="rental-list-thumb-wrapper">
+                      <img src="assets/img/rental/rental-1.jpg" class="rental-list-thumb" alt="">
+                    </a>
+                    <div class="rental-list-card-content">
+                      <h3 class="rental-list-card-title">
+                        <a href="rental-details.html">
+                          Hotel See View
+                        </a>
+                      </h3>
+                      <address class="rental-address">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6.99969 7.83418C8.00485 7.83418 8.81969 7.01933 8.81969 6.01418C8.81969 5.00902 8.00485 4.19418 6.99969 4.19418C5.99453 4.19418 5.17969 5.00902 5.17969 6.01418C5.17969 7.01933 5.99453 7.83418 6.99969 7.83418Z"
+                            stroke="#384BFF" />
+                          <path
+                            d="M2.11133 4.95254C3.2605 -0.099122 10.7447 -0.0932886 11.888 4.95838C12.5588 7.92171 10.7155 10.43 9.09967 11.9817C7.92717 13.1134 6.07217 13.1134 4.89383 11.9817C3.28383 10.43 1.4405 7.91588 2.11133 4.95254Z"
+                            stroke="#384BFF" />
+                        </svg>
+                        8502 Preston Rd Inglewood, Maine
+                      </address>
+                      <span class="rental-price">$480
+                        <span class="rental-stay-time">/ Night</span></span>
+                    </div>
+                  </div>
+                </article>
+                <article class="col-12">
+                  <div class="d-flex flex-column flex-md-row rental-list-card">
+                    <a href="rental-details.html" class="rental-list-thumb-wrapper">
+                      <img src="assets/img/rental/rental-2.jpg" class="rental-list-thumb" alt="">
+                    </a>
+                    <div class="rental-list-card-content">
+                      <h3 class="rental-list-card-title">
+                        <a href="rental-details.html">
+                          Hotel Max Today
+                        </a>
+                      </h3>
+                      <address class="rental-address">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6.99969 7.83418C8.00485 7.83418 8.81969 7.01933 8.81969 6.01418C8.81969 5.00902 8.00485 4.19418 6.99969 4.19418C5.99453 4.19418 5.17969 5.00902 5.17969 6.01418C5.17969 7.01933 5.99453 7.83418 6.99969 7.83418Z"
+                            stroke="#384BFF" />
+                          <path
+                            d="M2.11133 4.95254C3.2605 -0.099122 10.7447 -0.0932886 11.888 4.95838C12.5588 7.92171 10.7155 10.43 9.09967 11.9817C7.92717 13.1134 6.07217 13.1134 4.89383 11.9817C3.28383 10.43 1.4405 7.91588 2.11133 4.95254Z"
+                            stroke="#384BFF" />
+                        </svg>
+                        6391 Elgin St. Celina, Delaware
+                      </address>
+                      <span class="rental-price">$570
+                        <span class="rental-stay-time">/ Night</span></span>
+                    </div>
+                  </div>
+                </article>
+                <article class="col-12">
+                  <div class="d-flex flex-column flex-md-row rental-list-card">
+                    <a href="rental-details.html" class="rental-list-thumb-wrapper">
+                      <img src="assets/img/rental/rental-3.jpg" class="rental-list-thumb" alt="">
+                    </a>
+                    <div class="rental-list-card-content">
+                      <h3 class="rental-list-card-title">
+                        <a href="rental-details.html">
+                          Royel Martin
+                        </a>
+                      </h3>
+                      <address class="rental-address">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6.99969 7.83418C8.00485 7.83418 8.81969 7.01933 8.81969 6.01418C8.81969 5.00902 8.00485 4.19418 6.99969 4.19418C5.99453 4.19418 5.17969 5.00902 5.17969 6.01418C5.17969 7.01933 5.99453 7.83418 6.99969 7.83418Z"
+                            stroke="#384BFF" />
+                          <path
+                            d="M2.11133 4.95254C3.2605 -0.099122 10.7447 -0.0932886 11.888 4.95838C12.5588 7.92171 10.7155 10.43 9.09967 11.9817C7.92717 13.1134 6.07217 13.1134 4.89383 11.9817C3.28383 10.43 1.4405 7.91588 2.11133 4.95254Z"
+                            stroke="#384BFF" />
+                        </svg>
+                        8502 Preston Rd Inglewood, Maine
+                      </address>
+                      <span class="rental-price">$480
+                        <span class="rental-stay-time">/ Night</span></span>
+                    </div>
+                  </div>
+                </article>
+                <article class="col-12">
+                  <div class="d-flex flex-column flex-md-row rental-list-card">
+                    <a href="rental-details.html" class="rental-list-thumb-wrapper">
+                      <img src="assets/img/rental/rental-4.jpg" class="rental-list-thumb" alt="">
+                    </a>
+                    <div class="rental-list-card-content">
+                      <h3 class="rental-list-card-title">
+                        <a href="rental-details.html">
+                          Hotel See View
+                        </a>
+                      </h3>
+                      <address class="rental-address">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6.99969 7.83418C8.00485 7.83418 8.81969 7.01933 8.81969 6.01418C8.81969 5.00902 8.00485 4.19418 6.99969 4.19418C5.99453 4.19418 5.17969 5.00902 5.17969 6.01418C5.17969 7.01933 5.99453 7.83418 6.99969 7.83418Z"
+                            stroke="#384BFF" />
+                          <path
+                            d="M2.11133 4.95254C3.2605 -0.099122 10.7447 -0.0932886 11.888 4.95838C12.5588 7.92171 10.7155 10.43 9.09967 11.9817C7.92717 13.1134 6.07217 13.1134 4.89383 11.9817C3.28383 10.43 1.4405 7.91588 2.11133 4.95254Z"
+                            stroke="#384BFF" />
+                        </svg>
+                        8502 Preston Rd Inglewood, Maine
+                      </address>
+                      <span class="rental-price">$480
+                        <span class="rental-stay-time">/ Night</span></span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 col-lg-5 col-xxl-6">
+        <div class="rental-map">
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe width="100%" height="910" id="gmap_canvas"
+                src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Funfact -->
+  <section class="fun-fact-area">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <div class="single-fun-fact">
+            <div class="fun-fact-icon">
+              <img src="assets/img/icons/global-search.svg" alt="" />
+            </div>
+            <div class="fun-fact-content">
+              <h3 class="fun-fact-title">700 Destinations</h3>
+              <p class="fun-fact-desc">
+                Lorem ipsum dolor consectetur adipiscing elit. It’s Mauris
+                nullam the as integer the quam dolor.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <div class="single-fun-fact">
+            <div class="fun-fact-icon">
+              <img src="assets/img/icons/card-pos.svg" alt="" />
+            </div>
+            <div class="fun-fact-content">
+              <h3 class="fun-fact-title">Best Price Gurantee</h3>
+              <p class="fun-fact-desc">
+                Lorem ipsum dolor consectetur adipiscing elit. It’s Mauris
+                nullam the as integer the quam dolor.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <div class="single-fun-fact">
+            <div class="fun-fact-icon">
+              <img src="assets/img/icons/like-shapes.svg" alt="" />
+            </div>
+            <div class="fun-fact-content">
+              <h3 class="fun-fact-title">Top Notch Support</h3>
+              <p class="fun-fact-desc">
+                Lorem ipsum dolor consectetur adipiscing elit. It’s Mauris
+                nullam the as integer the quam dolor.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-area footer-dark">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-5 mb-md-0" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50"
+            data-aos-duration="1000">
+            <a href="index.html">
+              <img src="assets/img/logo/Logo-white.svg" alt="Logo" />
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-5 mb-lg-0" data-aos="fade-up" data-aos-offset="150" data-aos-delay="70"
+            data-aos-duration="1200">
+            <div class="footer-widget has-animation">
+              <h3 class="footer-widget-title">Office</h3>
+              <address class="footer-address">
+                <span class="d-block">Germany — </span> 785 15h Street, Office
+                478 Berlin, De 81566
+              </address>
+              <a href="mailto:info@email.com" class="footer-mail">
+                info@email.com
+                <span class="line"></span>
+              </a>
+              <a href="tel:+18408412569" class="footer-phone">+18408412569</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-5 mb-md-0" data-aos="fade-up" data-aos-offset="200" data-aos-delay="90"
+            data-aos-duration="1500">
+            <nav class="footer-widget">
+              <h3 class="footer-widget-title">Company Links</h3>
+              <ul class="footer-nav">
+                <li class="footer-nav-item">
+                  <a href="index.html" class="footer-nav-link">Home</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="about.html" class="footer-nav-link">About us</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="blog-details.html" class="footer-nav-link">Community Blog</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="about.html" class="footer-nav-link">Careers</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="about.html" class="footer-nav-link">Privacy policy</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="about.html" class="footer-nav-link">Terms of service</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6" data-aos="fade-up" data-aos-offset="250" data-aos-delay="100"
+            data-aos-duration="1500">
+            <div class="footer-widget">
+              <h3 class="footer-widget-title">Newsletter</h3>
+              <div class="footer-newsletter">
+                <form>
+                  <div class="newsletter-wrapper">
+                    <input type="text" class="form-control shadow-none" placeholder="Enter Your Email Address" />
+                    <button class="footer-newsletter-btn">
+                      <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                  </div>
+                </form>
+                <p class="privacy-text">
+                  I agree to the
+                  <a href="about.html" class="privacy-link">Privacy Policy.</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+            <p class="copyright-text">
+              &copy;Copyright
+              <a href="https://www.radiustheme.com/" class="copyright-link">tripfery</a> 2023
+            </p>
+          </div>
+          <div class="col-12 col-sm-6">
+            <ul class="payment-support-list d-flex justify-content-md-end">
+              <li><img src="assets/img/payment/visa.svg" alt="visa" /></li>
+              <li>
+                <img src="assets/img/payment/master.svg" alt="master" />
+              </li>
+              <li>
+                <img src="assets/img/payment/discover.svg" alt="discover" />
+              </li>
+              <li>
+                <img src="assets/img/payment/paypal.svg" alt="paypal" />
+              </li>
+              <li>
+                <img src="assets/img/payment/jcb.svg" alt="jcb" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div id="template-search" class="template-search">
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">All</a></li>
+        <li><a href="index.html">Features</a></li>
+        <li><a href="index.html">Hotel</a></li>
+        <li><a href="index.html"> Restaurant</a></li>
+        <li><a href="index.html">Tour</a></li>
+        <li><a href="index.html">Car</a></li>
+        <li><a href="index.html">Activity</a></li>
+      </ul>
+    </div>
+    <button type="button" class="close">×</button>
+    <form class="search-form">
+      <input type="search" value="" placeholder="Search">
+      <button type="submit" class="search-btn btn-ghost style-1">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </form>
+  </div>
+  <!-- jQuery -->
+  <script src="assets/js/jquery.min.js"></script>
+  <!-- jQuery Migrate -->
+  <script src="assets/js/jquery-migrate.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <!-- Isotope -->
+  <script src="assets/js/isotope.pkgd.min.js"></script>
+  <!-- Waypoints -->
+  <script src="assets/js/waypoints.min.js"></script>
+  <!-- Counter -->
+  <script src="assets/js/jquery.counterup.min.js"></script>
+  <!-- imagesloaded -->
+  <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+  <!-- Swiper -->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <!-- AOS -->
+  <script src="assets/js/aos.js"></script>
+  <!-- Magnific-popup -->
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <!-- Nice Selector -->
+  <script src="assets/js/jquery.nice-select.js"></script>
+  <!-- Flatepikr -->
+  <script src="assets/js/flatpickr.js"></script>
+  <!-- Masonry -->
+  <script src="assets/js/masonry.min.js"></script>
+  <!-- Main JS -->
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>

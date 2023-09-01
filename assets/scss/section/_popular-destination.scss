@@ -1,0 +1,80 @@
+.popular-destination {
+  padding: 120px 0;
+  @include portrait-phone {
+    padding: 70px 0;
+  }
+  .destination-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    .destination-thumb-wrapper {
+      position: relative;
+      border: 5px solid #f8fbff;
+      overflow: hidden;
+      border-radius: 173px;
+      transition: all .4s ease-in-out;
+      @include large-screen {
+        width: 100%;
+      }
+      .destination-thumb {
+        border-radius: 173px;
+        height: 290px;
+        width: 230px;
+        object-fit: cover;
+        background-color: transparent;
+        transition: all .4s ease-in-out;
+        @include large-screen {
+          width: 100%;
+        }
+      }
+    }
+
+    .star {
+      background: $rt-white;
+      box-shadow: 0px -1px 50px rgba(0, 0, 0, 0.15);
+      width: 45px;
+      height: 45px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 30px;
+      gap: 3px;
+      right: 5px;
+      i {
+        color: #f2c215;
+      }
+      .star-number {
+        font-size: 16px;
+
+        font-weight: $font-semibold;
+      }
+    }
+
+    .destination-info {
+      .destination-name {
+        font-size: 20px;
+        font-weight: $font-semibold;
+        color: $rt-black-400;
+      }
+      .destination-tour {
+        color: #9c9c9c;
+        font-size: 17px;
+        font-weight: $font-medium;
+      }
+    }
+
+    &:hover {
+      .destination-thumb-wrapper {
+        border-color: $rt-blue-500;
+        .destination-thumb {
+          transform: scale(1.3);
+        }
+      }
+    }
+  }
+}

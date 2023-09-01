@@ -1,0 +1,201 @@
+// Testimonial Onek
+.teatimonial-one {
+  padding: 120px 0;
+  @include portrait-phone {
+    padding: 70px 0;
+  }
+}
+.testimonial-title-wrapper {
+  .testimonial-title {
+    font-weight: $font-bold;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    color: $rt-black-400;
+    margin-bottom: 40px;
+    @include small-screen {
+      font-size: 30px;
+      line-height: 40px;
+    }
+    @include portrait-phone {
+      font-size: 26px;
+      line-height: 36px;
+    }
+  }
+}
+.single-testimonial {
+  .tesimonial-author {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    .author-img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+    }
+    .q-icon {
+      width: 55px;
+      height: 55px;
+      align-items: center;
+      justify-content: center;
+      display: inline-flex;
+      background-color: $rt-blue-500;
+      border-radius: 50%;
+      position: absolute;
+      bottom: -8px;
+      right: -6px;
+    }
+  }
+  .testimonial-desc {
+    font-size: 24px;
+    line-height: 40px;
+    padding: 45px 120px;
+    color: $rt-black-400;
+    @include small-screen {
+      font-size: 20px;
+      line-height: 35px;
+      padding: 30px;
+    }
+  }
+  .author-name {
+    font-size: 22px;
+    color: $rt-black-400;
+    font-weight: $font-bold;
+    margin-bottom: 15px;
+  }
+  .author-role {
+    font-size: 18px;
+    color: #9a9a9a;
+    font-weight: $font-medium;
+  }
+  @include small-screen {
+    .testimonial-desc {
+      padding: 45px 0;
+    }
+  }
+}
+.testimonialNav {
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #cecccc;
+    &::after {
+      font-size: 20px;
+      content: "";
+    }
+    i {
+      color: $rt-black-400;
+      font-weight: $font-bold;
+    }
+  }
+}
+@include small-screen {
+  .testimonialNav {
+    display: none;
+  }
+}
+
+// Testimonial Two
+.testimonial-two {
+  padding: 120px 0;
+  @include portrait-phone {
+    padding: 70px 0px 50px;
+  }
+  &.light {
+    padding: 70px 0 80px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+    &::before {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: "";
+      background-color: rgba($color: #000000, $alpha: 0.5);
+      z-index: -1;
+    }
+  }
+  .testimonialTwoSwiper {
+    padding-bottom: 85px;
+  }
+  .swiper-slide {
+    &.swiper-slide-next {
+      .single-testimonial-two {
+        &::after {
+          height: 95%;
+        }
+      }
+    }
+    .single-testimonial-two {
+      background-color: $rt-white;
+      box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+      border-radius: 10px;
+      padding: 40px;
+      position: relative;
+
+      .q-icon {
+        width: 80px;
+        height: 80px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #f7fdff;
+        margin-bottom: 15px;
+      }
+      .author-block {
+        padding-top: 30px;
+        .author-info {
+          .author-name {
+            font-weight: $font-bold;
+            font-size: 18px;
+            line-height: 24px;
+            color: $rt-black-400;
+          }
+          .author-role {
+            font-size: 16px;
+            line-height: 24px;
+            color: #717171;
+          }
+        }
+      }
+
+      &::after {
+        position: absolute;
+        left: 0;
+        width: 3px;
+        content: "";
+        background-color: $rt-blue-500;
+        height: 30%;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all 0.5s linear;
+      }
+    }
+  }
+  .swiper-pagination-bullets {
+    &.testimonialTwoPagiantion {
+      .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background-color: #d9d9d9;
+        border-radius: 50%;
+        opacity: 1;
+        transition: all 0.3s;
+
+        &.swiper-pagination-bullet-active {
+          width: 15px;
+          height: 15px;
+          background-color: $rt-blue-500;
+        }
+      }
+    }
+  }
+}

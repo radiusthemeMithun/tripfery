@@ -1,0 +1,81 @@
+.tripfery-button {
+  .tripfery-btn {
+    font-size: 14px;
+    background-color: $rt-blue-500;
+    color: $rt-white;
+    padding: 10px 20px;
+    height: 45px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-weight: $font-medium;
+    line-height: 26px;
+    border: none;
+    border-radius: 40px;
+    z-index: 1;
+    text-transform: capitalize;
+    transition: all ease .5s;
+    overflow: hidden;
+    &:hover {
+      color: $rt-white;
+      &::before {
+        opacity: 1;
+        width: 100%;
+      }
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 0%;
+      left: 0;
+      top: 0;
+      background-color: #0113b9;
+      opacity: 0;
+      z-index: -1;
+      transition: all ease .5s;
+      border-radius: 40px;
+    }
+  }
+}
+
+
+.btn-xs {
+  height: 35px;
+  border-radius: 30px;
+  background-color: #F2F2F2;
+  display: inline-block;
+  text-align: center;
+  padding: 10px 15px;
+  font-size: 15px;
+  line-height: 13px;
+  color: #232323;
+  transition: all .4s ease-in-out;
+  &.active {
+    border: 1px solid $rt-blue-500;
+    background-color: transparent;
+    margin-left: 10px;
+  }
+  &:hover {
+    color: $rt-blue-500;
+  }
+}
+
+.btn-md {
+  height: 35px;
+  background-color: #FFFFFF;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #384BFF;
+  display: inline-block;
+  text-align: center;
+  padding: 10px 15px;
+  transition: all .4s ease-in-out;
+  &:hover {
+    background-color: $rt-blue-500;
+    color: $rt-white;
+  }
+}
+

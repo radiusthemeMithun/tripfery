@@ -1,0 +1,212 @@
+.popular-tours {
+  padding: 120px 0 100px;
+  @include portrait-phone {
+    padding: 70px 0 50px;
+  }
+}
+.popular-tour-card-wrapper {
+  background: $rt-white;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+
+  cursor: pointer;
+  .card-thumb-wrapper {
+    overflow: hidden;
+    display: block;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    .card-thumb {
+      transform: scale(1);
+      transition: all 0.5s ease-in-out;
+    }
+  }
+  .tour-card-info {
+    padding: 20px 20px 30px;
+    .tour-info-top {
+      .bage-pink {
+        .badge-icon {
+          color: #E7233A;
+        }
+        &:hover {
+          .badge-icon {
+            color: $rt-white;
+          }
+        }
+      }
+    }
+  }
+  .tour-info-top {
+    margin-bottom: 10px;
+  }
+  .tour-card-title {
+    line-height: 1;
+    margin-bottom: 15px;
+    a {
+      font-weight: $font-bold;
+      font-size: 18px;
+      color: $rt-black-400;
+    }
+  }
+  .tour-info-middle {
+    .text-gray {
+      font-size: 14px;
+      color: #a0a0a0;
+    }
+    .tour-price {
+      font-size: 18px;
+      font-weight: $font-bold;
+    }
+    .tour-person {
+      font-size: 14px;
+      font-weight: $font-normal;
+    }
+    .author-name {
+      font-size: 15px;
+      font-weight: $font-semibold;
+      color: $rt-black-400;
+      margin-left: 5px;
+    }
+  }
+  .tour-info-bottom {
+    margin-top: 15px;
+    gap: 6px;
+    .review-stars {
+      display: inline-block;
+      .star-item {
+        display: inline;
+      }
+    }
+    .review-text {
+      font-size: 14px;
+      color: #a8a8a8;
+      display: inline-block;
+    }
+  }
+
+  &:hover {
+    .card-thumb {
+      transform: scale(1.1);
+    }
+    .tour-card-title {
+      a {
+        color: $rt-blue-500;
+      }
+    }
+  }
+}
+
+.tour-card-list-view {
+  background-color: $rt-white;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  @include small-screen {
+    display: block !important;
+  }
+  img {
+    width: 100%;
+    @include small-screen {
+      border-radius: 20px;
+    }
+  }
+  .card-thumb-container {
+    // padding: 0px 40px 0px 0px;
+    overflow: hidden;
+    display: block;
+    border-radius: 20px 0 0 20px;
+    .card-thumb {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px 0 0 20px;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+  .card-content {
+    padding: 35px 40px 30px 40px;
+  }
+
+  .review-container {
+    padding-bottom: 40px;
+    gap: 5px;
+    .review-text {
+      font-size: 13px;
+      color: #999999;
+    }
+  }
+  .card-content-top {
+    padding-bottom: 10px;
+  }
+  .tour-card-title {
+    line-height: 1;
+    margin-bottom: 15px;
+    a {
+      font-weight: $font-semibold;
+      font-size: 22px;
+      color: $rt-black-400;
+    }
+  }
+  .rating {
+    margin-bottom: 40px;
+  }
+  .card-meta {
+    padding-top: 40px;
+    border-top: 1px solid #d9d9d9;
+    .text-gray {
+      font-size: 15px;
+      line-height: 20px;
+      color: #A0A0A0;
+    }
+    .tour-price {
+      font-size: 18px;
+      font-weight: $font-bold;
+    }
+    .tour-person {
+      font-size: 16px;
+      font-weight: $font-normal;
+    }
+    .guided-by {
+      font-size: 15px;
+      color: #a0a0a0;
+    }
+    .author-name {
+      font-size: 15px;
+      color: $rt-black-400;
+      margin-left: 5px;
+    }
+  }
+
+  @include small-screen {
+    .card-thumb-container {
+      .card-thumb {
+        border-radius: 20px;
+      }
+    }
+  }
+
+  @include large-screen {
+    .card-content {
+      padding: 20px;
+    }
+    .card-meta {
+      padding-top: 20px;
+    }
+    .review-container {
+      padding-bottom: 25px;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    .card-thumb-container {
+      .card-thumb {
+        transform: scale(1.1);
+      }
+    }
+    .tour-card-title {
+      a {
+        color: $rt-blue-500;
+      }
+    }
+  }
+}

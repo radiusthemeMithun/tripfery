@@ -1,0 +1,127 @@
+.rental-listview-card {
+  background-color: #faf9f9;
+  border-radius: 20px;
+  &.white-bg {
+    background-color: white;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+  }
+  .listview-card-thumb-wrapper {
+    overflow: hidden;
+    border-radius: 20px 0 0 20px;
+    @include small-screen {
+      border-radius: 20px;
+    }
+  }
+  .listview-card-thumb {
+    min-height: 290px;
+    object-fit: cover;
+    transform: scale(1);
+    transition: all 0.4s ease-in-out;
+  }
+  .listview-card-content {
+    // border-radius: 20px;
+    padding: 32px 48px;
+
+    @include large-screen {
+      padding: 28px;
+    }
+  }
+  .listview-card-title {
+    font-size: 20px;
+    font-weight: $font-semibold;
+    margin-top: 10px;
+    a {
+      color: $rt-black-400;
+    }
+  }
+  .listview-card-top {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #d9d9d9;
+    @include large-screen {
+      padding-bottom: 30px;
+    }
+  }
+  .listview-card-bottom {
+    padding-top: 40px;
+    @include large-screen {
+      padding-top: 30px;
+    }
+    .restaurant-btn {
+      margin-top: 24px;
+      padding: 10px 14px 11px;
+      height: 35px;
+      font-size: 15px;
+      font-weight: $font-medium;
+      background-color: #F7F7FF;
+      color: $rt-blue-500;
+      display: inline-block;
+      border-radius: 40px;
+      line-height: 16px;
+      transition: all .4s ease-in-out;
+      &:hover {
+        color: $rt-white;
+        background-color: $rt-blue-500;
+      }
+    }
+  }
+  .listing-card-review-area {
+    margin-top: 10px;
+    gap: 8px;
+  }
+  .listview-card-review-text {
+    font-weight: $font-medium;
+    font-size: 16px;
+  }
+  .review-stars-area {
+    gap: 6px;
+  }
+  .review-stars {
+    li {
+      line-height: 1;
+    }
+  }
+  .number-of-reviews {
+    font-size: 13px;
+    color: #999999;
+  }
+  .price {
+    font-size: 24px;
+    font-weight: $font-semibold;
+    color: $rt-black-400;
+  }
+  .per-night {
+    color: #8d8c8c;
+    font-size: 14px;
+    font-weight: $font-normal;
+  }
+  .listview-btn {
+    font-size: 12px;
+    height: 35px;
+    background-color: $rt-white;
+    border-radius: 40px;
+    color: $rt-blue-500;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 14px 8px;
+    font-weight: $font-semibold;
+    line-height: 1;
+    &:hover {
+      background-color: $rt-blue-500;
+      color: $rt-white;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    .listview-card-thumb {
+      transform: scale(1.1);
+    }
+    .listview-card-title {
+      a {
+        color: $rt-blue-500;
+      }
+    }
+  }
+}

@@ -1,0 +1,199 @@
+.search-page-hero {
+  position: relative;
+  padding: 125px 0;
+  &.page-overlay {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background-color: rgba($color: #151437, $alpha: 0.75);
+    }
+  }
+}
+
+.search-form-wrapper {
+  &.search-form-wrapper-sm {
+    max-width: 710px;
+  }
+  &.search-form-wrapper-md {
+    max-width: 810px;
+  }
+  background-color: $rt-white;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  min-height: 150px;
+  z-index: 5;
+  position: relative;
+  max-width: 922px;
+  padding: 30px;
+
+  &.home-style {
+    border-radius: 0 10px 10px 10px;
+    box-shadow: none;
+    background-color: transparent;
+  }
+  &.overlap-style {
+    margin-top: -70px;
+  }
+  .select-dropdown {
+    
+      background-color: #f9f8f8;
+      border: 1px solid #eeeeee;
+      border-radius: 500px;
+      height: 40px;
+      padding: 12px 16px;
+      color: #999999;
+      font-size: 12px;
+      line-height: 15px;
+      @include min-medium-screen {
+        width: 180px;
+      }
+      &:focus {
+        outline: 0;
+        box-shadow: none;
+      }
+      &::placeholder {
+        font-size: 12px;
+        color: #999999;
+      }
+      &::after {
+        right: 16px;
+      }
+      ul {
+        width: 100%;
+      }
+    }
+  }
+
+.input-container {
+  gap: 20px;
+  .form-control {
+    background-color: #f9f8f8;
+    border: 1px solid #eeeeee;
+    border-radius: 500px;
+    height: 40px;
+    padding: 12px 16px;
+    color: #999999;
+    font-size: 12px;
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+    }
+    &::placeholder {
+      font-size: 12px;
+      color: #999999;
+    }
+  }
+  label {
+    font-size: 16px;
+    font-weight: $font-medium;
+    color: $rt-black-400;
+  }
+}
+.input-label {
+  font-weight: $font-medium;
+  font-size: 16px;
+}
+.pre-icon {
+  width: 26px;
+  height: 26px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: $rt-white;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-btn {
+  background-color: $rt-blue-500;
+  font-size: 16px;
+  color: $rt-white;
+  padding: 9px 25px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  transition: all ease .5s;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  &::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 0%;
+    left: 0;
+    top: 0;
+    background-color: #0113b9;
+    opacity: 0;
+    z-index: -1;
+    transition: all ease .5s;
+    border-radius: 40px;
+  }
+  &:hover {
+    color: $rt-white;
+    &::before {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+}
+
+.flatpickr-calendar {
+  padding: 1rem 1rem;
+  box-shadow: 0 0.6125rem 2.5rem 0.6125rem rgba(140, 152, 164, 0.175);
+  background-color: #fff;
+  border-radius: 0.75rem;
+  margin-top: 0.5rem;
+}
+.flatpickr-months {
+  margin-bottom: 12px;
+}
+.flatpickr-calendar .flatpickr-next-month svg,
+.flatpickr-calendar .flatpickr-prev-month svg {
+  position: static;
+  fill: #677788;
+  display: block;
+  width: 2;
+  height: 2rem;
+  line-height: 2rem;
+  background-color: transparent;
+  border-radius: 50%;
+  &:hover {
+    fill: $rt-blue-500;
+  }
+}
+.flatpickr-day.selected,
+.flatpickr-day.today {
+  background-color: $rt-blue-500;
+  border: none;
+  color: $rt-white;
+}
+.flatpickr-calendar .flatpickr-current-month input.cur-year {
+  color: #677788;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.flatpickr-calendar .flatpickr-monthDropdown-months {
+  color: #677788;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.flatpickr-weekdays {
+  font-size: 90%;
+  background: 0 0;
+  color: rgba(0, 0, 0, 0.54);
+  line-height: 1;
+  margin: 0;
+  text-align: center;
+  display: block;
+  flex: 1;
+  font-weight: $font-bold;
+  text-transform: uppercase;
+}

@@ -1,0 +1,14 @@
+
+.rental-with-map{
+    padding-top: 65px;
+    padding-bottom: 120px;
+    @include portrait-phone {
+        padding-bottom: 70px;
+    }
+}
+.rental-content{
+    padding-left: 20px;
+    @include medium-screen {
+        padding-right: 20px;
+    }
+}

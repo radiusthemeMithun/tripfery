@@ -1,0 +1,200 @@
+.activity-info-container {
+  gap: 40px;
+  @include small-screen {
+    gap: 30px;
+  }
+}
+
+.pb-65 {
+  padding-bottom: 65px;
+  @include small-screen {
+    padding-bottom: 30px;
+  }
+}
+
+.activity-title {
+  font-size: 30px;
+  font-weight: $font-semibold;
+  margin-bottom: 6px;
+  @include portrait-phone {
+    font-size: 26px;
+  }
+}
+
+.activity-location {
+  font-size: 16px;
+  color: #858585;
+}
+
+.info-item {
+  gap: 10px;
+
+  .info-text {
+    .info-text-one {
+      font-size: 16px;
+      color: $rt-black-400;
+      font-weight: $font-medium;
+    }
+    .info-text-two {
+      font-size: 14px;
+      color: #8d8d8d;
+    }
+  }
+}
+.activity-price {
+  gap: 12px;
+
+  .share-btn {
+    background-color: #f6f6f6;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    color: $rt-black-400;
+    &:hover {
+      color: $rt-white;
+      background-color: $rt-blue-500;
+    }
+  }
+}
+.price {
+  font-size: 30px;
+  font-weight: $font-bold;
+  color: $rt-blue-500;
+  @media screen and (max-width: 320px) {
+    font-size: 25px;
+  }
+}
+
+.from {
+  font-size: 15px;
+  color: $rt-black-400;
+  font-weight: $font-normal;
+  margin-right: 3px;
+}
+.stay-time {
+  font-size: 15px;
+  font-weight: $font-normal;
+  color: $rt-black-400;
+}
+
+.info-list {
+  .info-list-item {
+    color: #565656;
+    font-size: 16px;
+    line-height: 30px;
+    gap: 9px;
+  }
+  .info-list-icon {
+    color: $rt-blue-500;
+    font-size: 10px;
+  }
+  .info-list-icon-check {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    flex-shrink: 0;
+    &.success {
+      color: #0abe1c;
+      background-color: #d6f8d9;
+    }
+    &.warning {
+      color: #fb0000;
+      background-color: #ffebed;
+    }
+  }
+}
+
+.activity-feature-list {
+  gap: 15px;
+  .feature-list-item {
+    gap: 10px;
+    font-size: 18px;
+    color: $rt-black-400;
+  }
+  .feature-list-icon {
+    color: $rt-blue-500;
+  }
+}
+
+.info-card-accordion {
+  .accordion-flush {
+    .accordion-item {
+      background-color: transparent;
+      border: 1px solid #ebeaea;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      .accordion-button {
+        background-color: transparent;
+        padding: 10px 15px 10px;
+        color: $rt-black-400;
+        font-size: 16px;
+        font-weight: $font-semibold;
+
+        .highlighted-text {
+          color: $rt-blue-500;
+          margin-right: 10px;
+        }
+
+        &::after {
+          content: "";
+          background-image: none;
+          font-weight: $font-medium;
+          width: 30px;
+          height: 30px;
+          font-size: 24px;
+          border-radius: 50%;
+          background-color: #eaeaea;
+          transition: all 0.3s;
+
+          background-size: 40%;
+          background-position: 50%;
+          transform: none;
+          background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23000000' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+        }
+
+        &:not(.collapsed) {
+          box-shadow: none;
+          &::after {
+            background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23FFFFFF' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+            background-color: $rt-blue-500;
+            color: $rt-white;
+          }
+        }
+      }
+
+      .accordion-body {
+        padding: 0 15px 20px;
+        .tight-text {
+          line-height: 1;
+          color: #565656;
+        }
+        .loose-text {
+          line-height: 29px;
+          color: #565656;
+        }
+      }
+    }
+  }
+
+  //    &.accordion-two{
+  //         .accordion-flush{
+  //         .accordion-item{
+  //         .accordion-button{
+  //         padding: 10px 25px 10px 25px;
+
+  //     }
+
+  //            .accordion-body{
+  //         padding: 0 25px 20px 25px;
+  //            }
+  //     }
+  //     }
+  //     }
+}

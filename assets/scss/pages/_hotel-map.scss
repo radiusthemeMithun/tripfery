@@ -1,0 +1,19 @@
+.hotel-with-map {
+  padding-top: 65px;
+  padding-left: 30px;
+
+  @include small-screen {
+    padding: 16px;
+    padding-top: 65px;
+  }
+}
+.mapouter {
+  position: relative;
+  text-align: right;
+  line-height: 1;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+}

@@ -1,0 +1,121 @@
+.about-services {
+  padding-top: 100px;
+  @include portrait-phone {
+    padding-top: 70px;
+  }
+  .about-services-img {
+    position: relative;
+    img {
+      width: 100%;
+    }
+    .about-experiences {
+      position: absolute;
+      background-color: $rt-blue-500;
+      width: 230px;
+      height: 230px;
+      border-radius: 50%;
+      border: 10px solid $rt-white;
+      bottom: -65px;
+      @include portrait-phone {
+        width: 200px;
+        height: 200px;
+      }
+      .about-year {
+        font-weight: $font-extra-bold;
+        color: $rt-white;
+        display: block;
+        font-size: 40px;
+      }
+      .about-year-desc {
+        color: $rt-white;
+        font-size: 24px;
+        text-align: center;
+        line-height: 30px;
+      }
+    }
+  }
+  .about-services-content {
+    @include medium-screen {
+      margin-top: 80px;
+    }
+    .about-subtitle {
+      color: $rt-blue-500;
+      font-size: 24px;
+      display: block;
+      margin-bottom: 10px;
+      @include portrait-phone {
+        font-size: 20px;
+      }
+    }
+    .about-section-title {
+      font-size: 36px;
+      font-weight: $font-bold;
+      color: $rt-black-400;
+      margin-bottom: 20px;
+      line-height: 50px;
+      @include portrait-phone {
+        font-size: 26px;
+        line-height: 40px;
+      }
+    }
+    .about-desc {
+      font-size: 16px;
+      line-height: 26px;
+      color: #565656;
+      margin-bottom: 55px;
+      @include small-screen {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+.servies-grid {
+  padding-top: 185px;
+  @include medium-screen {
+    padding-top: 120px;
+  }
+  @include portrait-phone {
+    padding-top: 70px;
+  }
+  .single-service {
+    background-color: $rt-white;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+    border-radius: 30px;
+    padding: 70px 24px;
+    align-items: center;
+
+    .service-icon {
+      margin-bottom: 11px;
+      overflow: hidden;
+      svg {
+        color: $rt-black-400;
+        transition: transform 0.8s, fill 0.5s;
+        stroke-dasharray: 1500;
+      }
+    }
+    .service-content {
+      .service-title {
+        font-size: 24px;
+        font-weight: $font-semibold;
+        margin-bottom: 10px;
+        color: $rt-black-400;
+      }
+      .service-desc {
+        color: #565656;
+        font-size: 15px;
+        font-family: $rt-noto-sans;
+      }
+    }
+    &:hover {
+      .service-icon {
+        svg {
+          stroke-dashoffset: 0;
+          stroke: $rt-blue-500;
+          fill: transparent;
+          transition: transform 0.8s, fill 0.5s, stroke-dashoffset 6s;
+          animation: toBottomFromTop 0.5s forwards;
+        }
+      }
+    }
+  }
+}

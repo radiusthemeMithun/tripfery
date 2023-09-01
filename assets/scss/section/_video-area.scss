@@ -1,0 +1,102 @@
+.travel-video {
+  background-color: #f8fbff;
+  padding: 120px 0;
+  @include portrait-phone {
+    padding: 70px 0;
+  }
+}
+
+.video-img {
+  position: relative;
+  z-index: 1;
+  .leaf-img-1 {
+    position: relative;
+    z-index: 1;
+    img {
+      @include medium-screen {
+        width: 100%;
+      }
+    }
+    @include medium-screen {
+      width: 100%;
+    }
+  }
+  .leaf-img-2 {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    z-index: -1;
+    @include medium-screen {
+     display: none;
+    }
+  }
+
+  .video-icon {
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    background-color: $rt-white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+    left: 60%;
+    top: 60%;
+    transform: translate(-60%, -60%);
+    transition: all .4s ease-in-out;
+    @include large-screen {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    @include portrait-phone {
+      width: 80px;
+      height: 80px;
+    }
+    svg {
+      color: $rt-blue-500;
+      transition: all .4s ease-in-out;
+      @include portrait-phone {
+        width: 20px;
+        height: 23px;
+      }
+    }
+    &:hover {
+      background-color: $rt-blue-500;
+      svg {
+        color: $rt-white;
+      }
+    }
+  }
+}
+
+.video-content {
+  @include large-screen {
+    text-align: center;
+    margin-top: 24px;
+  }
+}
+
+.video-content-title {
+  font-size: 36px;
+  font-weight: $font-bold;
+  @include small-screen {
+    font-size: 30px;
+  }
+  @include portrait-phone {
+    font-size: 26px;
+  }
+}
+
+.video-content-desc {
+  font-size: 16px;
+  color: #565656;
+  line-height: 26px;
+  margin-top: 18px;
+  margin-bottom: 48px;
+}
+
+.pt-120 {
+  padding-top: 120px;
+}

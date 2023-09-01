@@ -1,0 +1,160 @@
+.choose-cars {
+  padding: 120px 0 90px 0;
+  @include portrait-phone {
+    padding: 70px 0 50px;
+  }
+}
+
+.switch-view-tab {
+  padding-bottom: 50px;
+}
+
+.choose-car-card {
+  border-radius: 20px;
+  background-color: $rt-white;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+  padding: 30px 20px 28px 20px;
+  cursor: pointer;
+  .car-top-info {
+    .car-title {
+      font-size: 20px;
+      font-weight: $font-semibold;
+      a {
+        color: $rt-black-400;
+      }
+    }
+    .car-info {
+      color: #a5a5a5;
+      font-size: 14px;
+    }
+  }
+
+  .car-thumb-wrapper {
+    overflow: hidden;
+    display: block;
+    .car-thumb {
+      transform: scale(1);
+      transition: all 0.5s ease-in-out;
+    }
+  }
+  .card-bottom-info {
+    padding-top: 30px;
+    .card-bottom-info-left {
+      gap: 20px;
+      .car-seat {
+        color: #8d8c8c;
+        font-size: 16px;
+        font-weight: $font-medium;
+      }
+    }
+    .card-bottom-info-right {
+      .car-price {
+        font-size: 20px;
+        color: $rt-black-400;
+        font-weight: $font-bold;
+      }
+      .car-day {
+        font-size: 15px;
+        color: #8d8c8c;
+        font-weight: $font-normal;
+      }
+    }
+  }
+  &:hover {
+    .car-thumb-wrapper {
+      .car-thumb {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+.car-listview-card {
+  background-color: $rt-white;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  padding: 20px;
+  a {
+    overflow: hidden;
+    display: block;
+    img {
+      transition: all .5s ease-in-out;
+    }
+  }
+  &:hover {
+    a {
+      img {
+        transform: scale(1.05);
+      }
+    }
+    .card-content {
+      .content-top {
+        .car-title {
+          a {
+            color: $rt-blue-500;
+          }
+        }
+      }
+    }
+  }
+
+  .card-content {
+    padding: 20px 30px 20px 40px;
+    @include large-screen {
+      padding: 20px;
+    }
+  }
+
+  .content-top {
+    flex: 1;
+    @include small-screen {
+      padding-bottom: 20px;
+    }
+    .car-title {
+      font-size: 20px;
+      font-weight: $font-bold;
+      a {
+        color: $rt-black-400;
+        transition: all .4s ease-in-out;
+      }
+    }
+    .address-info {
+      font-size: 14px;
+      color: #a5a5a5;
+    }
+
+    .car-wishlist-btn {
+      color: #a5a5a5;
+      &.active {
+        color: #f12c5b;
+      }
+    }
+  }
+
+  .content-bottom {
+    padding-top: 30px;
+    border-top: 1px solid #d2d2d2;
+
+    .content-bottom-left {
+      gap: 15px;
+      .car-info {
+        font-size: 16px;
+        font-weight: $font-medium;
+        color: #8d8c8c;
+        svg {
+          color: $rt-blue-500;
+        }
+      }
+    }
+    .content-bottom-right {
+      .trip-price {
+        font-size: 20px;
+        font-weight: $font-bold;
+      }
+      .per-day {
+        font-weight: $font-normal;
+        font-size: 15px;
+        color: #8d8c8c;
+      }
+    }
+  }
+}

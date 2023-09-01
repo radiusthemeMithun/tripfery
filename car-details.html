@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Details -TripFery Travel Website</title>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/fav.png">
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="assets/css/font-awesome-all.min.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="assets/css/aos.css" />
+  <!-- Magnific-popup -->
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <!-- Nice Select CSS -->
+  <link rel="stylesheet" href="assets/css/nice-select.css" />
+  <!-- Flatepikr -->
+  <link rel="stylesheet" href="assets/css/flatpickr.min.css" />
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-wrap">
+      <img src="assets/img/preloader.gif" alt="" class=" img-fluid preloader-icon">
+    </div>
+  </div>
+
+  <!-- Topbar -->
+  <section class="rt-tf-topbar">
+    <div class="topbar-container">
+      <div class="d-flex align-items-center  justify-content-between">
+        <div class="rt-tf-topbar-left d-flex">
+          <p class="rt-tf-welcome-text d-none d-lg-block">Welcome to Travel Agency</p>
+          <a href="tel:156-677-124-442-2887" class="rt-tf-phone-number">
+            <svg width="11" height="11" viewBox="0 0 11 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.98047 7.80859L9.51172 9.78125C9.45312 10.0742 9.21875 10.2695 8.92578 10.2695C4.00391 10.25 0 6.24609 0 1.32422C0 1.03125 0.175781 0.796875 0.46875 0.738281L2.44141 0.269531C2.71484 0.210938 3.00781 0.367188 3.125 0.621094L4.04297 2.75C4.14062 3.00391 4.08203 3.29688 3.86719 3.45312L2.8125 4.3125C3.47656 5.66016 4.57031 6.75391 5.9375 7.41797L6.79688 6.36328C6.95312 6.16797 7.24609 6.08984 7.5 6.1875L9.62891 7.10547C9.88281 7.24219 10.0391 7.53516 9.98047 7.80859Z"
+                fill="#D2D2D2" />
+            </svg>
+            156-677-124-442-2887</a>
+        </div>
+        <div class="rt-tf-topbar-right d-flex align-items-center justify-content-end">
+          <div class="rt-tf-right-info d-none d-sm-block">
+            <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.9805 0.972656L9.73047 9.07812C9.71094 9.27344 9.59375 9.44922 9.41797 9.54688C9.32031 9.58594 9.22266 9.625 9.10547 9.625C9.02734 9.625 8.94922 9.60547 8.87109 9.56641L6.48828 8.57031L5.49219 10.0547C5.41406 10.1914 5.27734 10.25 5.14062 10.25C4.92578 10.25 4.75 10.0742 4.75 9.85938V7.98438C4.75 7.82812 4.78906 7.69141 4.86719 7.59375L9.125 2.125L3.38281 7.30078L1.37109 6.46094C1.15625 6.36328 1 6.16797 1 5.91406C0.980469 5.64062 1.09766 5.44531 1.3125 5.32812L10.0625 0.347656C10.2578 0.230469 10.5312 0.230469 10.7266 0.367188C10.9219 0.503906 11.0195 0.738281 10.9805 0.972656Z"
+                fill="#D2D2D2" />
+            </svg>
+            <a href="mailto:travelwp@gmail.com" class="info-content ">
+              travelwp@gmail.com</a>
+          </div>
+          <div class="rt-tf-right-info d-none d-md-block">
+            <address class="info-content">
+              <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M3.28125 10.0156C2.26562 8.74609 0 5.71875 0 4C0 1.92969 1.66016 0.25 3.75 0.25C5.82031 0.25 7.5 1.92969 7.5 4C7.5 5.71875 5.21484 8.74609 4.19922 10.0156C3.96484 10.3086 3.51562 10.3086 3.28125 10.0156ZM3.75 5.25C4.43359 5.25 5 4.70312 5 4C5 3.31641 4.43359 2.75 3.75 2.75C3.04688 2.75 2.5 3.31641 2.5 4C2.5 4.70312 3.04688 5.25 3.75 5.25Z"
+                  fill="#D2D2D2" />
+              </svg>
+              184 Main Collins Street Victoria 8007
+            </address>
+          </div>
+          <div class="rt-tf-topbar-social-links">
+            <span class="social-link-text">Follow Us:</span>
+            <a href="https://www.facebook.com/" target="_blank" class="social-link-item">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/" class="social-link-item">
+              <i class="fa-brands fa-twitter"></i> 
+            </a>
+            <a href="https://bd.linkedin.com/" target="_blank" class="social-link-item">
+              <i class="fa-brands fa-linkedin-in"></i> 
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="social-link-item">
+              <i class="fa-brands fa-instagram"></i> 
+            </a>
+            <a href="https://www.pinterest.com/" target="_blank" class="social-link-item">
+              <i class="fa-brands fa-pinterest-p"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <!-- Place Holder -->
+  <div class="place-holder"></div>
+  <!-- Header -->
+  <header class="header-primary sticky-header">
+    <div class="nav-container">
+      <nav class="navbar navbar-expand-xl justify-content-between">
+        <a href="index.html">
+          <img src="assets/img/logo/Logo-color.svg" alt="">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="d-block d-xl-none">
+              <div class="logo"><a href="index.html"><img src="assets/img/logo/Logo-color.svg" alt="" width="130"></a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                data-bs-auto-close="outside" aria-expanded="false">All Demos</a>
+              <div class="dropdown-menu two-column">
+                <div class="shape">
+                  <svg class="animate__animated animate__fadeInUp" width="21" height="10" viewBox="0 0 21 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 0L0 9.5H20.5L10 0Z" fill="currentColor"/>
+                  </svg>
+                </div>
+                <div class="d-flex flex-column flex-xl-row justify-content-between">
+                  <ul>
+                    <li>
+                      <a href="index.html" class="dropdown-item">
+                        <span class="flip-item">
+                          <span data-text="Main Home">Main Home</span>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="index-2.html" class="dropdown-item">
+                        <span class="flip-item">
+                          <span data-text="Hotel Boking">Hotel Boking</span>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="index-3.html" class="dropdown-item">
+                        <span class="flip-item">
+                          <span data-text="Tour Package">Tour Package</span>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="index-4.html" class="dropdown-item">
+                        <span class="flip-item">
+                          <span data-text="Activity Place">Activity Place</span>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="index-5.html" class="dropdown-item">
+                        <span class="flip-item">
+                          <span data-text="Rental House">Rental House</span>
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul>
+                      <li>
+                        <a href="index-6.html" class="dropdown-item">
+                          <span class="flip-item">
+                            <span data-text="Rent a Car">Rent a Car</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="index-7.html" class="dropdown-item">
+                          <span class="flip-item">
+                            <span data-text="Restaurant Booking">Restaurant Booking</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="index-3.html" class="dropdown-item">
+                          <span class="flip-item">
+                            <span data-text="Tour Package">Tour Package</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="index-7.html" class="dropdown-item">
+                          <span class="flip-item">
+                            <span data-text="Activity Place">Activity Place</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="index-4.html" class="dropdown-item">
+                          <span class="flip-item">
+                            <span data-text="Rental House">Rental House</span>
+                          </span>
+                        </a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle flame" href="#" role="button" data-bs-toggle="dropdown"
+                data-bs-auto-close="outside" aria-expanded="false">All Feature</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-submenu dropdown">
+                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                    aria-expanded="false" href="#"><span class="flip-item">
+                      <span data-text="Hotel Feature">Hotel Feature</span>
+                    </span></a>
+                  <ul class="dropdown-menu rounded-0">
+                    <li><a href="hotel-search-sidebar-right.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Hotel Sidebar">Hotel Sidebar</span>
+                    </span></a>
+                    </li>
+                    <li><a href="hotel-details.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Hotel Detail">Hotel Detail</span>
+                    </span></a></li>
+                    <li><a href="room-details.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Room Detail">Room Detail</span>
+                    </span></a></li>
+                    <li><a href="hotel-search-with-map.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Search HalfMap">Search HalfMap</span>
+                    </span></a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu dropdown">
+                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                    aria-expanded="false" href="#"><span class="flip-item">
+                      <span data-text="Tour Feature">Tour Feature</span>
+                    </span></a>
+                  <ul class="dropdown-menu rounded-0">
+                    <li><a href="tour-sidebar-search.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Tour Sidebar">Tour Sidebar</span>
+                    </span></a></li>
+                    <li><a href="tour-details.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Tour Detail">Tour Detail</span>
+                    </span></a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu dropdown">
+                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                    aria-expanded="false" href="#"><span class="flip-item">
+                      <span data-text="Activity Feature">Activity Feature</span>
+                    </span></a>
+                  <ul class="dropdown-menu rounded-0">
+                    <li><a href="activity-search-sidebar.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Activity Sidebar">Activity Sidebar</span>
+                    </span></a>
+                    </li>
+                    <li><a href="activity-details.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Activity Details">Activity Details</span>
+                    </span></a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu dropdown">
+                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                    aria-expanded="false" href="#"><span class="flip-item">
+                      <span data-text="Rental Feature">Rental Feature</span>
+                    </span></a>
+                  <ul class="dropdown-menu rounded-0">
+                    <li><a href="rental-search-sidebar.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Rental Sidebar">Rental Sidebar</span>
+                    </span></a></li>
+                    <li><a href="rental-search-with-map.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Rental With Map">Rental With Map</span>
+                    </span></a>
+                    </li>
+                    <li><a href="rental-details.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Rental Details">Rental Details</span>
+                    </span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu dropdown">
+                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                    aria-expanded="false" href="#"><span class="flip-item">
+                      <span data-text="Ren a Car Feature">Rent a Car Feature</span>
+                    </span></a>
+                  <ul class="dropdown-menu rounded-0">
+                    <li><a href="car-search-sidebar.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Car Sidebar">Car Sidebar</span>
+                    </span></a></li>
+                    <li><a href="car-details.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Car Details">Car Details</span>
+                    </span></a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu dropdown">
+                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                    aria-expanded="false" href="#"><span class="flip-item">
+                      <span data-text="Restaurant Feature">Restaurant Feature</span>
+                    </span></a>
+                  <ul class="dropdown-menu rounded-0">
+                    <li><a href="restaurant-search-sidebar.html" class="dropdown-item"><span class="flip-item">
+                          <span data-text="Restaurant
+                            Sidebar">Restaurant
+                            Sidebar</span>
+                          </span></a></li>
+                    <li><a href="restaurant-details.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Restaurant Details">Restaurant Details</span>
+                    </span></a></li>
+
+                  </ul>
+                </li>
+
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                data-bs-auto-close="outside" aria-expanded="false">Essential Pages</a>
+              <ul class="dropdown-menu">
+                <li><a href="faq.html" class="dropdown-item"><span class="flip-item">
+                  <span data-text="Faq">Faq</span>
+                </span></a></li>
+                <li><a href="404.html" class="dropdown-item"><span class="flip-item">
+                  <span data-text="404 Page">404 Page</span>
+                </span></a></li>
+                <li><a href="services.html" class="dropdown-item"><span class="flip-item">
+                  <span data-text="Services Page">Services Page</span>
+                </span></a></li>
+                <li><a href="contact.html" class="dropdown-item"><span class="flip-item">
+                  <span data-text="Contact Page">Contact Page</span>
+                </span></a></li>
+                <li><a href="team.html" class="dropdown-item"><span class="flip-item">
+                  <span data-text="Team Page">Team Page</span>
+                </span></a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                data-bs-auto-close="outside" aria-expanded="false">Blog</a>
+              <ul class="dropdown-menu">
+                <li><a href="blog-grid.html" class="dropdown-item"><span class="flip-item">
+                  <span data-text="Blog Grid">Blog Grid</span>
+                </span></a></li>
+                <li><a href="blog-list.html" class="dropdown-item"><span class="flip-item">
+                  <span data-text="Blog List">Blog List</span>
+                </span></a></li>
+                <li><a href="blog-details.html" class="dropdown-item"><span class="flip-item">
+                  <span data-text="Blog Details">Blog Details</span>
+                </span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex align-items-center navbar-right">
+          <ul class="d-flex navbar-right-features d-md-flex">
+            <li class="d-none d-md-block">
+              <button class="currency-list">
+                USD
+                <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 1L4.5303 4.67453C4.23864 5.10849 3.76136 5.10849 3.4697 4.67453L1 1" stroke="currentColor"
+                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </li>
+            <li>
+              <a href="#template-search" class="navbar-btn-links">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                Search
+              </a>
+            </li>
+            <li>
+              <a href="index.html" class="navbar-btn-links">
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.3125 5.43298V4.7459C5.3125 3.15215 6.59458 1.58673 8.18833 1.43798C10.0867 1.25382 11.6875 2.7484 11.6875 4.61132V5.58882" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.375 15.5833H10.625C13.4725 15.5833 13.9825 14.4429 14.1313 13.0545L14.6625 8.80454C14.8538 7.07621 14.3579 5.66663 11.3333 5.66663H5.66667C2.64208 5.66663 2.14625 7.07621 2.3375 8.80454L2.86875 13.0545C3.0175 14.4429 3.5275 15.5833 6.375 15.5833Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10.976 8.50004H10.9824" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.01678 8.50004H6.02314" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Cart (0)
+              </a>
+            </li>
+          </ul>
+          <div class="header-button tripfery-button">
+            <a href="index.html" class="tripfery-btn">
+              Register Now
+            </a>
+          </div>
+          <button class="navbar-toggler d-block d-xl-none" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Breadcumb -->
+  <section class="breadcumb-area" style="
+        background: url('assets/img/bg/cars-search.jpg') no-repeat center
+          center/cover;
+      ">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-4">
+          <div class="text-center breadcrumb-content">
+            <h2 class="page-title">Car Details</h2>
+            <nav aria-label="breadcrumb " class="d-flex justify-content-center">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="index.html">United States</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Car Details
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- Car Slider -->
+    <section class="large-img-slider">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="swiper largeSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="slider-img-wrapper">
+                    <img src="assets/img/cars/slider/slider-car-1.jpg" class="slider-img img-fluid" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider-img-wrapper">
+                    <img src="assets/img/cars/slider/slider-car-2.jpg" class="slider-img img-fluid" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider-img-wrapper">
+                    <img src="assets/img/cars/slider/slider-car-3.jpg" class="slider-img img-fluid" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider-img-wrapper">
+                    <img src="assets/img/cars/slider/slider-car-4.jpg" class="slider-img img-fluid" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div thumbsSlider="" class="swiper largeSwiperThumb">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="slider-thumb-img">
+                    <img src="assets/img/cars/slider/thumb-1.jpg" class="img-fluid thumb-img" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider-thumb-img">
+                    <img src="assets/img/cars/slider/thumb-2.jpg" class="img-fluid thumb-img" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider-thumb-img">
+                    <img src="assets/img/cars/slider/thumb-3.jpg" class="img-fluid thumb-img" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider-thumb-img">
+                    <img src="assets/img/cars/slider/thumb-4.jpg" class="img-fluid thumb-img" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Car Info -->
+    <section class="car-info-top">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xxl-5 col-xl-4 col-lg-6">
+            <div class="details-page-top mb-3 mb-xl-0">
+              <h2 class="details-page-title">The French Gourmet</h2>
+              <address class="place-address">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.50469 8.39365C8.58164 8.39365 9.45469 7.52061 9.45469 6.44365C9.45469 5.3667 8.58164 4.49365 7.50469 4.49365C6.42773 4.49365 5.55469 5.3667 5.55469 6.44365C5.55469 7.52061 6.42773 8.39365 7.50469 8.39365Z"
+                    stroke="#E7233A" stroke-opacity="0.99" />
+                  <path
+                    d="M2.2611 5.30634C3.49235 -0.106157 11.5111 -0.0999069 12.7361 5.31259C13.4548 8.48759 11.4798 11.1751 9.7486 12.8376C8.49235 14.0501 6.50485 14.0501 5.24235 12.8376C3.51735 11.1751 1.54235 8.48134 2.2611 5.30634Z"
+                    stroke="#E7233A" stroke-opacity="0.99" />
+                </svg>
+                Kensington and Chelsea, London, W2 4EL, United Kingdom
+              </address>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-6">
+            <div class="d-flex restaurant-feature mb-3 mb-xl-0">
+              <ul class="r-feature-list">
+                <li class="d-flex r-feature-list-item align-items-center"><i class="fa-solid fa-circle-check"></i>Nice
+                  Food</li>
+                <li class="d-flex r-feature-list-item align-items-center"><i class="fa-solid fa-circle-check"></i>Food
+                  Recipes</li>
+              </ul>
+              <ul class="r-feature-list">
+                <li class="d-flex r-feature-list-item align-items-center"><i
+                    class="fa-solid fa-circle-check"></i>Quality &
+                  Balance</li>
+                <li class="d-flex r-feature-list-item align-items-center"><i
+                    class="fa-solid fa-circle-check"></i>Refresh
+                  your taste buds
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-4 col-xxl-3">
+            <div class="d-flex align-items-center details-page-info-right ">
+              <ul class="d-flex align-items-center stars">
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+              </ul>
+              <div class="activity-price d-flex">
+                <h3 class="price"><span class="from">Start</span>$72 <span class="stay-time">/night</span></h3>
+                <a href="car-details.html" class="share-btn">
+                  <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14.7363 6.52539L9.58008 10.9492C9.14062 11.3301 8.4375 11.0078 8.4375 10.4219V7.87305C3.86719 7.93164 1.93359 9.04492 3.25195 13.293C3.39844 13.7617 2.8125 14.1426 2.43164 13.8496C1.14258 12.9121 0 11.125 0 9.33789C0 4.88477 3.7207 3.91797 8.4375 3.85938V1.54492C8.4375 0.929688 9.14062 0.607422 9.58008 0.988281L14.7363 5.41211C15.0586 5.73438 15.0586 6.23242 14.7363 6.52539Z"
+                      fill="currentColor" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page Content -->
+    <section class="page-details-info">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="page-details-info-left">
+              <!-- Overview -->
+              <div class="info-card">
+                <h3 class="info-card-title">Overview</h3>
+                <p class="info-card-desc">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris
+                  nullam the as integer quam dolor nunc semper. Ornare non nulla
+                  faucibus pulvinar vulputate neque. The Suscipit tristique nam
+                  enim mauris consectetur platea. The Cras aliquet accumsan.
+                  Egestas ut eget egestas ultrices diam. Sem fusce pretium
+                  ultrices mauris magnis as nunc.Malesuada commodo integer sit
+                  fringilla fermentum pellentesque id at that on scelerisque
+                  acus vitae in pretium tincidunt.
+                </p>
+                <p class="info-card-desc">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris
+                  nullam the as integer quam dolor nunc semper. Ornare non nulla
+                  faucibus pulvinar vulputate neque. The Suscipit tristique nam
+                  enim mauris consectetur platea.
+                </p>
+              </div>
+              <!-- Highlights -->
+              <div class="info-card">
+                <h3 class="info-card-title">Car Features</h3>
+                <ul class="highligts d-flex flex-wrap">
+                  <li class="highligts-item restaurant-item d-flex align-items-center justify-content-center">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.8203 2H7.18031C5.05031 2 3.32031 3.74 3.32031 5.86V19.95C3.32031 21.75 4.61031 22.51 6.19031 21.64L11.0703 18.93C11.5903 18.64 12.4303 18.64 12.9403 18.93L17.8203 21.64C19.4003 22.52 20.6903 21.76 20.6903 19.95V5.86C20.6803 3.74 18.9503 2 16.8203 2Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M9.59375 11L11.0938 12.5L15.0938 8.5" stroke="#384BFF" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <h4 class="highligts-name">Airbag</h4>
+                  </li>
+                  <li class="highligts-item restaurant-item d-flex align-items-center justify-content-center">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.8203 2H7.18031C5.05031 2 3.32031 3.74 3.32031 5.86V19.95C3.32031 21.75 4.61031 22.51 6.19031 21.64L11.0703 18.93C11.5903 18.64 12.4303 18.64 12.9403 18.93L17.8203 21.64C19.4003 22.52 20.6903 21.76 20.6903 19.95V5.86C20.6803 3.74 18.9503 2 16.8203 2Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M9.59375 11L11.0938 12.5L15.0938 8.5" stroke="#384BFF" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <h4 class="highligts-name">FM Radio</h4>
+                  </li>
+                  <li class="highligts-item restaurant-item d-flex align-items-center justify-content-center">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.8203 2H7.18031C5.05031 2 3.32031 3.74 3.32031 5.86V19.95C3.32031 21.75 4.61031 22.51 6.19031 21.64L11.0703 18.93C11.5903 18.64 12.4303 18.64 12.9403 18.93L17.8203 21.64C19.4003 22.52 20.6903 21.76 20.6903 19.95V5.86C20.6803 3.74 18.9503 2 16.8203 2Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M9.59375 11L11.0938 12.5L15.0938 8.5" stroke="#384BFF" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <h4 class="highligts-name">Power Windows</h4>
+                  </li>
+                  <li class="highligts-item restaurant-item d-flex align-items-center justify-content-center">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.8203 2H7.18031C5.05031 2 3.32031 3.74 3.32031 5.86V19.95C3.32031 21.75 4.61031 22.51 6.19031 21.64L11.0703 18.93C11.5903 18.64 12.4303 18.64 12.9403 18.93L17.8203 21.64C19.4003 22.52 20.6903 21.76 20.6903 19.95V5.86C20.6803 3.74 18.9503 2 16.8203 2Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M9.59375 11L11.0938 12.5L15.0938 8.5" stroke="#384BFF" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <h4 class="highligts-name">Sensor</h4>
+                  </li>
+                  <li class="highligts-item restaurant-item d-flex align-items-center justify-content-center">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.8203 2H7.18031C5.05031 2 3.32031 3.74 3.32031 5.86V19.95C3.32031 21.75 4.61031 22.51 6.19031 21.64L11.0703 18.93C11.5903 18.64 12.4303 18.64 12.9403 18.93L17.8203 21.64C19.4003 22.52 20.6903 21.76 20.6903 19.95V5.86C20.6803 3.74 18.9503 2 16.8203 2Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M9.59375 11L11.0938 12.5L15.0938 8.5" stroke="#384BFF" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <h4 class="highligts-name">Speed Km</h4>
+                  </li>
+                  <li class="highligts-item restaurant-item d-flex align-items-center justify-content-center">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.8203 2H7.18031C5.05031 2 3.32031 3.74 3.32031 5.86V19.95C3.32031 21.75 4.61031 22.51 6.19031 21.64L11.0703 18.93C11.5903 18.64 12.4303 18.64 12.9403 18.93L17.8203 21.64C19.4003 22.52 20.6903 21.76 20.6903 19.95V5.86C20.6803 3.74 18.9503 2 16.8203 2Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M9.59375 11L11.0938 12.5L15.0938 8.5" stroke="#384BFF" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <h4 class="highligts-name">Steering Wheel</h4>
+                  </li>
+                  <li class="highligts-item restaurant-item d-flex align-items-center justify-content-center">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.8203 2H7.18031C5.05031 2 3.32031 3.74 3.32031 5.86V19.95C3.32031 21.75 4.61031 22.51 6.19031 21.64L11.0703 18.93C11.5903 18.64 12.4303 18.64 12.9403 18.93L17.8203 21.64C19.4003 22.52 20.6903 21.76 20.6903 19.95V5.86C20.6803 3.74 18.9503 2 16.8203 2Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M9.59375 11L11.0938 12.5L15.0938 8.5" stroke="#384BFF" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <h4 class="highligts-name">TV</h4>
+                  </li>
+
+                </ul>
+              </div>
+              <!-- Highlights -->
+              <div class="info-card">
+                <h3 class="info-card-title">Brands</h3>
+                <ul class="highligts d-flex flex-wrap">
+                  <li class="highligts-item restaurant-item d-flex align-items-center justify-content-center">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.8203 2H7.18031C5.05031 2 3.32031 3.74 3.32031 5.86V19.95C3.32031 21.75 4.61031 22.51 6.19031 21.64L11.0703 18.93C11.5903 18.64 12.4303 18.64 12.9403 18.93L17.8203 21.64C19.4003 22.52 20.6903 21.76 20.6903 19.95V5.86C20.6803 3.74 18.9503 2 16.8203 2Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M9.59375 11L11.0938 12.5L15.0938 8.5" stroke="#384BFF" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <h4 class="highligts-name">Honda</h4>
+                  </li>
+                  <li class="highligts-item restaurant-item d-flex align-items-center justify-content-center">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.8203 2H7.18031C5.05031 2 3.32031 3.74 3.32031 5.86V19.95C3.32031 21.75 4.61031 22.51 6.19031 21.64L11.0703 18.93C11.5903 18.64 12.4303 18.64 12.9403 18.93L17.8203 21.64C19.4003 22.52 20.6903 21.76 20.6903 19.95V5.86C20.6803 3.74 18.9503 2 16.8203 2Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M9.59375 11L11.0938 12.5L15.0938 8.5" stroke="#384BFF" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <h4 class="highligts-name">Hyundai</h4>
+                  </li>
+                  <li class="highligts-item restaurant-item d-flex align-items-center justify-content-center">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.8203 2H7.18031C5.05031 2 3.32031 3.74 3.32031 5.86V19.95C3.32031 21.75 4.61031 22.51 6.19031 21.64L11.0703 18.93C11.5903 18.64 12.4303 18.64 12.9403 18.93L17.8203 21.64C19.4003 22.52 20.6903 21.76 20.6903 19.95V5.86C20.6803 3.74 18.9503 2 16.8203 2Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M9.59375 11L11.0938 12.5L15.0938 8.5" stroke="#384BFF" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <h4 class="highligts-name">Mitsubishi</h4>
+                  </li>
+                  <li class="highligts-item restaurant-item d-flex align-items-center justify-content-center">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.8203 2H7.18031C5.05031 2 3.32031 3.74 3.32031 5.86V19.95C3.32031 21.75 4.61031 22.51 6.19031 21.64L11.0703 18.93C11.5903 18.64 12.4303 18.64 12.9403 18.93L17.8203 21.64C19.4003 22.52 20.6903 21.76 20.6903 19.95V5.86C20.6803 3.74 18.9503 2 16.8203 2Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M9.59375 11L11.0938 12.5L15.0938 8.5" stroke="#384BFF" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <h4 class="highligts-name">Outlander</h4>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Map -->
+              <div class="map-area">
+                <div class="d-flex justify-content-between map-header">
+                  <h3 class="restaurant-title">Rental's Location</h3>
+                  <span class="location-name">New York</span>
+                </div>
+                <div class="map-wrapper">
+                  <iframe width="850" class="rounded-4" height="382" frameborder="0" scrolling="no" marginheight="0"
+                    marginwidth="0" id="gmap_canvas"
+                    src="https://maps.google.com/maps?width=850&amp;height=382&amp;hl=en&amp;q=%20Dhaka+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                </div>
+              </div>
+
+              <!-- Review -->
+              <div class="info-card">
+                <h3 class="info-card-title m-0">Review</h3>
+                <div class="review-wrapper">
+                  <h4 class="review-text">
+                    <i class="fa-solid fa-star"></i>
+                    5/5 Excellent <span class="review-count">(3 reviews)</span>
+                  </h4>
+                  <div class="review-grid">
+                    <div class="single-progress">
+                      <div class="d-flex justify-content-between progress-label">
+                        <span class="rating-name">Cleanliness</span>
+                        <span class="rating-count">5/5</span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar w-100" role="progressbar" aria-label="Basic example"
+                          aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="single-progress">
+                      <div class="d-flex justify-content-between progress-label">
+                        <span class="rating-name">Communication</span>
+                        <span class="rating-count">5/5</span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar w-75" role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="single-progress">
+                      <div class="d-flex justify-content-between progress-label">
+                        <span class="rating-name">Check-in</span>
+                        <span class="rating-count">5/5</span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar w-75" role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="single-progress">
+                      <div class="d-flex justify-content-between progress-label">
+                        <span class="rating-name">Accuracy</span>
+                        <span class="rating-count">5/5</span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar w-75" role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="single-progress">
+                      <div class="d-flex justify-content-between progress-label">
+                        <span class="rating-name">Location</span>
+                        <span class="rating-count">5/5</span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar w-75" role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="single-progress">
+                      <div class="d-flex justify-content-between progress-label">
+                        <span class="rating-name">Value</span>
+                        <span class="rating-count">5/5</span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar w-75" role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="review-list">
+                  <p class="review-result">
+                    3 reviews on this Hotel - Showing 1 to 3
+                  </p>
+                  <!-- One -->
+                  <div class="single-review">
+                    <ul class="d-flex align-items-center rating-stars">
+                      <li>
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                    </ul>
+                    <p class="review-desc">
+                      Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                      Mauris nullam the as integer quam dolor nunc semper.
+                      Ornare non nulla faucibus pulvinar vulputate neque. The
+                      Suscipit tristique nam enim mauris consectetur platea.
+                    </p>
+                    <div class="d-flex align-items-center user-info-container">
+                      <img src="assets/img/others/cau-1.png" class="user-avatar img-fluid rounded-circle" alt="" />
+                      <div class="user-info">
+                        <h3 class="user-name">Guy Hawkins</h3>
+                        <span class="comment-date">06/10/2022</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Two -->
+                  <div class="single-review">
+                    <ul class="d-flex align-items-center rating-stars">
+                      <li>
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                    </ul>
+                    <p class="review-desc">
+                      Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                      Mauris nullam the as integer quam dolor nunc semper.
+                      Ornare non nulla faucibus pulvinar vulputate neque. The
+                      Suscipit tristique nam enim mauris consectetur platea.
+                    </p>
+                    <div class="d-flex align-items-center user-info-container">
+                      <img src="assets/img/others/cau-2.png" class="user-avatar img-fluid rounded-circle" alt="" />
+                      <div class="user-info">
+                        <h3 class="user-name">Bessie Cooper</h3>
+                        <span class="comment-date">06/10/2022</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Three -->
+                  <div class="single-review">
+                    <ul class="d-flex align-items-center rating-stars">
+                      <li>
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                    </ul>
+                    <p class="review-desc">
+                      Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                      Mauris nullam the as integer quam dolor nunc semper.
+                      Ornare non nulla faucibus pulvinar vulputate neque. The
+                      Suscipit tristique nam enim mauris consectetur platea.
+                    </p>
+                    <div class="d-flex align-items-center user-info-container">
+                      <img src="assets/img/others/cau-1.png" class="user-avatar img-fluid rounded-circle" alt="" />
+                      <div class="user-info">
+                        <h3 class="user-name">Guy Hawkins</h3>
+                        <span class="comment-date">06/10/2022</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Button -->
+                </div>
+                <div class="item-button">
+                  <button  class="btn add-review-btn collapsed" data-bs-toggle="collapse" data-bs-target="#rtAdvanceFilter1" aria-expanded="false">Add a Review </button>
+                </div>
+                <div class="review-form navbar-collapse collapse" id="rtAdvanceFilter1">
+                    <p>Your email address will not be published. Required fields are marked *</p>
+                    <form class="rt-contact-form">
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" id="name" class="form-control" name="name" placeholder="*Name" data-error="Name field is required" required>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input type="email" id="email" class="form-control" name="email" placeholder="*Email" data-error="Email field is required" required>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="col-12 review-icon">
+                              <div class="title">Your Rating</div>
+                              <div class="rating">
+                                <input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+                                <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+                                <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+                                <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+                                <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+                              </div>      
+                            </div>
+                            <div class="col-12 form-group">
+                                <textarea class="textarea form-control" name="message" id="form-message" placeholder="*Your Review" rows="7" cols="20" data-error="Message field is required" required></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+
+                            <div class="col-12 form-group">
+                                <button type="submit" class="rt-submit-btn">Submit</button>
+                            </div>
+                        </div>
+                        <div class="form-response"></div>
+                    </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <aside class="right-sidebar-form">
+              <button class="booknow-btn-sm">Book Now</button>
+              <div class="sidebar-query-form">
+                <form action="" class="booking-form">
+                  <div class="position-relative input-wrapper">
+                    <label for="checkIn" class="input-label">Check In</label>
+                    <input type="text" id="checkIn" class="form-control selector" placeholder="18-01-2023">
+                  </div>
+                  <div class="position-relative input-wrapper">
+                    <label for="checkOut" class="input-label">Check Out</label>
+                    <input type="text" id="checkOut" class="form-control selector" placeholder="05-03-2023">
+                  </div>
+                  <div class="position-relative input-wrapper">
+                    <label for="room" class="input-label">Room</label>
+                    <input type="text" id="room" class="form-control">
+                  </div>
+                  <div class="position-relative input-wrapper">
+                    <label for="guest" class="input-label">Guests</label>
+                    <input type="text" id="guest" class="form-control">
+                  </div>
+                  <button class="send-btn">
+                    Reserve
+                  </button>
+                </form>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Deal -->
+    <section class="related-deals">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="related-section-title">
+              <h3 class="deals-title">Explore other options</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <article class="col-lg-4 col-md-6 col-xl-3 mb-4">
+            <div class="choose-car-card">
+              <div class="d-flex car-top-info align-items-center justify-content-between">
+                <div class="d-flex flex-column">
+                  <h3 class="car-title">
+                    <a href="car-details.html">Audi RS e-tron GT</a>
+                  </h3>
+                  <p class="car-info">Royal Ln. Mesa, New Jersey</p>
+                </div>
+                <button class="car-wishlist-btn">
+                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13.1455 21.6771C12.7913 21.8021 12.208 21.8021 11.8538 21.6771C8.83301 20.6459 2.08301 16.3438 2.08301 9.05215C2.08301 5.8334 4.67676 3.22923 7.87467 3.22923C9.77051 3.22923 11.4476 4.1459 12.4997 5.56257C13.5518 4.1459 15.2393 3.22923 17.1247 3.22923C20.3226 3.22923 22.9163 5.8334 22.9163 9.05215C22.9163 16.3438 16.1663 20.6459 13.1455 21.6771Z"
+                      fill="#F12C5B" />
+                  </svg>
+                </button>
+              </div>
+              <a href="car-details.html" class="car-thumb-wrapper">
+                <img src="assets/img/cars/test-1.png" class="img-fluid car-thumb" alt="" />
+              </a>
+              <div class="card-bottom-info d-flex justify-content-between">
+                <div class="card-bottom-info-left d-flex">
+                  <span class="car-seat"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7.63314 9.05857C7.5498 9.05023 7.4498 9.05023 7.35814 9.05857C5.3748 8.9919 3.7998 7.3669 3.7998 5.3669C3.7998 3.32523 5.4498 1.6669 7.4998 1.6669C9.54147 1.6669 11.1998 3.32523 11.1998 5.3669C11.1915 7.3669 9.61647 8.9919 7.63314 9.05857Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M13.6747 3.3331C15.2914 3.3331 16.5914 4.64143 16.5914 6.24977C16.5914 7.82477 15.3414 9.1081 13.7831 9.16644C13.7164 9.1581 13.6414 9.1581 13.5664 9.16644"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M3.4666 12.1331C1.44993 13.4831 1.44993 15.6831 3.4666 17.0248C5.75827 18.5581 9.5166 18.5581 11.8083 17.0248C13.8249 15.6748 13.8249 13.4748 11.8083 12.1331C9.52493 10.6081 5.7666 10.6081 3.4666 12.1331Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M15.2832 16.6669C15.8832 16.5419 16.4499 16.3002 16.9165 15.9419C18.2165 14.9669 18.2165 13.3586 16.9165 12.3836C16.4582 12.0336 15.8999 11.8002 15.3082 11.6669"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    4
+                  </span>
+                  <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.6667 11.6667C17.5871 11.6667 18.3333 10.9205 18.3333 10C18.3333 9.07952 17.5871 8.33333 16.6667 8.33333C15.7462 8.33333 15 9.07952 15 10C15 10.9205 15.7462 11.6667 16.6667 11.6667Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M16.6667 5C17.5871 5 18.3333 4.25381 18.3333 3.33333C18.3333 2.41286 17.5871 1.66667 16.6667 1.66667C15.7462 1.66667 15 2.41286 15 3.33333C15 4.25381 15.7462 5 16.6667 5Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M16.6667 18.3333C17.5871 18.3333 18.3333 17.5871 18.3333 16.6667C18.3333 15.7462 17.5871 15 16.6667 15C15.7462 15 15 15.7462 15 16.6667C15 17.5871 15.7462 18.3333 16.6667 18.3333Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M3.33366 11.6667C4.25413 11.6667 5.00033 10.9205 5.00033 10C5.00033 9.07952 4.25413 8.33333 3.33366 8.33333C2.41318 8.33333 1.66699 9.07952 1.66699 10C1.66699 10.9205 2.41318 11.6667 3.33366 11.6667Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M5 10H15" stroke="#384BFF" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M15.0003 3.33333H11.667C10.0003 3.33333 9.16699 4.16667 9.16699 5.83333V14.1667C9.16699 15.8333 10.0003 16.6667 11.667 16.6667H15.0003"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Manual</span>
+                </div>
+                <div class="card-bottom-info-right">
+                  <span class="car-price">$99<span class="car-day"> / Day</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-lg-4 col-md-6 col-xl-3 mb-4">
+            <div class="choose-car-card">
+              <div class="d-flex car-top-info align-items-center justify-content-between">
+                <div class="d-flex flex-column">
+                  <h3 class="car-title">
+                    <a href="car-details.html">Audi RS e-tron GT</a>
+                  </h3>
+                  <p class="car-info">Royal Ln. Mesa, New Jersey</p>
+                </div>
+                <button class="car-wishlist-btn">
+                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13.1455 21.6771C12.7913 21.8021 12.208 21.8021 11.8538 21.6771C8.83301 20.6459 2.08301 16.3438 2.08301 9.05215C2.08301 5.8334 4.67676 3.22923 7.87467 3.22923C9.77051 3.22923 11.4476 4.1459 12.4997 5.56257C13.5518 4.1459 15.2393 3.22923 17.1247 3.22923C20.3226 3.22923 22.9163 5.8334 22.9163 9.05215C22.9163 16.3438 16.1663 20.6459 13.1455 21.6771Z"
+                      fill="#F12C5B" />
+                  </svg>
+                </button>
+              </div>
+              <a href="car-details.html" class="car-thumb-wrapper">
+                <img src="assets/img/cars/test-2.png" class="car-thumb img-fluid" alt="" />
+              </a>
+              <div class="card-bottom-info d-flex justify-content-between">
+                <div class="card-bottom-info-left d-flex">
+                  <span class="car-seat"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7.63314 9.05857C7.5498 9.05023 7.4498 9.05023 7.35814 9.05857C5.3748 8.9919 3.7998 7.3669 3.7998 5.3669C3.7998 3.32523 5.4498 1.6669 7.4998 1.6669C9.54147 1.6669 11.1998 3.32523 11.1998 5.3669C11.1915 7.3669 9.61647 8.9919 7.63314 9.05857Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M13.6747 3.3331C15.2914 3.3331 16.5914 4.64143 16.5914 6.24977C16.5914 7.82477 15.3414 9.1081 13.7831 9.16644C13.7164 9.1581 13.6414 9.1581 13.5664 9.16644"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M3.4666 12.1331C1.44993 13.4831 1.44993 15.6831 3.4666 17.0248C5.75827 18.5581 9.5166 18.5581 11.8083 17.0248C13.8249 15.6748 13.8249 13.4748 11.8083 12.1331C9.52493 10.6081 5.7666 10.6081 3.4666 12.1331Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M15.2832 16.6669C15.8832 16.5419 16.4499 16.3002 16.9165 15.9419C18.2165 14.9669 18.2165 13.3586 16.9165 12.3836C16.4582 12.0336 15.8999 11.8002 15.3082 11.6669"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    4
+                  </span>
+                  <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.6667 11.6667C17.5871 11.6667 18.3333 10.9205 18.3333 10C18.3333 9.07952 17.5871 8.33333 16.6667 8.33333C15.7462 8.33333 15 9.07952 15 10C15 10.9205 15.7462 11.6667 16.6667 11.6667Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M16.6667 5C17.5871 5 18.3333 4.25381 18.3333 3.33333C18.3333 2.41286 17.5871 1.66667 16.6667 1.66667C15.7462 1.66667 15 2.41286 15 3.33333C15 4.25381 15.7462 5 16.6667 5Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M16.6667 18.3333C17.5871 18.3333 18.3333 17.5871 18.3333 16.6667C18.3333 15.7462 17.5871 15 16.6667 15C15.7462 15 15 15.7462 15 16.6667C15 17.5871 15.7462 18.3333 16.6667 18.3333Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M3.33366 11.6667C4.25413 11.6667 5.00033 10.9205 5.00033 10C5.00033 9.07952 4.25413 8.33333 3.33366 8.33333C2.41318 8.33333 1.66699 9.07952 1.66699 10C1.66699 10.9205 2.41318 11.6667 3.33366 11.6667Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M5 10H15" stroke="#384BFF" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M15.0003 3.33333H11.667C10.0003 3.33333 9.16699 4.16667 9.16699 5.83333V14.1667C9.16699 15.8333 10.0003 16.6667 11.667 16.6667H15.0003"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Manual</span>
+                </div>
+                <div class="card-bottom-info-right">
+                  <span class="car-price">$99<span class="car-day"> / Day</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-lg-4 col-md-6 col-xl-3 mb-4">
+            <div class="choose-car-card">
+              <div class="d-flex car-top-info align-items-center justify-content-between">
+                <div class="d-flex flex-column">
+                  <h3 class="car-title">
+                    <a href="car-details.html">Audi RS e-tron GT</a>
+                  </h3>
+                  <p class="car-info">Royal Ln. Mesa, New Jersey</p>
+                </div>
+                <button class="car-wishlist-btn">
+                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13.1455 21.6771C12.7913 21.8021 12.208 21.8021 11.8538 21.6771C8.83301 20.6459 2.08301 16.3438 2.08301 9.05215C2.08301 5.8334 4.67676 3.22923 7.87467 3.22923C9.77051 3.22923 11.4476 4.1459 12.4997 5.56257C13.5518 4.1459 15.2393 3.22923 17.1247 3.22923C20.3226 3.22923 22.9163 5.8334 22.9163 9.05215C22.9163 16.3438 16.1663 20.6459 13.1455 21.6771Z"
+                      fill="#F12C5B" />
+                  </svg>
+                </button>
+              </div>
+              <a href="car-details.html" class="car-thumb-wrapper">
+                <img src="assets/img/cars/test-3.png" class="car-thumb img-fluid" alt="" />
+              </a>
+              <div class="card-bottom-info d-flex justify-content-between">
+                <div class="card-bottom-info-left d-flex">
+                  <span class="car-seat"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7.63314 9.05857C7.5498 9.05023 7.4498 9.05023 7.35814 9.05857C5.3748 8.9919 3.7998 7.3669 3.7998 5.3669C3.7998 3.32523 5.4498 1.6669 7.4998 1.6669C9.54147 1.6669 11.1998 3.32523 11.1998 5.3669C11.1915 7.3669 9.61647 8.9919 7.63314 9.05857Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M13.6747 3.3331C15.2914 3.3331 16.5914 4.64143 16.5914 6.24977C16.5914 7.82477 15.3414 9.1081 13.7831 9.16644C13.7164 9.1581 13.6414 9.1581 13.5664 9.16644"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M3.4666 12.1331C1.44993 13.4831 1.44993 15.6831 3.4666 17.0248C5.75827 18.5581 9.5166 18.5581 11.8083 17.0248C13.8249 15.6748 13.8249 13.4748 11.8083 12.1331C9.52493 10.6081 5.7666 10.6081 3.4666 12.1331Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M15.2832 16.6669C15.8832 16.5419 16.4499 16.3002 16.9165 15.9419C18.2165 14.9669 18.2165 13.3586 16.9165 12.3836C16.4582 12.0336 15.8999 11.8002 15.3082 11.6669"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    4
+                  </span>
+                  <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.6667 11.6667C17.5871 11.6667 18.3333 10.9205 18.3333 10C18.3333 9.07952 17.5871 8.33333 16.6667 8.33333C15.7462 8.33333 15 9.07952 15 10C15 10.9205 15.7462 11.6667 16.6667 11.6667Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M16.6667 5C17.5871 5 18.3333 4.25381 18.3333 3.33333C18.3333 2.41286 17.5871 1.66667 16.6667 1.66667C15.7462 1.66667 15 2.41286 15 3.33333C15 4.25381 15.7462 5 16.6667 5Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M16.6667 18.3333C17.5871 18.3333 18.3333 17.5871 18.3333 16.6667C18.3333 15.7462 17.5871 15 16.6667 15C15.7462 15 15 15.7462 15 16.6667C15 17.5871 15.7462 18.3333 16.6667 18.3333Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M3.33366 11.6667C4.25413 11.6667 5.00033 10.9205 5.00033 10C5.00033 9.07952 4.25413 8.33333 3.33366 8.33333C2.41318 8.33333 1.66699 9.07952 1.66699 10C1.66699 10.9205 2.41318 11.6667 3.33366 11.6667Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M5 10H15" stroke="#384BFF" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M15.0003 3.33333H11.667C10.0003 3.33333 9.16699 4.16667 9.16699 5.83333V14.1667C9.16699 15.8333 10.0003 16.6667 11.667 16.6667H15.0003"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Manual</span>
+                </div>
+                <div class="card-bottom-info-right">
+                  <span class="car-price">$99<span class="car-day"> / Day</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-lg-4 col-md-6 col-xl-3 mb-4">
+            <div class="choose-car-card">
+              <div class="d-flex car-top-info align-items-center justify-content-between">
+                <div class="d-flex flex-column">
+                  <h3 class="car-title">
+                    <a href="car-details.html">Audi RS e-tron GT</a>
+                  </h3>
+                  <p class="car-info">Royal Ln. Mesa, New Jersey</p>
+                </div>
+                <button class="car-wishlist-btn">
+                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13.1455 21.6771C12.7913 21.8021 12.208 21.8021 11.8538 21.6771C8.83301 20.6459 2.08301 16.3438 2.08301 9.05215C2.08301 5.8334 4.67676 3.22923 7.87467 3.22923C9.77051 3.22923 11.4476 4.1459 12.4997 5.56257C13.5518 4.1459 15.2393 3.22923 17.1247 3.22923C20.3226 3.22923 22.9163 5.8334 22.9163 9.05215C22.9163 16.3438 16.1663 20.6459 13.1455 21.6771Z"
+                      fill="#F12C5B" />
+                  </svg>
+                </button>
+              </div>
+              <a href="car-details.html" class="car-thumb-wrapper">
+                <img src="assets/img/cars/test-4.png" class="car-thumb img-fluid" alt="" />
+              </a>
+              <div class="card-bottom-info d-flex justify-content-between">
+                <div class="card-bottom-info-left d-flex">
+                  <span class="car-seat"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7.63314 9.05857C7.5498 9.05023 7.4498 9.05023 7.35814 9.05857C5.3748 8.9919 3.7998 7.3669 3.7998 5.3669C3.7998 3.32523 5.4498 1.6669 7.4998 1.6669C9.54147 1.6669 11.1998 3.32523 11.1998 5.3669C11.1915 7.3669 9.61647 8.9919 7.63314 9.05857Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M13.6747 3.3331C15.2914 3.3331 16.5914 4.64143 16.5914 6.24977C16.5914 7.82477 15.3414 9.1081 13.7831 9.16644C13.7164 9.1581 13.6414 9.1581 13.5664 9.16644"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M3.4666 12.1331C1.44993 13.4831 1.44993 15.6831 3.4666 17.0248C5.75827 18.5581 9.5166 18.5581 11.8083 17.0248C13.8249 15.6748 13.8249 13.4748 11.8083 12.1331C9.52493 10.6081 5.7666 10.6081 3.4666 12.1331Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M15.2832 16.6669C15.8832 16.5419 16.4499 16.3002 16.9165 15.9419C18.2165 14.9669 18.2165 13.3586 16.9165 12.3836C16.4582 12.0336 15.8999 11.8002 15.3082 11.6669"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    4
+                  </span>
+                  <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.6667 11.6667C17.5871 11.6667 18.3333 10.9205 18.3333 10C18.3333 9.07952 17.5871 8.33333 16.6667 8.33333C15.7462 8.33333 15 9.07952 15 10C15 10.9205 15.7462 11.6667 16.6667 11.6667Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M16.6667 5C17.5871 5 18.3333 4.25381 18.3333 3.33333C18.3333 2.41286 17.5871 1.66667 16.6667 1.66667C15.7462 1.66667 15 2.41286 15 3.33333C15 4.25381 15.7462 5 16.6667 5Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M16.6667 18.3333C17.5871 18.3333 18.3333 17.5871 18.3333 16.6667C18.3333 15.7462 17.5871 15 16.6667 15C15.7462 15 15 15.7462 15 16.6667C15 17.5871 15.7462 18.3333 16.6667 18.3333Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M3.33366 11.6667C4.25413 11.6667 5.00033 10.9205 5.00033 10C5.00033 9.07952 4.25413 8.33333 3.33366 8.33333C2.41318 8.33333 1.66699 9.07952 1.66699 10C1.66699 10.9205 2.41318 11.6667 3.33366 11.6667Z"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M5 10H15" stroke="#384BFF" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M15.0003 3.33333H11.667C10.0003 3.33333 9.16699 4.16667 9.16699 5.83333V14.1667C9.16699 15.8333 10.0003 16.6667 11.667 16.6667H15.0003"
+                        stroke="#384BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Manual</span>
+                </div>
+                <div class="card-bottom-info-right">
+                  <span class="car-price">$99<span class="car-day"> / Day</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Funfact -->
+    <section class="fun-fact-area">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <div class="single-fun-fact">
+              <div class="fun-fact-icon">
+                <img src="assets/img/icons/global-search.svg" alt="" />
+              </div>
+              <div class="fun-fact-content">
+                <h3 class="fun-fact-title">700 Destinations</h3>
+                <p class="fun-fact-desc">
+                  Lorem ipsum dolor consectetur adipiscing elit. It’s Mauris
+                  nullam the as integer the quam dolor.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <div class="single-fun-fact">
+              <div class="fun-fact-icon">
+                <img src="assets/img/icons/card-pos.svg" alt="" />
+              </div>
+              <div class="fun-fact-content">
+                <h3 class="fun-fact-title">Best Price Gurantee</h3>
+                <p class="fun-fact-desc">
+                  Lorem ipsum dolor consectetur adipiscing elit. It’s Mauris
+                  nullam the as integer the quam dolor.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <div class="single-fun-fact">
+              <div class="fun-fact-icon">
+                <img src="assets/img/icons/like-shapes.svg" alt="" />
+              </div>
+              <div class="fun-fact-content">
+                <h3 class="fun-fact-title">Top Notch Support</h3>
+                <p class="fun-fact-desc">
+                  Lorem ipsum dolor consectetur adipiscing elit. It’s Mauris
+                  nullam the as integer the quam dolor.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-area footer-dark">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-5 mb-md-0" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50"
+            data-aos-duration="1000">
+            <a href="index.html">
+              <img src="assets/img/logo/Logo-white.svg" alt="Logo" />
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-5 mb-lg-0" data-aos="fade-up" data-aos-offset="150" data-aos-delay="70"
+            data-aos-duration="1200">
+            <div class="footer-widget has-animation">
+              <h3 class="footer-widget-title">Office</h3>
+              <address class="footer-address">
+                <span class="d-block">Germany — </span> 785 15h Street, Office
+                478 Berlin, De 81566
+              </address>
+              <a href="mailto:info@email.com" class="footer-mail">
+                info@email.com
+                <span class="line"></span>
+              </a>
+              <a href="tel:+18408412569" class="footer-phone">+18408412569</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-5 mb-md-0" data-aos="fade-up" data-aos-offset="200" data-aos-delay="90"
+            data-aos-duration="1500">
+            <nav class="footer-widget">
+              <h3 class="footer-widget-title">Company Links</h3>
+              <ul class="footer-nav">
+                <li class="footer-nav-item">
+                  <a href="index.html" class="footer-nav-link">Home</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="about.html" class="footer-nav-link">About us</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="blog-details.html" class="footer-nav-link">Community Blog</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="about.html" class="footer-nav-link">Careers</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="about.html" class="footer-nav-link">Privacy policy</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="about.html" class="footer-nav-link">Terms of service</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6" data-aos="fade-up" data-aos-offset="250" data-aos-delay="100"
+            data-aos-duration="1500">
+            <div class="footer-widget">
+              <h3 class="footer-widget-title">Newsletter</h3>
+              <div class="footer-newsletter">
+                <form>
+                  <div class="newsletter-wrapper">
+                    <input type="text" class="form-control shadow-none" placeholder="Enter Your Email Address" />
+                    <button class="footer-newsletter-btn">
+                      <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                  </div>
+                </form>
+                <p class="privacy-text">
+                  I agree to the
+                  <a href="about.html" class="privacy-link">Privacy Policy.</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+            <p class="copyright-text">
+              &copy;Copyright
+              <a href="https://www.radiustheme.com/" class="copyright-link">tripfery</a> 2023
+            </p>
+          </div>
+          <div class="col-12 col-sm-6">
+            <ul class="payment-support-list d-flex justify-content-md-end">
+              <li><img src="assets/img/payment/visa.svg" alt="visa" /></li>
+              <li>
+                <img src="assets/img/payment/master.svg" alt="master" />
+              </li>
+              <li>
+                <img src="assets/img/payment/discover.svg" alt="discover" />
+              </li>
+              <li>
+                <img src="assets/img/payment/paypal.svg" alt="paypal" />
+              </li>
+              <li>
+                <img src="assets/img/payment/jcb.svg" alt="jcb" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div id="template-search" class="template-search">
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">All</a></li>
+        <li><a href="index.html">Features</a></li>
+        <li><a href="index.html">Hotel</a></li>
+        <li><a href="index.html"> Restaurant</a></li>
+        <li><a href="index.html">Tour</a></li>
+        <li><a href="index.html">Car</a></li>
+        <li><a href="index.html">Activity</a></li>
+      </ul>
+    </div>
+    <button type="button" class="close">×</button>
+    <form class="search-form">
+      <input type="search" value="" placeholder="Search">
+      <button type="submit" class="search-btn btn-ghost style-1">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </form>
+  </div>
+  <!-- jQuery -->
+  <script src="assets/js/jquery.min.js"></script>
+  <!-- jQuery Migrate -->
+  <script src="assets/js/jquery-migrate.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <!-- Isotope -->
+  <script src="assets/js/isotope.pkgd.min.js"></script>
+  <!-- Waypoints -->
+  <script src="assets/js/waypoints.min.js"></script>
+  <!-- Counter -->
+  <script src="assets/js/jquery.counterup.min.js"></script>
+  <!-- imagesloaded -->
+  <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+  <!-- Swiper -->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <!-- AOS -->
+  <script src="assets/js/aos.js"></script>
+  <!-- Magnific-popup -->
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <!-- Nice Selector -->
+  <script src="assets/js/jquery.nice-select.js"></script>
+  <!-- Flatepikr -->
+  <script src="assets/js/flatpickr.js"></script>
+  <!-- Masonry -->
+  <script src="assets/js/masonry.min.js"></script>
+  <!-- Main JS -->
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>

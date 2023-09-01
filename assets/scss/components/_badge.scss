@@ -1,0 +1,47 @@
+.badge {
+  border-radius: 60px;
+  height: 25px;
+  display: inline-flex;
+  background-color: $rt-pink-100;
+  gap: 4px;
+  align-items: center;
+  padding: 5px 9px;
+  transition: all 0.4s ease;
+
+  .badge-text {
+    color: $rt-black-400;
+    font-weight: $font-medium;
+    font-size: 14px;
+  }
+  .badge-icon {
+    color: #e7233a;
+  }
+  &.badge-pink {
+    background-color: #fff8f8;
+  }
+  &:hover {
+    background-color: #e7233a;
+    .badge-text {
+      color: $rt-white;
+    }
+    .badge-icon {
+      color: $rt-white;
+    }
+  }
+}
+
+.discount-badge {
+  height: 25px;
+  padding: 5px 10px;
+  background-color: #0cd138;
+  color: $rt-white;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: $font-medium;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}

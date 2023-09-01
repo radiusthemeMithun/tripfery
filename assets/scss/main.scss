@@ -1,0 +1,77 @@
+// Variables
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+// base
+@import "base/reset";
+@import "base/typography";
+
+//Utils
+@import "utils/helper";
+
+//Layout
+@import "layout/navbar";
+
+//Components
+@import "layout/navbar-toggler";
+@import "components/preloader";
+@import "section/page-hero";
+@import "section/hero";
+@import "section/search-page-hero";
+@import "section/switch-view";
+@import "section/related-deals";
+
+@import "components/buttons";
+@import "components/badge";
+@import "components/rating-star";
+@import "components/section-title";
+@import "components/infocard";
+@import "components/pagination";
+@import "components/search";
+
+//
+
+//Section
+@import "section/fun-fact";
+@import "section/details-page-hero";
+@import "section/filter-bar";
+
+//Pages
+@import "pages/index";
+@import "pages/index-two";
+@import "pages/index-three";
+@import "pages/index-four";
+@import "pages/index-five";
+@import "pages/index-six";
+@import "pages/contact";
+@import "pages/hotel-sidebar";
+@import "pages/hotel-map";
+@import "pages/restaurant-sidebar";
+@import "pages/restaurant-details";
+@import "pages/activity-details";
+@import "pages/activity-sidebar";
+@import "pages/tours-sidebar";
+@import "pages/renal-sidebar-right";
+@import "pages/rental-sidebar";
+@import "pages/rental-with-map";
+@import "pages/hotel-sidebar";
+@import "pages/car-sidebar";
+@import "pages/car-details";
+@import "pages/about";
+@import "pages/index-seven";
+@import "pages/faqs";
+@import "pages/hotel-details";
+@import "pages/notfound";
+@import "pages/services";
+@import "pages/blogs";
+@import "pages/blog-list";
+@import "pages/blog-details";
+
+//Breadcrumb
+
+.bg-blue-100 {
+  background-color: $rt-blue-100;
+}
+.bg-blue-50 {
+  background-color: #f9f9fa;
+}

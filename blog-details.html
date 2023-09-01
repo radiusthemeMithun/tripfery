@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Details -TripFery Travel Website</title>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/fav.png">
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="assets/css/font-awesome-all.min.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="assets/css/aos.css" />
+  <!-- Magnific-popup -->
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <!-- Nice Select CSS -->
+  <link rel="stylesheet" href="assets/css/nice-select.css" />
+  <!-- Flatepikr -->
+  <link rel="stylesheet" href="assets/css/flatpickr.min.css" />
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-wrap">
+      <img src="assets/img/preloader.gif" alt="" class=" img-fluid preloader-icon">
+    </div>
+  </div>
+
+  <!-- Topbar -->
+  <section class="rt-tf-topbar">
+    <div class="topbar-container">
+      <div class="d-flex align-items-center  justify-content-between">
+        <div class="rt-tf-topbar-left d-flex">
+          <p class="rt-tf-welcome-text d-none d-lg-block">Welcome to Travel Agency</p>
+          <a href="tel:156-677-124-442-2887" class="rt-tf-phone-number">
+            <svg width="11" height="11" viewBox="0 0 11 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.98047 7.80859L9.51172 9.78125C9.45312 10.0742 9.21875 10.2695 8.92578 10.2695C4.00391 10.25 0 6.24609 0 1.32422C0 1.03125 0.175781 0.796875 0.46875 0.738281L2.44141 0.269531C2.71484 0.210938 3.00781 0.367188 3.125 0.621094L4.04297 2.75C4.14062 3.00391 4.08203 3.29688 3.86719 3.45312L2.8125 4.3125C3.47656 5.66016 4.57031 6.75391 5.9375 7.41797L6.79688 6.36328C6.95312 6.16797 7.24609 6.08984 7.5 6.1875L9.62891 7.10547C9.88281 7.24219 10.0391 7.53516 9.98047 7.80859Z"
+                fill="#D2D2D2" />
+            </svg>
+            156-677-124-442-2887</a>
+        </div>
+        <div class="rt-tf-topbar-right d-flex align-items-center justify-content-end">
+          <div class="rt-tf-right-info d-none d-sm-block">
+            <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.9805 0.972656L9.73047 9.07812C9.71094 9.27344 9.59375 9.44922 9.41797 9.54688C9.32031 9.58594 9.22266 9.625 9.10547 9.625C9.02734 9.625 8.94922 9.60547 8.87109 9.56641L6.48828 8.57031L5.49219 10.0547C5.41406 10.1914 5.27734 10.25 5.14062 10.25C4.92578 10.25 4.75 10.0742 4.75 9.85938V7.98438C4.75 7.82812 4.78906 7.69141 4.86719 7.59375L9.125 2.125L3.38281 7.30078L1.37109 6.46094C1.15625 6.36328 1 6.16797 1 5.91406C0.980469 5.64062 1.09766 5.44531 1.3125 5.32812L10.0625 0.347656C10.2578 0.230469 10.5312 0.230469 10.7266 0.367188C10.9219 0.503906 11.0195 0.738281 10.9805 0.972656Z"
+                fill="#D2D2D2" />
+            </svg>
+            <a href="mailto:travelwp@gmail.com" class="info-content ">
+              travelwp@gmail.com</a>
+          </div>
+          <div class="rt-tf-right-info d-none d-md-block">
+            <address class="info-content">
+              <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M3.28125 10.0156C2.26562 8.74609 0 5.71875 0 4C0 1.92969 1.66016 0.25 3.75 0.25C5.82031 0.25 7.5 1.92969 7.5 4C7.5 5.71875 5.21484 8.74609 4.19922 10.0156C3.96484 10.3086 3.51562 10.3086 3.28125 10.0156ZM3.75 5.25C4.43359 5.25 5 4.70312 5 4C5 3.31641 4.43359 2.75 3.75 2.75C3.04688 2.75 2.5 3.31641 2.5 4C2.5 4.70312 3.04688 5.25 3.75 5.25Z"
+                  fill="#D2D2D2" />
+              </svg>
+              184 Main Collins Street Victoria 8007
+            </address>
+          </div>
+          <div class="rt-tf-topbar-social-links">
+            <span class="social-link-text">Follow Us:</span>
+            <a href="https://www.facebook.com/" target="_blank" class="social-link-item">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/" class="social-link-item">
+              <i class="fa-brands fa-twitter"></i> 
+            </a>
+            <a href="https://bd.linkedin.com/" target="_blank" class="social-link-item">
+              <i class="fa-brands fa-linkedin-in"></i> 
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="social-link-item">
+              <i class="fa-brands fa-instagram"></i> 
+            </a>
+            <a href="https://www.pinterest.com/" target="_blank" class="social-link-item">
+              <i class="fa-brands fa-pinterest-p"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <!-- Place Holder -->
+  <div class="place-holder"></div>
+  <!-- Header -->
+  <header class="header-primary sticky-header">
+    <div class="nav-container">
+      <nav class="navbar navbar-expand-xl justify-content-between">
+        <a href="index.html">
+          <img src="assets/img/logo/Logo-color.svg" alt="">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="d-block d-xl-none">
+              <div class="logo"><a href="index.html"><img src="assets/img/logo/Logo-color.svg" alt="" width="130"></a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                data-bs-auto-close="outside" aria-expanded="false">All Demos</a>
+              <div class="dropdown-menu two-column">
+                <div class="shape">
+                  <svg class="animate__animated animate__fadeInUp" width="21" height="10" viewBox="0 0 21 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 0L0 9.5H20.5L10 0Z" fill="currentColor"/>
+                  </svg>
+                </div>
+                <div class="d-flex flex-column flex-xl-row justify-content-between">
+                  <ul>
+                    <li>
+                      <a href="index.html" class="dropdown-item">
+                        <span class="flip-item">
+                          <span data-text="Main Home">Main Home</span>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="index-2.html" class="dropdown-item">
+                        <span class="flip-item">
+                          <span data-text="Hotel Boking">Hotel Boking</span>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="index-3.html" class="dropdown-item">
+                        <span class="flip-item">
+                          <span data-text="Tour Package">Tour Package</span>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="index-4.html" class="dropdown-item">
+                        <span class="flip-item">
+                          <span data-text="Activity Place">Activity Place</span>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="index-5.html" class="dropdown-item">
+                        <span class="flip-item">
+                          <span data-text="Rental House">Rental House</span>
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul>
+                      <li>
+                        <a href="index-6.html" class="dropdown-item">
+                          <span class="flip-item">
+                            <span data-text="Rent a Car">Rent a Car</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="index-7.html" class="dropdown-item">
+                          <span class="flip-item">
+                            <span data-text="Restaurant Booking">Restaurant Booking</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="index-3.html" class="dropdown-item">
+                          <span class="flip-item">
+                            <span data-text="Tour Package">Tour Package</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="index-7.html" class="dropdown-item">
+                          <span class="flip-item">
+                            <span data-text="Activity Place">Activity Place</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="index-4.html" class="dropdown-item">
+                          <span class="flip-item">
+                            <span data-text="Rental House">Rental House</span>
+                          </span>
+                        </a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle flame" href="#" role="button" data-bs-toggle="dropdown"
+                data-bs-auto-close="outside" aria-expanded="false">All Feature</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-submenu dropdown">
+                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                    aria-expanded="false" href="#"><span class="flip-item">
+                      <span data-text="Hotel Feature">Hotel Feature</span>
+                    </span></a>
+                  <ul class="dropdown-menu rounded-0">
+                    <li><a href="hotel-search-sidebar-right.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Hotel Sidebar">Hotel Sidebar</span>
+                    </span></a>
+                    </li>
+                    <li><a href="hotel-details.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Hotel Detail">Hotel Detail</span>
+                    </span></a></li>
+                    <li><a href="room-details.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Room Detail">Room Detail</span>
+                    </span></a></li>
+                    <li><a href="hotel-search-with-map.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Search HalfMap">Search HalfMap</span>
+                    </span></a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu dropdown">
+                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                    aria-expanded="false" href="#"><span class="flip-item">
+                      <span data-text="Tour Feature">Tour Feature</span>
+                    </span></a>
+                  <ul class="dropdown-menu rounded-0">
+                    <li><a href="tour-sidebar-search.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Tour Sidebar">Tour Sidebar</span>
+                    </span></a></li>
+                    <li><a href="tour-details.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Tour Detail">Tour Detail</span>
+                    </span></a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu dropdown">
+                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                    aria-expanded="false" href="#"><span class="flip-item">
+                      <span data-text="Activity Feature">Activity Feature</span>
+                    </span></a>
+                  <ul class="dropdown-menu rounded-0">
+                    <li><a href="activity-search-sidebar.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Activity Sidebar">Activity Sidebar</span>
+                    </span></a>
+                    </li>
+                    <li><a href="activity-details.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Activity Details">Activity Details</span>
+                    </span></a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu dropdown">
+                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                    aria-expanded="false" href="#"><span class="flip-item">
+                      <span data-text="Rental Feature">Rental Feature</span>
+                    </span></a>
+                  <ul class="dropdown-menu rounded-0">
+                    <li><a href="rental-search-sidebar.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Rental Sidebar">Rental Sidebar</span>
+                    </span></a></li>
+                    <li><a href="rental-search-with-map.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Rental With Map">Rental With Map</span>
+                    </span></a>
+                    </li>
+                    <li><a href="rental-details.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Rental Details">Rental Details</span>
+                    </span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu dropdown">
+                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                    aria-expanded="false" href="#"><span class="flip-item">
+                      <span data-text="Ren a Car Feature">Rent a Car Feature</span>
+                    </span></a>
+                  <ul class="dropdown-menu rounded-0">
+                    <li><a href="car-search-sidebar.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Car Sidebar">Car Sidebar</span>
+                    </span></a></li>
+                    <li><a href="car-details.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Car Details">Car Details</span>
+                    </span></a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu dropdown">
+                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                    aria-expanded="false" href="#"><span class="flip-item">
+                      <span data-text="Restaurant Feature">Restaurant Feature</span>
+                    </span></a>
+                  <ul class="dropdown-menu rounded-0">
+                    <li><a href="restaurant-search-sidebar.html" class="dropdown-item"><span class="flip-item">
+                          <span data-text="Restaurant
+                            Sidebar">Restaurant
+                            Sidebar</span>
+                          </span></a></li>
+                    <li><a href="restaurant-details.html" class="dropdown-item"><span class="flip-item">
+                      <span data-text="Restaurant Details">Restaurant Details</span>
+                    </span></a></li>
+
+                  </ul>
+                </li>
+
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                data-bs-auto-close="outside" aria-expanded="false">Essential Pages</a>
+              <ul class="dropdown-menu">
+                <li><a href="faq.html" class="dropdown-item"><span class="flip-item">
+                  <span data-text="Faq">Faq</span>
+                </span></a></li>
+                <li><a href="404.html" class="dropdown-item"><span class="flip-item">
+                  <span data-text="404 Page">404 Page</span>
+                </span></a></li>
+                <li><a href="services.html" class="dropdown-item"><span class="flip-item">
+                  <span data-text="Services Page">Services Page</span>
+                </span></a></li>
+                <li><a href="contact.html" class="dropdown-item"><span class="flip-item">
+                  <span data-text="Contact Page">Contact Page</span>
+                </span></a></li>
+                <li><a href="team.html" class="dropdown-item"><span class="flip-item">
+                  <span data-text="Team Page">Team Page</span>
+                </span></a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                data-bs-auto-close="outside" aria-expanded="false">Blog</a>
+              <ul class="dropdown-menu">
+                <li><a href="blog-grid.html" class="dropdown-item"><span class="flip-item">
+                  <span data-text="Blog Grid">Blog Grid</span>
+                </span></a></li>
+                <li><a href="blog-list.html" class="dropdown-item"><span class="flip-item">
+                  <span data-text="Blog List">Blog List</span>
+                </span></a></li>
+                <li><a href="blog-details.html" class="dropdown-item"><span class="flip-item">
+                  <span data-text="Blog Details">Blog Details</span>
+                </span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex align-items-center navbar-right">
+          <ul class="d-flex navbar-right-features d-md-flex">
+            <li class="d-none d-md-block">
+              <button class="currency-list">
+                USD
+                <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 1L4.5303 4.67453C4.23864 5.10849 3.76136 5.10849 3.4697 4.67453L1 1" stroke="currentColor"
+                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </li>
+            <li>
+              <a href="#template-search" class="navbar-btn-links">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                Search
+              </a>
+            </li>
+            <li>
+              <a href="index.html" class="navbar-btn-links">
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.3125 5.43298V4.7459C5.3125 3.15215 6.59458 1.58673 8.18833 1.43798C10.0867 1.25382 11.6875 2.7484 11.6875 4.61132V5.58882" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.375 15.5833H10.625C13.4725 15.5833 13.9825 14.4429 14.1313 13.0545L14.6625 8.80454C14.8538 7.07621 14.3579 5.66663 11.3333 5.66663H5.66667C2.64208 5.66663 2.14625 7.07621 2.3375 8.80454L2.86875 13.0545C3.0175 14.4429 3.5275 15.5833 6.375 15.5833Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10.976 8.50004H10.9824" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.01678 8.50004H6.02314" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Cart (0)
+              </a>
+            </li>
+          </ul>
+          <div class="header-button tripfery-button">
+            <a href="index.html" class="tripfery-btn">
+              Register Now
+            </a>
+          </div>
+          <button class="navbar-toggler d-block d-xl-none" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Breadcumb -->
+  <section class="breadcumb-area" style="
+        background: url('assets/img/bg/breadcumb-o-bg.jpg') no-repeat center
+          center/cover;
+      ">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-4">
+          <div class="text-center breadcrumb-content">
+            <h2 class="page-title">Blog List</h2>
+            <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Blog Details
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog List -->
+  <section class="blog-post-list">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 col-lg-8">
+          <div class="blog-details-card">
+            <div class="blog-post-details">
+              <a href="blog-details.html">
+                <img src="assets/img/blogs/blog-l-1.jpg" class="img-fluid" alt="" />
+              </a>
+              <div class="blog-post-content">
+                <span class="tag">Tours</span>
+                <h3 class="post-details-title">
+                  40 Most Beautiful Countries in the World
+                </h3>
+                <p class="post-paragraph">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                  Mauris nullam the as integer quam dolor nunc semper. Ornare
+                  non nulla faucibus pulvinar vulputate neque. The Suscipit
+                  tristique nam enim mauris consectetur that any platea.Lorem
+                  ipsum dolor sit amet consectetur adipiscing elit. Mauris
+                  nullam the as integer quam dolor nunc semper. Ornare non
+                  nulla faucibus pulvinar vulputate the neque. The Suscipit
+                  tristique nam enim mauris consectetur platea. The Cras
+                  aliquet accumsan. the Egestas ut eget egestas ultrices diam.
+                  Sem fusce pretium ultrices mauris magnis nunc.Malesuada
+                  commodo integer sit fringilla fermentum pellentesque id at
+                  that on scelerisque acus vitae in at pretium tincidunt.
+                </p>
+                <p class="post-paragraph">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                  Mauris nullam the as integer quam dolor nunc semper. Ornare
+                  non nulla faucibus pulvinar vulputate neque. The Suscipit
+                  tristique nam enim mauris consectetur platea. The Cras
+                  aliquet accumsan. Egestas ut eget egestas ultrices diam. Sem
+                  fusce pretium ultrices mauris magnis as nunc.Malesuada
+                  commodo integer sit fringilla fermentum pellentesque id at
+                  that on scelerisque acus vitae in pretium tincidunt.
+                </p>
+                <p class="post-paragraph">
+                  The Suscipit tristique nam enim mauris consectetur platea.
+                  The Cras aliquet accumsan. Egestas ut eget egestas ultrices
+                  diam. Sem fusce pretium ultrices mauris magnis as
+                  nunc.Malesuada that as commodo on scelerisque in pretium
+                  tincidunt.
+                </p>
+                <blockquote class="post-blockquote text-center">
+                  <p>
+                    With all that fear, it’s much easier at home in our
+                    comfort zones than to break out and travel.
+                  </p>
+                </blockquote>
+                <p class="post-paragraph">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                  Mauris nullam the as integer quam dolor nunc semper. Ornare
+                  non nulla faucibus pulvinar vulputate neque. The Suscipit
+                  tristique nam enim mauris consectetur that any platea.Lorem
+                  ipsum dolor sit amet consectetur adipiscing elit. Mauris
+                  nullam the as integer quam dolor nunc semper. Ornare non
+                  nulla faucibus pulvinar vulputate the neque. The Suscipit
+                  tristique nam enim mauris consectetur platea.
+                </p>
+                <p class="post-paragraph">
+                  Sem fusce pretium ultrices mauris magnis nunc.Malesuada
+                  commodo integer fringilla fermentum pellentesque id at that
+                  on scelerisque pretium tincidunt.Lorem ipsum dolor sit amet
+                  consectetur adipiscing elit nullam quam dolor nunc semper.
+                </p>
+                <div class="post-imgae-wrap">
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <img src="assets/img/blogs/blog-d-1.jpg" class="img-fluid w-100" alt="" />
+                    </div>
+                    <div class="col-lg-4 mt-lg-0 mt-3">
+                      <img src="assets/img/blogs/blog-d-2.jpg" class="w-100 h-100" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <p class="post-paragraph">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                  Mauris nullam the as integer quam dolor nunc semper. Ornare
+                  non nulla faucibus pulvinar vulputate neque. The Suscipit
+                  tristique nam enim mauris consectetur that any platea.Lorem
+                  ipsum dolor sit amet consectetur adipiscing elit. Mauris
+                  nullam the as integer quam dolor nunc semper. Ornare non
+                  nulla faucibus pulvinar vulputate the neque. The Suscipit
+                  tristique nam enim mauris consectetur platea.
+                </p>
+                <p class="post-paragraph">
+                  Sem fusce pretium ultrices mauris magnis nunc.Malesuada
+                  commodo integer fringilla fermentum pellentesque id at that
+                  on scelerisque pretium tincidunt.Lorem ipsum dolor sit amet
+                  consectetur adipiscing elit nullam quam dolor nunc semper.
+                </p>
+                <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between blog-meta">
+                  <div class="post-info">
+                    <span class="post-date">April 30, 2022 </span>
+                    <span class="post-comments">
+                      <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M16.5859 11.2129C17.377 10.4219 17.875 9.42578 17.875 8.3125C17.875 5.96875 15.6191 4.03516 12.6895 3.71289C11.7812 2.01367 9.61328 0.8125 7.09375 0.8125C3.72461 0.8125 1 2.92188 1 5.5C1 6.58398 1.46875 7.58008 2.28906 8.40039C1.82031 9.2793 1.17578 9.98242 1.17578 10.0117C1 10.1875 0.941406 10.4805 1.0293 10.7441C1.14648 10.9785 1.38086 11.1543 1.67383 11.1543C3.22656 11.1543 4.48633 10.5391 5.33594 10.0117C5.59961 10.0703 5.89258 10.0996 6.15625 10.1582C7.09375 11.8281 9.23242 13 11.7812 13C12.3672 13 12.9531 12.9414 13.5098 12.8242C14.3594 13.3516 15.6191 13.9375 17.2012 13.9375C17.4648 13.9375 17.6992 13.791 17.8164 13.5273C17.9043 13.293 17.875 13 17.6699 12.7949C17.6699 12.7949 17.0254 12.0918 16.5859 11.2129ZM5.07227 8.48828L4.57422 8.81055C4.16406 9.10352 3.72461 9.30859 3.31445 9.45508C3.37305 9.30859 3.46094 9.16211 3.54883 9.01562L3.98828 8.10742L3.25586 7.375C2.875 6.99414 2.40625 6.34961 2.40625 5.5C2.40625 3.74219 4.54492 2.21875 7.09375 2.21875C9.61328 2.21875 11.7812 3.74219 11.7812 5.5C11.7812 7.28711 9.61328 8.78125 7.09375 8.78125C6.5957 8.78125 6.12695 8.75195 5.6582 8.63477L5.07227 8.48828ZM15.5898 10.1875L14.8574 10.9199L15.3262 11.8281C15.3848 11.9746 15.4727 12.1211 15.5605 12.2676C15.1211 12.1211 14.7109 11.8867 14.3008 11.623L13.7734 11.3008L13.2168 11.4473C12.748 11.5645 12.25 11.5938 11.7812 11.5938C10.1992 11.5938 8.76367 11.0078 7.91406 10.1582C10.9023 9.83594 13.1875 7.87305 13.1875 5.5C13.1875 5.41211 13.1582 5.32422 13.1582 5.20703C15.0332 5.64648 16.4688 6.87695 16.4688 8.3125C16.4688 9.16211 15.9707 9.80664 15.5898 10.1875Z"
+                          fill="#797979" />
+                      </svg>
+                      <span>2 Comments</span></span>
+                  </div>
+                  <div class="d-flex social-share">
+                    <span class="follow-text">Follow Us:</span>
+                    <div class="d-flex social-links">
+                      <a href="https://www.facebook.com/" target="_blank" class="social-link">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                      <a href="https://twitter.com/" target="_blank" class="social-link">
+                        <i class="fa-brands fa-twitter"></i> 
+                      </a>
+                      <a href="https://bd.linkedin.com/" target="_blank" class="social-link">
+                        <i class="fa-brands fa-linkedin-in"></i> 
+                      </a>
+                      <a href="https://www.instagram.com/" target="_blank" class="social-link">
+                        <i class="fa-brands fa-instagram"></i> 
+                      </a>
+                      <a href="https://www.pinterest.com/" target="_blank" class="social-link">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Tags -->
+                <div class="tag-clouds d-flex flex-wrap">
+                  <a href="blog-details.html" class="tag-link">Camera</a>
+                  <a href="blog-details.html" class="tag-link">Travel</a>
+                  <a href="blog-details.html" class="tag-link">Winter</a>
+                  <a href="blog-details.html" class="tag-link">Road Trips</a>
+                </div>
+
+                <!-- Author Card -->
+                <div class="author-info-card d-flex flex-column flex-md-row align-items-center">
+                  <div>
+                    <img src="assets/img/blogs/author-avatar.png" class="rounded-circle" alt="" />
+                  </div>
+                  <div>
+                    <h3 class="author-name">Ralph Edwards</h3>
+                    <p class="author-desc">
+                      Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                      Mauris nullam the quam dolor nunc semper.
+                    </p>
+                    <div class="d-flex social-links">
+                      <a href="https://www.facebook.com/" target="_blank" class="social-link">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                      <a href="https://twitter.com/" target="_blank" class="social-link">
+                        <i class="fa-brands fa-twitter"></i> 
+                      </a>
+                      <a href="https://bd.linkedin.com/" target="_blank" class="social-link">
+                        <i class="fa-brands fa-linkedin-in"></i> 
+                      </a>
+                      <a href="https://www.instagram.com/" target="_blank" class="social-link">
+                        <i class="fa-brands fa-instagram"></i> 
+                      </a>
+                      <a href="https://www.pinterest.com/" target="_blank" class="social-link">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Next Previous Post -->
+                <div
+                  class="d-flex flex-column flex-lg-row next-prev-post justify-content-between align-items-lg-center">
+                  <div class="d-flex np-single-post">
+                    <a href="blog-details.html" class="np-thumb-wrapper">
+                      <img src="assets/img/blogs/dsm-1.jpg" class="np-thumb" alt="" />
+                    </a>
+                    <div class="np-post-content flex-grow-1">
+                      <span class="np-post-subtile">Previous Post</span>
+                      <h3 class="np-post-title">
+                        <a href="blog-details.html">Three of the Best Day Trips to Make San
+                          Francisco</a>
+                      </h3>
+                    </div>
+                  </div>
+
+                  <div class="d-flex np-single-post">
+                    <a href="blog-details.html" class="np-thumb-wrapper">
+                      <img src="assets/img/blogs/dsm-2.jpg" class="np-thumb" alt="" />
+                    </a>
+                    <div class="np-post-content flex-grow-1">
+                      <span class="np-post-subtile">Next Post</span>
+                      <h3 class="np-post-title">
+                        <a href="blog-details.html">Three of the Best Day Trips to Make San
+                          Francisco</a>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Comments -->
+                <div class="comments-list-wrapper">
+                  <h3 class="comments-list-title">Comments:</h3>
+                  <div class="comments">
+                    <div class="comment d-flex flex-column flex-sm-row">
+                      <a href="blog-details.html" class="author-thumb">
+                        <img src="assets/img/blogs/c-avatar-1.png" class="rounded-circle" alt="" />
+                      </a>
+                      <div class="author-info">
+                        <h3 class="author-name">
+                          David Martin
+                          <span class="date-stamp">(April 30, 2022)</span>
+                        </h3>
+                        <p class="comment-text">
+                          Lorem ipsum dolor sit amet consectetur adipiscing
+                          elit. Mauris nullam the quam dolor nunc semper.
+                        </p>
+                        <button class="reply-btn">Reply</button>
+                      </div>
+                    </div>
+                    <div class="comment d-flex flex-column flex-sm-row">
+                      <a href="blog-details.html" class="author-thumb">
+                        <img src="assets/img/blogs/c-avatar-2.png" class="rounded-circle" alt="" />
+                      </a>
+                      <div class="author-info">
+                        <h3 class="author-name">
+                          Maria Martin
+                          <span class="date-stamp">(April 30, 2022)</span>
+                        </h3>
+                        <p class="comment-text">
+                          Lorem ipsum dolor sit amet consectetur adipiscing
+                          elit. Mauris nullam the quam dolor nunc semper.
+                        </p>
+                        <button class="reply-btn">Reply</button>
+                      </div>
+                    </div>
+                    <div class="comment d-flex flex-column flex-sm-row">
+                      <a href="blog-details.html" class="author-thumb">
+                        <img src="assets/img/blogs/c-avatar-3.png" class="rounded-circle" alt="" />
+                      </a>
+                      <div class="author-info">
+                        <h3 class="author-name">
+                          Guy Hawkins
+                          <span class="date-stamp">(April 30, 2022)</span>
+                        </h3>
+                        <p class="comment-text">
+                          Lorem ipsum dolor sit amet consectetur adipiscing
+                          elit. Mauris nullam the quam dolor nunc semper.
+                        </p>
+                        <button class="reply-btn">Reply</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Form Area -->
+                <div class="form-area">
+                  <form>
+                    <h3 class="form-title">Post a Comment</h3>
+                    <div class="row">
+                      <div class="col-12 col-lg-6 col-xl-4 input-wrapper">
+                        <input type="text" class="form-control shadow-none" placeholder="Your Name" />
+                      </div>
+                      <div class="col-12 col-lg-6 col-xl-4 input-wrapper">
+                        <input type="text" class="form-control shadow-none" placeholder="Your Email" />
+                      </div>
+                      <div class="col-12 col-lg-12 col-xl-4 input-wrapper">
+                        <input type="text" class="form-control shadow-none" placeholder="Your Website" />
+                      </div>
+                      <div class="col-12 textarea-wrapper">
+                        <textarea placeholder="Your Comment" class="form-control shadow-none"></textarea>
+                      </div>
+                      <div class="col">
+                        <button class="comment-btn">Submit Now</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 mt-4 mt-lg-0">
+          <aside class="blog-sidebar">
+            <div class="sidebar-widget">
+              <h3 class="sidebar-title">Search</h3>
+              <form>
+                <div class="search-form d-flex align-items-center">
+                  <input type="text" class="form-control shadow-none" placeholder="Search..." />
+                  <button class="blog-search-btn">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.8086 12.8633L11.0742 10.1289C10.9375 10.0195 10.7734 9.9375 10.6094 9.9375H10.1719C10.9102 8.98047 11.375 7.77734 11.375 6.4375C11.375 3.32031 8.80469 0.75 5.6875 0.75C2.54297 0.75 0 3.32031 0 6.4375C0 9.58203 2.54297 12.125 5.6875 12.125C7 12.125 8.20312 11.6875 9.1875 10.9219V11.3867C9.1875 11.5508 9.24219 11.7148 9.37891 11.8516L12.0859 14.5586C12.3594 14.832 12.7695 14.832 13.0156 14.5586L13.7812 13.793C14.0547 13.5469 14.0547 13.1367 13.8086 12.8633ZM5.6875 9.9375C3.74609 9.9375 2.1875 8.37891 2.1875 6.4375C2.1875 4.52344 3.74609 2.9375 5.6875 2.9375C7.60156 2.9375 9.1875 4.52344 9.1875 6.4375C9.1875 8.37891 7.60156 9.9375 5.6875 9.9375Z"
+                        fill="white" />
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="sidebar-widget">
+              <h3 class="sidebar-title">Popular Posts</h3>
+              <article class="d-flex blog-sm-wrapper">
+                <a href="blog-details.html">
+                  <img src="assets/img/blogs/blog-sm-1.jpg" class="" alt="" />
+                </a>
+                <div class="blog-content">
+                  <span class="blog-date">April 30, 2022</span>
+                  <h3 class="blog-title">
+                    <a href="blog-details.html">Beautiful Countries in the World</a>
+                  </h3>
+                </div>
+              </article>
+              <article class="d-flex blog-sm-wrapper">
+                <a href="blog-details.html">
+                  <img src="assets/img/blogs/blog-sm-2.jpg" class="" alt="" />
+                </a>
+                <div class="blog-content">
+                  <span class="blog-date">April 30, 2022</span>
+                  <h3 class="blog-title">
+                    <a href="blog-details.html">The New Nomads Are Here Done!</a>
+                  </h3>
+                </div>
+              </article>
+              <article class="d-flex blog-sm-wrapper">
+                <a href="blog-details.html">
+                  <img src="assets/img/blogs/blog-sm-3.jpg" class="" alt="" />
+                </a>
+                <div class="blog-content">
+                  <span class="blog-date">April 30, 2022</span>
+                  <h3 class="blog-title">
+                    <a href="blog-details.html">Perfect Activities for Couples</a>
+                  </h3>
+                </div>
+              </article>
+              <article class="d-flex blog-sm-wrapper">
+                <a href="blog-details.html">
+                  <img src="assets/img/blogs/blog-sm-4.jpg" class="" alt="" />
+                </a>
+                <div class="blog-content">
+                  <span class="blog-date">April 30, 2022</span>
+                  <h3 class="blog-title">
+                    <a href="blog-details.html">Things to Do with is This Summer</a>
+                  </h3>
+                </div>
+              </article>
+            </div>
+            <div class="sidebar-widget">
+              <h3 class="sidebar-title">Categories</h3>
+              <div class="category-pills d-flex flex-column">
+                <a href="blog-details.html" class="single-category">
+                  <span class="circle"></span> Around The World (17)</a><a href="blog-details.html" class="single-category">
+                  <span class="circle"></span> Magic Places (8)</a><a href="blog-details.html" class="single-category">
+                  <span class="circle"></span>Travel Guide (4)</a><a href="blog-details.html" class="single-category">
+                  <span class="circle"></span> Travel Direction (4)</a><a href="blog-details.html" class="single-category">
+                  <span class="circle"></span> Tips & Tricks (7)</a>
+              </div>
+            </div>
+            <div class="sidebar-widget">
+              <h3 class="sidebar-title">Tags</h3>
+              <div class="d-flex flex-wrap tag-clouds">
+                <a href="blog-details.html" class="single-tag">Travel</a>
+                <a href="blog-details.html" class="single-tag">Winter</a>
+                <a href="blog-details.html" class="single-tag">City</a>
+                <a href="blog-details.html" class="single-tag">Road Trips</a>
+                <a href="blog-details.html" class="single-tag">Summer</a>
+                <a href="blog-details.html" class="single-tag">Fun</a>
+                <a href="blog-details.html" class="single-tag">Hotel</a>
+                <a href="blog-details.html" class="single-tag">Trip</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Funfact -->
+  <section class="fun-fact-area">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <div class="single-fun-fact">
+            <div class="fun-fact-icon">
+              <img src="assets/img/icons/global-search.svg" alt="" />
+            </div>
+            <div class="fun-fact-content">
+              <h3 class="fun-fact-title">700 Destinations</h3>
+              <p class="fun-fact-desc">
+                Lorem ipsum dolor consectetur adipiscing elit. It’s Mauris
+                nullam the as integer the quam dolor.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <div class="single-fun-fact">
+            <div class="fun-fact-icon">
+              <img src="assets/img/icons/card-pos.svg" alt="" />
+            </div>
+            <div class="fun-fact-content">
+              <h3 class="fun-fact-title">Best Price Gurantee</h3>
+              <p class="fun-fact-desc">
+                Lorem ipsum dolor consectetur adipiscing elit. It’s Mauris
+                nullam the as integer the quam dolor.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <div class="single-fun-fact">
+            <div class="fun-fact-icon">
+              <img src="assets/img/icons/like-shapes.svg" alt="" />
+            </div>
+            <div class="fun-fact-content">
+              <h3 class="fun-fact-title">Top Notch Support</h3>
+              <p class="fun-fact-desc">
+                Lorem ipsum dolor consectetur adipiscing elit. It’s Mauris
+                nullam the as integer the quam dolor.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-area footer-dark">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-5 mb-md-0" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50"
+            data-aos-duration="1000">
+            <a href="index.html">
+              <img src="assets/img/logo/Logo-white.svg" alt="Logo" />
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-5 mb-lg-0" data-aos="fade-up" data-aos-offset="150" data-aos-delay="70"
+            data-aos-duration="1200">
+            <div class="footer-widget has-animation">
+              <h3 class="footer-widget-title">Office</h3>
+              <address class="footer-address">
+                <span class="d-block">Germany — </span> 785 15h Street, Office
+                478 Berlin, De 81566
+              </address>
+              <a href="mailto:info@email.com" class="footer-mail">
+                info@email.com
+                <span class="line"></span>
+              </a>
+              <a href="tel:+18408412569" class="footer-phone">+18408412569</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 mb-5 mb-md-0" data-aos="fade-up" data-aos-offset="200" data-aos-delay="90"
+            data-aos-duration="1500">
+            <nav class="footer-widget">
+              <h3 class="footer-widget-title">Company Links</h3>
+              <ul class="footer-nav">
+                <li class="footer-nav-item">
+                  <a href="index.html" class="footer-nav-link">Home</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="about.html" class="footer-nav-link">About us</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="blog-details.html" class="footer-nav-link">Community Blog</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="about.html" class="footer-nav-link">Careers</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="about.html" class="footer-nav-link">Privacy policy</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="about.html" class="footer-nav-link">Terms of service</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6" data-aos="fade-up" data-aos-offset="250" data-aos-delay="100"
+            data-aos-duration="1500">
+            <div class="footer-widget">
+              <h3 class="footer-widget-title">Newsletter</h3>
+              <div class="footer-newsletter">
+                <form>
+                  <div class="newsletter-wrapper">
+                    <input type="text" class="form-control shadow-none" placeholder="Enter Your Email Address" />
+                    <button class="footer-newsletter-btn">
+                      <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                  </div>
+                </form>
+                <p class="privacy-text">
+                  I agree to the
+                  <a href="about.html" class="privacy-link">Privacy Policy.</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+            <p class="copyright-text">
+              &copy;Copyright
+              <a href="https://www.radiustheme.com/" class="copyright-link">tripfery</a> 2023
+            </p>
+          </div>
+          <div class="col-12 col-sm-6">
+            <ul class="payment-support-list d-flex justify-content-md-end">
+              <li><img src="assets/img/payment/visa.svg" alt="visa" /></li>
+              <li>
+                <img src="assets/img/payment/master.svg" alt="master" />
+              </li>
+              <li>
+                <img src="assets/img/payment/discover.svg" alt="discover" />
+              </li>
+              <li>
+                <img src="assets/img/payment/paypal.svg" alt="paypal" />
+              </li>
+              <li>
+                <img src="assets/img/payment/jcb.svg" alt="jcb" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div id="template-search" class="template-search">
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">All</a></li>
+        <li><a href="index.html">Features</a></li>
+        <li><a href="index.html">Hotel</a></li>
+        <li><a href="index.html"> Restaurant</a></li>
+        <li><a href="index.html">Tour</a></li>
+        <li><a href="index.html">Car</a></li>
+        <li><a href="index.html">Activity</a></li>
+      </ul>
+    </div>
+    <button type="button" class="close">×</button>
+    <form class="search-form">
+      <input type="search" value="" placeholder="Search">
+      <button type="submit" class="search-btn btn-ghost style-1">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </form>
+  </div>
+  <!-- jQuery -->
+  <script src="assets/js/jquery.min.js"></script>
+  <!-- jQuery Migrate -->
+  <script src="assets/js/jquery-migrate.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <!-- Isotope -->
+  <script src="assets/js/isotope.pkgd.min.js"></script>
+  <!-- Waypoints -->
+  <script src="assets/js/waypoints.min.js"></script>
+  <!-- Counter -->
+  <script src="assets/js/jquery.counterup.min.js"></script>
+  <!-- imagesloaded -->
+  <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+  <!-- Swiper -->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <!-- AOS -->
+  <script src="assets/js/aos.js"></script>
+  <!-- Magnific-popup -->
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <!-- Nice Selector -->
+  <script src="assets/js/jquery.nice-select.js"></script>
+  <!-- Flatepikr -->
+  <script src="assets/js/flatpickr.js"></script>
+  <!-- Masonry -->
+  <script src="assets/js/masonry.min.js"></script>
+  <!-- Main JS -->
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>

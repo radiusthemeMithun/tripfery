@@ -1,0 +1,102 @@
+.user-counter {
+  padding: 120px 0;
+  @include portrait-phone {
+    padding: 70px 0;
+  }
+  .user-counter-list {
+    position: relative;
+    .single-counter {
+      background-color: #f9f9ff;
+      border: 1px solid $rt-blue-500;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      position: absolute;
+      &:nth-child(1) {
+        width: 183px;
+        height: 183px;
+        top: 30px;
+        left: 80px;
+        .counter-info {
+          letter-spacing: 0.5em;
+        }
+      }
+      &:nth-child(2) {
+        width: 220px;
+        height: 220px;
+        top: 110px;
+        right: 30px;
+        .counter-info {
+          letter-spacing: 0.15em;
+        }
+      }
+      &:nth-child(3) {
+        width: 140px;
+        height: 140px;
+        top: 230px;
+        left: 130px;
+        .counter-info {
+          font-size: 15px;
+        }
+      }
+      @include desktop {
+        &:nth-child(1) {
+          left: 0;
+        }
+
+        &:nth-child(3) {
+          left: 0;
+        }
+      }
+    }
+    .counter-title {
+      font-weight: $font-semibold;
+      font-size: 40px;
+      line-height: 50px;
+      color: #384bff;
+    }
+    .style-2 {
+      font-size: 30px;
+    }
+    .counter-info {
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-size: $font-medium;
+    }
+  }
+  .user-counter-list.aos {
+    [data-aos^=fade][data-aos^=fade].aos-animate {
+      opacity: 1;
+      transform: translateZ(0);
+    }
+    [data-aos=fade-left] {
+      transform: translate3d(30px,0,0);
+    }
+  }
+  .user-counter-content {
+    .user-counter-title {
+      font-weight: $font-bold;
+      font-size: 36px;
+      line-height: 50px;
+      margin-bottom: 10px;
+      @include portrait-phone {
+        font-size: 30px;
+        line-height: 40px;
+      }
+      .text-blue {
+        color: $rt-blue-500;
+        font-weight: $font-normal;
+      }
+    }
+    .counter-desc {
+      color: #565656;
+      font-size: 16px;
+      line-height: 26px;
+      margin-bottom: 40px;
+    }
+  }
+}

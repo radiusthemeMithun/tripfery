@@ -1,0 +1,183 @@
+.rooms-tab {
+  padding: 120px 0;
+
+  .rooms-tab-info {
+    margin-bottom: 40px;
+    .rooms-info-subtitle {
+      font-weight: $font-medium;
+      font-size: 20px;
+      margin-bottom: 15px;
+      color: $rt-blue-500;
+    }
+    .rooms-info-title {
+      font-weight: $font-semibold;
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+    .rooms-info-desc {
+      font-size: 16px;
+      line-height: 26px;
+      color: #565656;
+    }
+  }
+  .tab-btns {
+    gap: 40px;
+    @include screen-768-to-1200 {
+      gap: 25px;
+    }
+    .tab-link {
+      font-weight: $font-medium;
+      font-size: 24px;
+      line-height: 26px;
+      color: $rt-black-400;
+      padding-bottom: 16px;
+      position: relative;
+      &::after {
+        width: 50%;
+        background-color: #d9d9d9;
+        position: absolute;
+        height: 2px;
+        content: "";
+        bottom: 0;
+        left: 0;
+        transition: all 0.3s linear;
+      }
+      &.active {
+        color: $rt-blue-500;
+        &::after {
+          width: 100%;
+          background-color: $rt-blue-500;
+        }
+      }
+    }
+  }
+}
+
+.room-feature-wrap-1 {
+  padding: 120px 0;
+  @include portrait-phone {
+    padding: 90px 0 50px;
+  }
+}
+.room-feature-box-1 {
+   @media only screen and (min-width: 1200px) {
+    padding: 50px 0px 0px 20px;
+  }
+  .rooms-feature-info {
+    margin-bottom: 40px;
+    .rooms-info-subtitle {
+      font-weight: $font-medium;
+      font-size: 20px;
+      margin-bottom: 15px;
+      color: $rt-blue-500;
+    }
+    .rooms-info-title {
+      font-weight: $font-semibold;
+      font-size: 36px;
+      margin-bottom: 15px;
+      @include small-screen {
+        font-size: 26px;
+      }
+      @include portrait-phone {
+        font-size: 24px;
+      }
+    }
+    .rooms-info-desc {
+      font-size: 16px;
+      line-height: 26px;
+      color: #565656;
+    }
+  }
+  .list-feature {
+    ul {
+      li {
+        .list-item {
+          position: relative;
+          width: 100%;
+          &:hover { 
+            .list-title {
+              color: $rt-blue-500;
+              &::after {
+                width: 100%;
+                background-color: $rt-blue-500;
+              }
+            }
+          }
+          .list-title {
+            display: inline-block;
+            font-weight: $font-medium;
+            font-size: 24px;
+            line-height: 26px;
+            color: $rt-black-400;
+            padding-bottom: 16px;
+            position: relative;
+            margin-bottom: 50px;
+            @include portrait-phone {
+              font-size: 20px;
+              margin-bottom: 30px;
+            }
+            &::after {
+              width: 50%;
+              background-color: #d9d9d9;
+              position: absolute;
+              height: 2px;
+              content: "";
+              bottom: 0;
+              left: 0;
+              transition: all 0.3s linear;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.image-column {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  @media screen and (min-width: 1441px) {
+    max-width: 33vw;
+  }
+  @include medium-screen {
+    height: 680px;
+  }
+  @include small-screen {
+    height: 510px;
+  }
+  @include portrait-phone {
+    height: 543px;
+  }
+  @media screen and (max-width: 425px) {
+    height: 400px;
+  }
+  @media screen and (max-width: 375px) {
+    height: 350px;
+  }
+  @media screen and (max-width: 320px) {
+    height: 300px;
+  }
+  .col-img {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      overflow: hidden;
+      clip-path: inset(0 100% 0 0);
+      transition: clip-path 0s ease .6s,-webkit-clip-path 0s ease .6s;
+      img {
+          width: 100%;
+          height: auto;
+          will-change: transform;
+          object-fit: cover;
+          display: block;
+      }
+  }
+  .active {
+      opacity: 1;
+      transition: clip-path .6s ease,-webkit-clip-path .6s ease;
+      clip-path: inset(0 0 0 0);
+  }
+}

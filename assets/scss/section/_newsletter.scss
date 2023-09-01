@@ -1,0 +1,238 @@
+.newsletter-one {
+  padding: 120px 0;
+  @include portrait-phone {
+    padding: 70px 0;
+  }
+}
+.newsletter-bg {
+  padding: 100px 0 130px 0;
+  border-radius: 20px;
+  position: relative;
+  @include small-screen {
+    padding: 50px 0;
+  }
+
+  &::before {
+    background-color: rgba(6, 2, 24, 0.3);
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    top: 0;
+    border-radius: 20px;
+  }
+  .newsletter-content {
+    z-index: 5;
+    position: relative;
+
+    .newsletter-text {
+      color: $rt-white;
+      margin-bottom: 28px;
+      font-size: 36px;
+      font-weight: $font-bold;
+      line-height: 50px;
+      @include small-screen {
+        font-size: 30px;
+        line-height: 40px;
+      }
+    }
+
+    .newsletter-wrapper {
+      max-width: 516px;
+      margin: 0 auto;
+    }
+
+    .newsletter-input {
+      gap: 14px;
+
+      .form-control {
+        background-color: $rt-white;
+        border: 1px solid #dcdcdc;
+        border-radius: 10px;
+        height: 60px;
+        padding: 20px 30px;
+
+        &::placeholder {
+          font-size: 16px;
+          color: #b1acac;
+        }
+      }
+    }
+  }
+  &.newsletter-three {
+    &::before {
+      display: none;
+    }
+    .newsletter-content {
+      .newsletter-text {
+        color: $rt-black-400;
+      }
+    }
+  }
+}
+.newsletter-two {
+  padding: 100px 0;
+  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
+  z-index: 1;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .2);
+    z-index: -1;
+  }
+  .newsletter-two-form {
+    max-width: 536px;
+    position: relative;
+    z-index: 5;
+    .newsletter-two-text {
+      color: $rt-white;
+      font-size: 36px;
+      line-height: 50px;
+      margin-bottom: 28px;
+      font-weight: $font-bold;
+    }
+    .newsletter-two-input {
+      gap: 16px;
+      .form-control {
+        background-color: $rt-white;
+        border: 1px solid #dcdcdc;
+        height: 60px;
+        padding: 20px 30px;
+        border-radius: 30px;
+        &::placeholder {
+          font-size: 16px;
+          color: #b1acac;
+        }
+      }
+    }
+  }
+}
+
+.newsletter-btn {
+  background-color: $rt-blue-500;
+  color: $rt-white;
+  font-size: 20px;
+  font-weight: $font-bold;
+  height: 60px;
+  padding: 16px 25px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+ 
+  &::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 0%;
+    left: 0;
+    top: 0;
+    background-color: #0113b9;
+    opacity: 0;
+    z-index: -1;
+    transition: all ease .5s;
+    border-radius: 10px;
+  }
+  &:hover {
+    color: $rt-white;
+    &::before {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+}
+.newsletter-btn.border-radius-500 {
+  border-radius: 30px;
+  &::before {
+    border-radius: 30px;
+  }
+}
+
+// Car Newsletter
+.car-newsletter {
+  padding: 100px 0 220px;
+  @include large-screen {
+    padding-bottom: 100px;
+  }
+  @include portrait-phone {
+    padding-top: 40px;
+  }
+  .car-newsletter-img {
+    position: relative;
+    img {
+      z-index: 2;
+      position: relative;
+    }
+    .shape-wrap {
+      .shape {
+        height: 515px;
+        width: 452px;
+        top: -460px;
+        left: 0;
+        z-index: 1;
+        position: absolute;
+        background-color: #F2F3FF;
+        border-radius: 320px;
+        transform: rotate(30deg);
+  
+        @include large-screen {
+          display: none;
+        }
+      }
+    }
+  }
+  .car-newsletter-info {
+    margin-bottom: 45px;
+  }
+  .car-newsletter-subtitle {
+    font-size: 20px;
+    line-height: 27px;
+    color: $rt-blue-500;
+  }
+  .car-newsletter-title {
+    font-size: 36px;
+    line-height: 50px;
+    font-weight: $font-bold;
+    margin-bottom: 10px;
+    @include portrait-phone {
+      font-size: 26px;
+      line-height: 40px;
+    }
+  }
+  .car-newsletter-desc {
+    font-size: 16px;
+    line-height: 26px;
+    color: #565656;
+  }
+  .car-newsletter-form {
+    max-width: 470px;
+    .car-newsletter-input {
+      gap: 20px;
+      .form-control {
+        background-color: $rt-white;
+        border: 1px solid #dcdcdc;
+        height: 60px;
+        padding: 20px 30px;
+        border-radius: 30px;
+        &::placeholder {
+          font-size: 16px;
+          color: #b1acac;
+        }
+      }
+    }
+  }
+}
+

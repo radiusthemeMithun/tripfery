@@ -1,0 +1,115 @@
+.contact-padding {
+  padding: 120px 0;
+  @include portrait-phone {
+    padding: 70px 0px;
+  }
+}
+.contact-area {
+  padding: 70px 55px 70px;
+  @include small-screen {
+    padding: 50px 30px;
+  }
+  background-color: $rt-white;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+  border-radius: 30px;
+
+  .contact-form-info {
+    .contact-info-title {
+      font-weight: $font-bold;
+      font-size: 30px;
+      line-height: 41px;
+      color: #232323;
+      margin-bottom: 10px;
+    }
+    .contact-info-desc {
+      color: #565656;
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .contact-info-details {
+    gap: 20px;
+    .contact-email,
+    .contact-phone {
+      font-size: 16px;
+      color: #565656;
+      line-height: 26px;
+    }
+    .contact-address {
+      font-size: 16px;
+      color: #565656;
+    }
+    .info-icon {
+      color: $rt-blue-500;
+      margin-right: 10px;
+      font-size: 20px;
+    }
+  }
+}
+.contact-form {
+  .contact-btn {
+    background-color: $rt-blue-500;
+    color: $rt-white;
+    font-weight: $font-semibold;
+    font-size: 18px;
+    line-height: 26px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: all 0.3s;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    overflow: hidden;
+    &:hover {
+      color: $rt-white;
+      &::before {
+        opacity: 1;
+        width: 100%;
+      }
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 0%;
+      left: 0;
+      top: 0;
+      background-color: #0113b9;
+      opacity: 0;
+      z-index: -1;
+      transition: all ease .5s;
+      border-radius: 10px;
+    }
+  }
+  .form-control {
+    &.textarea-style {
+      height: 170px;
+      resize: none;
+    }
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    height: 50px;
+    padding: 12px 18px;
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+      border-color: $rt-blue-500;
+    }
+    &::placeholder {
+      color: #949494;
+      font-size: 15px;
+    }
+  }
+}
+
+// Map
+.contact-map {
+  padding-bottom: 120px;
+  border-radius: 30px;
+  width: 100%;
+  @include portrait-phone {
+    padding-bottom: 70px;
+  }
+}

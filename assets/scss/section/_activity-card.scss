@@ -1,0 +1,252 @@
+.popular-activity {
+  padding: 0px 0 120px;
+}
+.popular-activity.style-2 {
+  padding: 120px 0px;
+  @include portrait-phone {
+    padding: 70px 0px;
+  }
+}
+.popular-activity-card {
+  background-color: $rt-white;
+  padding: 8px;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  cursor: pointer;
+  .card-thumb-wrapper {
+    display: block;
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: relative;
+    .card-thumb {
+      transform: scale(1);
+      transition: all 0.4s ease-in-out;
+    }
+    .star-badge {
+      position: absolute;
+      top: 16px;
+      right: 13px;
+      background-color: $rt-white;
+      height: 25px;
+      border-radius: 40px;
+      padding: 6px 8px;
+      line-height: 1;
+      font-size: 12px;
+      font-weight: $font-semibold;
+      color: $rt-black-400;
+      display: inline-block;
+      align-items: center;
+      justify-content: center;
+      i {
+        color: #f09813;
+      }
+    }
+  }
+  .activity-card-info {
+    padding: 20px 20px 24px 14px;
+    .activity-card-meta {
+      h3 {
+        .activity-card-title {
+          font-weight: $font-semibold;
+          font-size: 20px;
+          color: $rt-black-400;
+          display: block;
+          margin-bottom: 8px;
+        }
+      }
+      .activity-card-address {
+        font-weight: $font-normal;
+        font-size: 14px;
+        color: #a5a5a5;
+        margin-bottom: 12px;
+      }
+    }
+    .activity-card-wishlist-btn {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background-color: #fff7f7;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all .3s ease-in-out;
+      svg {
+        color: #FA2E2E;
+        transition: all .3s ease-in-out;
+      }
+      &:hover {
+        background-color: #FA2E2E;
+        svg {
+          color: $rt-white;
+        }
+      }
+    }
+    .activity-card-bottom {
+      margin-top: 10px;
+      .activity-price-info {
+        .activity-price {
+          color: $rt-black-400;
+          font-weight: $font-bold;
+        }
+        .currency-sign {
+          font-size: 15px;
+          font-weight: $font-medium;
+          color: $rt-blue-500;
+        }
+        .activity-person {
+          font-size: 14px;
+          font-weight: $font-normal;
+          color: #8d8c8c;
+        }
+      }
+      .btn-light-animated {
+        font-size: 12px;
+        background-color: #f5f6ff;
+        display: block;
+        text-align: center;
+        padding: 10px 15px;
+        border-radius: 40px;
+        line-height: 1;
+        font-weight: $font-semibold;
+        &:hover {
+          background-color: $rt-blue-500 !important;
+          color: $rt-white !important;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    .card-thumb-wrapper {
+      .card-thumb {
+        transform: scale(1.1);
+      }
+    }
+    .activity-card-info {
+      .activity-card-meta {
+        h3 {
+          .activity-card-title {
+            color: $rt-blue-500;
+          }
+        }
+      }
+    }
+  }
+}
+
+// List View
+.activity-listview-card {
+  background-color: $rt-white;
+  padding: 15px;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  &:hover {
+    .card-thumb-container {
+      .card-thumb {
+        transform: scale(1.1);
+      }
+    }
+    .card-content {
+      .content {
+        .activity-title {
+          a {
+            color: $rt-blue-500;
+          }
+        }
+      }
+    }
+  }
+
+  .card-thumb-container {
+    overflow: hidden;
+    .card-thumb {
+      border-radius: 10px;
+      transition: all 0.5s ease-in-out;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .star-badge {
+      position: absolute;
+      top: 16px;
+      right: 13px;
+      background-color: $rt-white;
+      height: 25px;
+      border-radius: 40px;
+      padding: 6px 8px;
+      line-height: 1;
+      font-size: 12px;
+      font-weight: $font-semibold;
+      color: $rt-black-400;
+      display: inline-block;
+      align-items: center;
+      justify-content: center;
+      i {
+        color: #ff9901;
+      }
+    }
+  }
+
+  .card-content {
+    padding: 10px 30px 10px 30px;
+    @include small-screen {
+      padding: 20px 0;
+    }
+    .content {
+      flex: 1;
+      .activity-title {
+        font-size: 22px;
+        font-weight: $font-bold;
+  
+        margin-bottom: 10px;
+        a {
+          color: $rt-black-400;
+        }
+      }
+     .activity-card-address {
+      margin-bottom: 15px;
+     }
+     p {
+      margin-bottom: 25px;
+     }
+    }
+  }
+
+  .activity-card-bottom {
+    padding-top: 30px;
+    border-top: 1px solid #d2d2d2;
+    .activity-btn {
+      font-size: 12px;
+      background-color: #f5f6ff;
+      display: block;
+      text-align: center;
+      padding: 10px 15px;
+      border-radius: 40px;
+      line-height: 1;
+      font-weight: $font-semibold;
+      &:hover {
+        background-color: $rt-blue-500;
+        color: $rt-white;
+      }
+    }
+  }
+
+  .activity-price-info {
+    .activity-price {
+      color: $rt-black-400;
+      font-weight: $font-bold;
+    }
+    .currency-sign {
+      font-size: 15px;
+      font-weight: $font-medium;
+      color: $rt-blue-500;
+    }
+    .activity-person {
+      font-size: 16px;
+      font-weight: $font-normal;
+      color: #8d8c8c;
+    }
+  }
+}

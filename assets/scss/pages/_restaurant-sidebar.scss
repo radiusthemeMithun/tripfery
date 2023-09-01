@@ -1,0 +1,8 @@
+.restaurant-sidebar-search {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  @include portrait-phone {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}

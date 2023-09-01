@@ -1,0 +1,50 @@
+.fun-fact-area{
+    background-color: $rt-blue-300;
+    padding: 80px 0;
+    @include portrait-phone {
+        padding: 70px 0 40px;
+    }
+    .single-fun-fact{
+        @include small-screen {
+            text-align: center;
+        }
+        &:hover {
+            .fun-fact-icon {
+                img {
+                    animation: spinAround 2s linear infinite;
+                }
+            }
+        }
+        .fun-fact-icon{
+            margin-bottom: 10px;
+            overflow: hidden;
+            img {
+                transition: all .4s;
+            }
+         }
+         .fun-fact-content{
+            .fun-fact-title{
+                margin-bottom: 10px;
+                font-size: 30px;
+                color: $rt-black-400;
+                font-weight: $font-semibold;
+                @include portrait-phone {
+                    font-size: 26px;
+                }
+            }
+            .fun-fact-desc{
+                color: #565656;
+                font-size: 15px;
+            }
+         }
+    }
+}
+
+@keyframes spinAround {
+	from {
+		transform: rotate(0deg)
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}

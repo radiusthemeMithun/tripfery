@@ -1,0 +1,86 @@
+.about-video-area {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  @include portrait-phone {
+    padding: 70px 0;
+  }
+}
+
+.about-video-bg {
+  min-height: 600px;
+  border-radius: 50px;
+  display: grid;
+  place-items: center;
+  @include portrait-phone {
+    min-height: 400px;
+  }
+
+  .about-video-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: $rt-white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .4s ease-in-out;
+    @include portrait-phone {
+      width: 80px;
+      height: 80px;
+    }
+    svg {
+      color: $rt-blue-500;
+      transition: all .4s ease-in-out;
+    }
+    &:hover {
+      background-color: $rt-blue-500;
+      svg {
+        color: $rt-white;
+      }
+    }
+  }
+}
+
+.video-content-area {
+  margin-top: -100px;
+  background-color: $rt-white;
+  padding: 60px 80px 65px;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+  @include small-screen {
+    margin-top: 30px;
+    padding: 40px;
+  }
+
+  @include screen-768-to-1200 {
+    padding: 60px;
+  }
+
+  .video-subtitle {
+    font-size: 24px;
+    color: $rt-blue-500;
+    font-weight: $font-semibold;
+    letter-spacing: 0.3em;
+    @include portrait-phone {
+      font-size: 20px;
+    }
+  }
+  .video-content-title {
+    font-weight: $font-bold;
+    font-size: 36px;
+    line-height: 50px;
+    color: $rt-black-400;
+    margin-bottom: 10px;
+    @include portrait-phone {
+      font-size: 26px;
+      line-height: 40px;
+    }
+  }
+  .video-content-desc {
+    color: #565656;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 0;
+  }
+}
+
+@import "../section/team";

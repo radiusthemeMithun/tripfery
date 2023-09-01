@@ -1,0 +1,122 @@
+.hotel-info {
+  padding: 120px 0 50px 0;
+  @include portrait-phone {
+    padding: 70px 0 5px 0;
+  }
+}
+
+.hotel-info-card {
+  .item-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    @media only screen and (max-width: 1199px) {
+      width: 100%;
+    }
+    .img-fluid {
+      cursor: pointer;
+      transition: all .5s ease-out;
+      border-radius: 5px;
+      @media only screen and (max-width: 1199px) {
+        width: 100%;
+      }
+    }
+  }
+  &:hover {
+    .item-img {
+      .img-fluid {
+        transform: scale(1.05);
+      }
+    }
+  }
+  .hotel-short-info {
+    background-color: $rt-white;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    padding: 40px 50px;
+    z-index: 1;
+    margin-top: -130px;
+    @media only screen and (max-width: 479px) {
+      padding: 40px;
+    }
+  }
+  .info-subtitle {
+    font-weight: $font-semibold;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: $rt-gray-500;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  .info-title {
+    font-weight: 600;
+    font-size: 24px;
+    color: $rt-black-400;
+    margin-bottom: 10px;
+    @media only screen and (max-width: 479px) {
+      font-size: 20px;
+    }
+  }
+  .review-text {
+    font-size: 13px;
+    line-height: 18px;
+    color: $rt-gray-500;
+  }
+}
+
+.info-card-counter {
+  background-color: $rt-white;
+  padding: 67px 34px;
+  border: 1px dashed #384bff;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  gap: 40px;
+  @media only screen and (max-width: 479px) {
+    padding: 30px;
+  }
+  .hotel-info-title {
+    font-weight: 600;
+    font-size: 30px;
+    color: $rt-black-400;
+  }
+  .hotel-info-desc {
+    font-size: 16px;
+    color: #565656;
+  }
+
+  .info-counter {
+    gap: 50px;
+    @media only screen and (max-width: 479px) {
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+  }
+  .info-counter {
+    .counter {
+      font-weight: $font-bold;
+      font-size: 34px;
+      color: #384bff;
+      @media only screen and (max-width: 479px) {
+        font-size: 24px;
+      }
+    }
+    .post-fix {
+      font-size: 30px;
+      color: #384bff;
+      font-weight: $font-bold;
+      position: relative;
+      left: -5px;
+      @media only screen and (max-width: 479px) {
+        font-size: 22px;
+      }
+    }
+  }
+  .info-counter-label {
+    font-weight: $font-normal;
+    font-size: 16px;
+    color: #8f8f8f;
+  }
+}

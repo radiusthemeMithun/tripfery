@@ -1,0 +1,34 @@
+@import "../section/topbar";
+@import "../section/expanding-cards";
+@import "../section/listing-card-filter";
+@import "../section/metrics";
+@import "../section/testimonials";
+@import "../section/latest-blog";
+@import "../section/social-media-link";
+@import "../layout/footer";
+
+.tabs {
+  background-color: #e4e4e4;
+  display: inline-flex;
+  border-radius: 16px;
+  position: relative;
+}
+.tabs > button {
+  background: transparent;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  position: relative;
+}
+.tabs > button.active {
+  color: white;
+  border-radius: 16px;
+  font-weight: bold;
+}
+.pill {
+  content: " ";
+  background-color: black;
+  border-radius: 16px;
+  display: block;
+  position: absolute;
+}

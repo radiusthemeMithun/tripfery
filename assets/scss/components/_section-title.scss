@@ -1,0 +1,81 @@
+.section-title-wrapper {
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 6;
+  .line {
+    width: 50px;
+    height: 5px;
+    background-color: $rt-blue-500;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &.light {
+    .section-title,
+    .section-desc {
+      color: $rt-white;
+    }
+  }
+
+  .section-title {
+    font-weight: $font-bold;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    color: $rt-black-400;
+    margin-bottom: 10px;
+    @include small-screen {
+      font-size: 30px;
+      line-height: 40px;
+    }
+    @include portrait-phone {
+      font-size: 26px;
+      line-height: 36px;
+    }
+  }
+  .section-shape {
+    position: absolute;
+    top: 23px;
+    left: 50%;
+    max-width: 234px;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+  .section-desc {
+    font-weight: $font-normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #565656;
+  }
+}
+.section-title-wrapper.style-2 {
+  .line {
+    width: 50px;
+    height: 5px;
+    background-color: $rt-blue-500;
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    @include portrait-phone {
+     top: 53px;
+    }
+  }
+  .section-title {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+}
+.section-title-wrapper.has-animation .line {
+  width: 0;
+  transition: all ease 1s;
+}
+.section-title-wrapper.active-animation .line {
+  width: 50px;
+}
+
+
+

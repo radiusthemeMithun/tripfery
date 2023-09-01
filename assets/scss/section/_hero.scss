@@ -1,0 +1,545 @@
+.hero-bg {
+  position: relative;
+
+  &.hero-one-bg {
+    // transition: all 0.3s e;
+    &.hero-overlay {
+      &::before {
+        background-color: rgba($color: #000000, $alpha: 0.5);
+      }
+    }
+  }
+  &.hero-two-bg {
+    .hero-two-forms {
+      padding: 60px 0 140px 0;
+    }
+  }
+
+  &.hero-four-bg {
+    .content-four {
+      padding-top: 150px;
+      @include large-screen {
+        padding-top: 135px;
+      }
+    }
+    .hero-four-search-form {
+      padding-top: 40px;
+      padding-bottom: 85px;
+    }
+    &.hero-overlay {
+      &::before {
+        background-color: rgba($color: #0057ff, $alpha: 0.2);
+      }
+    }
+  }
+
+  &.hero-five-bg {
+    min-height: 58vh;
+    &.hero-overlay {
+      &::before {
+        background-color: rgba($color: #000000, $alpha: 0.7);
+      }
+    }
+  }
+
+  &.hero-six-bg {
+    padding-bottom: 170px;
+    &.hero-overlay {
+      &::before {
+        background-color: rgba($color: #111751, $alpha: 0.6);
+      }
+    }
+  }
+
+  &.hero-seven-bg {
+    padding-bottom: 90px;
+    &.hero-overlay {
+      &::before {
+        background-color: rgba($color: #000000, $alpha: 0.5);
+      }
+    }
+  }
+  &.hero-overlay {
+    &::before {
+      width: 100%;
+      height: 100%;
+      content: "";
+      position: absolute;
+      z-index: 2;
+      background-color: rgba($color: #1d0071, $alpha: 0.5);
+    }
+  }
+}
+.hero-two {
+  position: relative;
+  overflow: hidden;
+  .hero-layout {
+    background-position: right top;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    animation: rtZoom 50s linear infinite;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
+.hero-three {
+  position: relative;
+  padding-bottom: 90px;
+  .hero-back-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.hero-four {
+  position: relative;
+  overflow: hidden;
+  // height: 100vh;
+  height: 100%;
+  // @include small-screen {
+  //   height: 100vh;
+  // }
+  video {
+    width: 100%;
+    display: block
+  }
+  .video-banner {
+    position: relative;
+  }
+  .hero-content {
+    position: absolute;
+    left: 0;
+    top: 140px;
+    right: 0;
+    width: 640px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    text-align: center;
+    @media screen and (max-width: 1440px) {
+      top: 55px;
+    }
+    @include large-screen {
+      top: 0;
+    }
+    @include small-screen {
+      display: none;
+    }
+  }
+  .hero-four-search-form {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 53%;
+    @media screen and (max-width: 1440px) {
+      top: 57%;
+    }
+    @include large-screen {
+      top: 52%;
+    }
+    @include medium-screen {
+      display: none;
+    }
+  }
+}
+.hero-five {
+  position: relative;
+  overflow: hidden;
+  .hero-layout {
+    background-position: right top;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    animation: rtZoom2 10s linear infinite;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
+.hero-six {
+  position: relative;
+  overflow: hidden;
+  .hero-layout {
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    animation: rtZoom2 10s linear infinite;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
+.home-forms-container {
+  padding: 130px 0 135px 0;
+}
+
+.home-forms-tab {
+  background-color: $rt-white;
+  max-width: 1000px;
+  border-radius: 0 10px 10px 10px;
+  @include medium-screen {
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+.search-form-wrapper.home-style {
+  max-width: 100%;
+}
+
+.video-popup-container {
+  z-index: 10;
+  .video-popup {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    background-color: $rt-white;
+    position: relative;
+    top: 120px;
+    right: 50px;
+    i {
+      font-size: 16px;
+      color: $rt-blue-500;
+    }
+    @include small-screen {
+      left: 50%;
+      transform: translateX(-50%);
+      top: 50px;
+    }
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      left: -25%;
+      top: -25%;
+      height: 150%;
+      width: 150%;
+      border: 2px solid $rt-white;
+      border-radius: 100px;
+      opacity: 0;
+      animation: 1s flairanimationbefore linear infinite;
+      -webkit-animation: 1s flairanimationbefore linear infinite;
+    }
+    &::before {
+      animation-delay: 0.5s;
+    }
+    @-webkit-keyframes flairanimationbefore {
+      0% {
+        transform: scale(0.68);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1.2);
+        opacity: 0;
+      }
+    }
+    @keyframes flairanimationbefore {
+      0% {
+        transform: scale(0.68);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1.2);
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.hero-arrow {
+  position: absolute;
+  z-index: 10;
+  right: 18%;
+  top: 42%;
+  @include large-screen {
+    display: none;
+  }
+  .hero-svg {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    transform: rotate(-100deg);
+    .draw-arrow {
+      stroke-width: 2;
+      stroke: white;
+      fill: none;
+      stroke-dasharray: 400;
+      stroke-dashoffset: 400;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+      animation-name: rt-draw;
+      &.tail-1 {
+        animation-delay: 0.5s;
+      }
+      &.tail-2 {
+        animation-delay: 0.7s;
+      }
+    }
+  }
+  @keyframes rt-draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+.hero-content {
+  @include small-screen {
+    text-align: center;
+  }
+  &.content-one {
+    padding-top: 135px;
+    margin-bottom: 0;
+  }
+  &.content-five {
+    padding: 180px 0 170px 0;
+  }
+  &.light-content {
+    padding-bottom: 120px;
+    .hero-subtitle {
+      color: $rt-blue-500;
+    }
+    .hero-title {
+      color: $rt-black-400;
+    }
+  }
+  &.content-six {
+    padding-bottom: 30px;
+  }
+  &.content-seven {
+    padding-top: 150px;
+    padding-bottom: 70px;
+  }
+  padding-top: 190px;
+  position: relative;
+  z-index: 5;
+  // margin-bottom: 45px;
+  .hero-subtitle {
+    font-weight: $font-bold;
+    font-size: 40px;
+    display: block;
+    margin-bottom: 20px;
+    line-height: 36px;
+    color: $rt-white;
+    font-family: $rt-cursive-font;
+    @include large-screen {
+      font-size: 30px;
+      line-height: 24px;
+    }
+    @include portrait-phone {
+      font-size: 26px;
+      line-height: 24px;
+    }
+  }
+  .hero-title {
+    font-weight: $font-bold;
+    font-size: 60px;
+    line-height: 75px;
+    color: $rt-white;
+    text-transform: capitalize;
+    @include large-screen {
+      font-size: 50px;
+      line-height: 65px;
+    }
+    @include portrait-phone {
+      font-size: 40px;
+      line-height: 55px;
+    }
+  }
+}
+.hotel-form-wrapper {
+  &.width-style-two {
+    max-width: 786px;
+  }
+  max-width: 1000px;
+  position: relative;
+  z-index: 5;
+  height: 150px;
+  margin: 0 auto;
+  background-color: $rt-white;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.home-form-tabs-container {
+  z-index: 20;
+}
+.home-form-tab-btns {
+  background-color: $rt-white;
+  border-radius: 10px 10px 0 0;
+  max-width: calc(760px - 7px);
+}
+
+.home-form-tab-item {
+  &:first-child {
+    .home-form-btn-item {
+      border-top-left-radius: 10px;
+    }
+  }
+  &:last-child {
+    .home-form-btn-item {
+      border-top-right-radius: 10px;
+    }
+  }
+  .home-form-btn-item {
+    background-color: transparent;
+    padding: 18px 20px;
+    font-weight: $font-semibold;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: $rt-black-400;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s linear;
+    justify-content: center;
+    gap: 8px;
+    position: relative;
+    z-index: 2;
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: transparent;
+      z-index: -2;
+      transition: all 300ms ease-out 0s;
+    }
+    &.hotel {
+      svg {
+        color: $rt-blue-500;
+      }
+    }
+    &.tours {
+      svg {
+        color: #0071ff;
+      }
+    }
+    &.activity {
+      svg {
+        color: #a738ff;
+      }
+    }
+    &.rental {
+      svg {
+        color: #e32977;
+      }
+    }
+    &.rentcar {
+      svg {
+        color: #f38d15;
+      }
+    }
+    &.restaurant {
+      svg {
+        color: #24e388;
+      }
+    }
+
+    &.active {
+      &::after {
+        width: 100%;
+        background-color: $rt-blue-500;
+      }
+      color: $rt-white;
+      svg {
+        color: $rt-white;
+      }
+
+      &.hotel {
+        &::after {
+            width: 100%;
+            background-color: $rt-blue-500;
+            border-top-left-radius: 10px;
+        }
+      }
+
+      &.tours {
+        &::after {
+          width: 100%;
+          background-color: #0071ff;
+      }
+      }
+      &.activity {
+
+        &::after {
+          width: 100%;
+          background-color: #a738ff;
+      }
+      }
+      &.rental {
+
+        &::after {
+          width: 100%;
+          background-color: #e32977;
+      }
+      }
+      &.rentcar {
+
+        &::after {
+          width: 100%;
+          background-color: #f38d15;
+      }
+
+      }
+      &.restaurant {
+
+        &::after {
+          width: 100%;
+          background-color: #24e388;
+          border-top-right-radius: 10px;
+      }
+      }
+    }
+  }
+}
+
+
+/*------------------- rtZoom Animation -------------------*/
+@keyframes rtZoom {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1.5);
+  }
+}
+
+@keyframes rtZoom2 {
+  0% {
+      transform: scale(1.2, 1.2);
+  }
+  100% {
+      transform: scale(1, 1);
+  }
+}
+
+// @keyframes rtZoom3 {
+//   0% {
+//       transform: scale(1, 1);
+//   }
+
+//   100% {
+//       transform: scale(1, 1);
+//   }
+// }
+
+
+
+
+

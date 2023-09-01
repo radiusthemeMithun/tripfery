@@ -1,0 +1,43 @@
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 999999;
+  .loading-bar {
+    width: 120px;
+    height: 3px;
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    &::before {
+      content: "";
+      width: 35px;
+      height: 3px;
+      background-color: $rt-blue-500;
+      position: absolute;
+
+      left: -34px;
+      animation: bluebar 1.5s infinite ease;
+    }
+  }
+  @-webkit-keyframes bluebar {
+    50% {
+      left: 96px;
+    }
+  }
+  @keyframes bluebar {
+    50% {
+      left: 96px;
+    }
+  }
+}

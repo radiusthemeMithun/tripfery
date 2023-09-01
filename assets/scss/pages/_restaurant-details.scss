@@ -1,0 +1,78 @@
+@import "../section/large-slider";
+
+.restaurant-info {
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+.r-feature-list {
+  .r-feature-list-item {
+    gap: 7px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: $font-semibold;
+    @include screen-400 {
+      font-size: 16px;
+    }
+  }
+  i {
+    color: #5bdb46;
+  }
+}
+
+.details-page-info-right {
+  gap: 20px;
+  .stars {
+    li {
+      line-height: 1;
+    }
+    i {
+      color: #e8ad16;
+    }
+  }
+}
+
+.details-page-title {
+  font-size: 30px;
+  font-weight: $font-semibold;
+  color: $rt-black-400;
+  @include portrait-phone {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+}
+.place-address {
+  font-size: 16px;
+  color: #858585;
+}
+.details-page-info {
+  gap: 20px;
+}
+.restaurant-feature {
+  gap: 40px;
+  @include screen-400 {
+    gap: 15px;
+  }
+}
+
+.map-area {
+  margin-bottom: 30px;
+  .map-header {
+    padding: 0 40px;
+    margin-bottom: 25px;
+    gap: 15px;
+    @include small-screen {
+      padding: 0 20px;
+    }
+  }
+  .map-wrapper {
+    border-radius: 20px;
+  }
+  .restaurant-title {
+    font-size: 24px;
+    font-weight: $font-bold;
+  }
+  .location-title {
+    font-size: 18px;
+    color: #878787;
+  }
+}

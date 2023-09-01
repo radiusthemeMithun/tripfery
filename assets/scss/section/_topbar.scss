@@ -1,0 +1,63 @@
+.topbar-container {
+  padding: 0 100px;
+  @include large-screen {
+    padding: 0 16px;
+  }
+}
+
+.rt-tf-topbar {
+  background-color: $rt-black-400;
+  padding: 12px 0;
+  line-height: 1;
+  .rt-tf-topbar-left {
+    gap: 34px;
+
+    .rt-tf-welcome-text {
+      color: $rt-gray-400;
+      font-size: 12px;
+    }
+    .rt-tf-phone-number {
+      font-size: 12px;
+      color: $rt-gray-400;
+      svg {
+        color: $rt-gray-400;
+      }
+    }
+  }
+  .rt-tf-topbar-right {
+    gap: 30px;
+    @media only screen and (max-width: 320px) {
+      display: none !important;
+    }
+    @include screen-768-to-1200 {
+      gap: 16px;
+    }
+    .rt-tf-right-info {
+      .info-content {
+        color: $rt-gray-400;
+        font-size: 12px;
+      }
+    }
+    .rt-tf-topbar-social-links {
+      .social-link-text {
+        color: $rt-gray-400;
+        font-size: 12px;
+        text-transform: capitalize;
+        margin-right: 10px;
+        display: inline-block;
+      }
+      .social-link-item {
+        color: $rt-gray-400;
+        margin-right: 8px;
+        font-size: 12px;
+        display: inline-block;
+        &:last-of-type {
+          margin-right: 0;
+        }
+        &:hover {
+          color: $rt-blue-500;
+        }
+      }
+    }
+  }
+}

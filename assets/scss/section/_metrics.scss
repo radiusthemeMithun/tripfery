@@ -1,0 +1,49 @@
+.metrics-area {
+  margin-bottom: -100px;
+  position: relative;
+  z-index: 10;
+  .metrics-row {
+    background-color: $rt-blue-500;
+    border-radius: 20px;
+    padding: 56px 128px;
+    &.metrics-rounded {
+      border-radius: 20px;
+    }
+    .single-metrics {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .metrics-number {
+        font-size: 80px;
+        color: #5967f7;
+        .counter {
+          font-weight: $font-semibold;
+        }
+        .post-fix {
+          font-weight: $font-normal;
+          margin-left: -25px;
+        }
+      }
+      .metrics-name {
+        color: $rt-white;
+        font-size: 22px;
+        font-weight: $font-medium;
+        letter-spacing: 2px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    @include small-screen {
+      align-items: center;
+      padding: 50px;
+    }
+    @include tablet {
+      gap: 50px;
+    }
+    @include screen-768-to-1200 {
+      padding: 50px;
+    }
+  }
+}

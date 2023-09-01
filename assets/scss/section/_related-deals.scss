@@ -1,0 +1,14 @@
+.related-deals {
+  padding-bottom: 40px;
+}
+.related-section-title {
+  .deals-title {
+    font-size: 30px;
+    font-weight: $font-semibold;
+    color: $rt-black-400;
+    margin-bottom: 25px;
+    @include portrait-phone {
+      font-size: 26px;
+    }
+  }
+}

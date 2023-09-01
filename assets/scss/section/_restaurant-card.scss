@@ -1,0 +1,114 @@
+.choose-restaurant {
+  padding: 120px 0 90px;
+  @include portrait-phone {
+    padding: 70px 0;
+  }
+  .tripfery-button {
+    margin-top: 35px;
+    @include portrait-phone {
+      margin-top: 20px;
+    }
+  }
+}
+.restaurant-card {
+  background-color: $rt-white;
+  padding: 8px;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  cursor: pointer;
+  .restaurant-thumb-wrapper {
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: block;
+    .restaurant-thumb {
+      transform: scale(1);
+      transition: all 0.5s ease-in-out;
+    }
+  }
+  .discount-badge {
+    height: 25px;
+    padding: 5px 10px;
+    background-color: #0cd138;
+    color: $rt-white;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: $font-medium;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .restaurant-meta {
+    padding-top: 14px;
+    .badge {
+      margin-bottom: 13px;
+    }
+  }
+
+  .resaturant-card-content {
+    padding: 10px 10px 20px 10px;
+  }
+  .restaurant-card-title {
+    a {
+      font-size: 20px;
+      color: $rt-black-400;
+      font-weight: $font-semibold;
+      display: inline-block;
+      margin-bottom: 13px;
+    }
+  }
+  .resaturant-info {
+    .restaurant-card-review {
+      gap: 5px;
+      .review-text {
+        font-size: 16px;
+        font-weight: $font-medium;
+        line-height: 20px;
+      }
+    }
+    .review-stars-area {
+      gap: 5px;
+    }
+
+    .number-of-reviews {
+      font-size: 13px;
+      color: $rt-gray-500;
+    }
+    .review-stars {
+      li {
+        line-height: 1;
+      }
+    }
+  }
+  .restaurant-btn {
+    margin-top: 24px;
+    padding: 10px 14px 11px;
+    height: 35px;
+    font-size: 15px;
+    font-weight: $font-medium;
+    background-color: #F7F7FF;
+    color: $rt-blue-500;
+    display: inline-block;
+    border-radius: 40px;
+    line-height: 16px;
+    transition: all .4s ease-in-out;
+    &:hover {
+      color: $rt-white;
+      background-color: $rt-blue-500;
+    }
+  }
+
+  &:hover {
+    .restaurant-thumb {
+      transform: scale(1.1);
+    }
+    .restaurant-card-title {
+      a {
+        color: $rt-blue-500;
+      }
+    }
+  }
+}

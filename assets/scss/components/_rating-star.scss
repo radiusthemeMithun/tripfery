@@ -1,0 +1,47 @@
+.rating-stars {
+  // margin-right: 5px;
+  gap: 2px;
+  li {
+    line-height: 1;
+  }
+  i {
+    color: #eca336;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+}
+
+.rating {
+
+	label {
+		float: left;
+		position: relative;
+		width: 24px;
+		height: 24px;
+		cursor: pointer;
+		
+		&:not(:first-of-type) {
+			padding-right: 2px;
+		}
+		
+		&:before {
+			font-size: 16px;
+			color: #CCCCCC;
+      font-family: FontAwesome;
+      content: "\f005";
+      display: inline-block;
+		}
+	}
+	
+	input {
+		display: none;
+	}
+	
+	input:checked ~ label:before,
+	&:not(:checked) > label:hover:before,
+	&:not(:checked) > label:hover ~ label:before {
+		color: #E8AD16;
+	}
+}
+
+

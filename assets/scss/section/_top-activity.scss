@@ -1,0 +1,76 @@
+.top-activity {
+  padding: 120px 0 90px 0;
+  @include portrait-phone {
+    padding: 70px 0 50px;
+  }
+  .top-activity-wrapper {
+    position: relative;
+    z-index: 1;
+    width: 196px;
+    height: 280px;
+    background-color: #f9f9ff;
+    border-radius: 100px 100px 20px 20px;
+    padding: 15px 13px;
+    cursor: pointer;
+    &::after {
+      width: 100%;
+      height: 0;
+      background-color: $rt-blue-500;
+      transition: height .5s;
+      border-radius: 100px 100px 20px 20px;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+    }
+    &:hover {
+      &::after {
+        height: 100%;
+      }
+      .top-activity-thumb-wrapper {
+        img {
+          transform: scale(1.3);
+        }
+      }
+      .activity-info {
+        .activity-name {
+          color: $rt-white;
+        }
+        .activity-place {
+          color: #f1f1f1;
+        }
+      }
+    }
+    .top-activity-thumb-wrapper {
+      position: relative;
+      overflow: hidden;
+      border-radius: 50%;
+      height: 170px;
+      width: 170px;
+      img {
+        border-radius: 50%;
+        transition: all 0.4s ease-in-out;
+        transform: scale(1);
+        height: 170px;
+        width: 170px;
+      }
+    }
+    .activity-info {
+      padding-top: 15px;
+      .activity-name {
+        font-size: 18px;
+        font-weight: $font-semibold;
+        line-height: 24px;
+        color: $rt-black-400;
+        transition: all 0.4s ease-in-out;
+      }
+      .activity-place {
+        font-size: 15px;
+        color: #929292;
+        transition: all 0.4s ease-in-out;
+      }
+    }
+  }
+}

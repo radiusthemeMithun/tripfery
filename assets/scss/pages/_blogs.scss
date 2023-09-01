@@ -1,0 +1,129 @@
+@import "../section/breadcumb";
+.blog-grid {
+  &.home-style {
+    padding: 200px 0 120px 0;
+    @include portrait-phone {
+      padding: 160px 0px 50px;
+    }
+  }
+  padding: 120px 0 100px;
+  @include portrait-phone {
+    padding: 70px 0px 50px;
+  }
+  .blog-grid-post {
+    .post-thumb-wrapper {
+      display: block;
+      overflow: hidden;
+      border-radius: 20px;
+      width: 100%;
+      .post-thumb {
+        border-radius: 20px;
+        transition: all 0.5s ease-in-out;
+        object-fit: cover;
+        transform: scale(1);
+        width: 100%;
+      }
+    }
+    .youtube-icon {
+      position: absolute;
+      top: 33%;
+      left: 50%;
+      transform: translateY(-33%) translateX(-50%);
+      @include screen-400 {
+        display: none;
+      }
+      a {
+        width: 67px;
+        height: 47px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #FF0000;
+        border-radius: 12px;
+        i {
+          color: $rt-white;
+          font-size: 20px;
+        }
+      }
+    }
+    .grid-post-content {
+      margin-left: 20px;
+      padding-left: 13px;
+      margin-top: 20px;
+      position: relative;
+      &::after {
+        content: "";
+        height: 100%;
+        width: 2px;
+        background-color: #e0e1e2;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      &::before {
+        content: "";
+        height: 0;
+        width: 2px;
+        background-color: $rt-blue-500;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transition: height .8s;
+      }
+      .post-meta {
+        display: flex;
+        gap: 15px;
+        .tag {
+          font-size: 15px;
+          color: $rt-blue-500;
+          font-weight: $font-medium;
+        }
+        .date {
+          font-size: 15px;
+          color: #797979;
+          position: relative;
+          padding-left: 15px;
+          &::before {
+            content: "";
+            width: 3px;
+            height: 3px;
+            top: 50%;
+            left: 0;
+            position: absolute;
+            border-radius: 50%;
+            background-color: #797979;
+            transition: all .4s linear;
+          }
+        }
+      }
+      .post-title {
+        .post-link {
+          font-size: 22px;
+          font-weight: $font-bold;
+          color: $rt-black-400;
+        }
+      }
+    }
+    &:hover {
+      cursor: pointer;
+      .post-thumb-wrapper {
+        .post-thumb {
+          transform: scale(1.2);
+        }
+      }
+      .grid-post-content {
+        &::before {
+          height: 100%;
+          transition: height .6s;
+          top: 0;
+        }
+        .post-title {
+          .post-link {
+            color: $rt-blue-500;
+          }
+        }
+      }
+    }
+  }
+}
