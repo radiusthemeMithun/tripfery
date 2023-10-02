@@ -266,9 +266,6 @@
   z-index: 10;
   right: 18%;
   top: 42%;
-  @include large-screen {
-    display: none;
-  }
   .hero-svg {
     width: 200px;
     height: 200px;
